@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import ControlledForm from '../ControlledForm/ControlledForm'
 import './App.css';
 
@@ -8,16 +9,18 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Hello, World</h1>
         </header>
         <ControlledForm />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        { this.props.hasErrored ? <p>Sorry! There was an error loading your result.</p> : ''}
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  hasErrored: state.hasErrored,
+})
+
+export default connect(mapStateToProps)(App);
 
