@@ -1,32 +1,33 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { setInitialLocation } from '../../thunks/setInitialLocation'
 
 export class ControlledForm extends Component {
   constructor() {
     super()
 
     this.state = {
-      country: ''
+      initialLocation: ''
     }
   }
 
   handleChange = (event) => {
-    const { name, value } = event.target
-    this.setState({[name]: value})
+    const initialLocation = event.target.value;
+    this.setState({ initialLocation });
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.fetchData(this.state.country)
+    this.props.selectInitialLocation(this.state.initialLocation);
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
        <input
+         value={this.state.initialLocation}
          type='text'
          placeholder='enter a country'
-         name='country'
-         value={this.state.country}
          onChange={this.handleChange}
        /> 
        <button>
@@ -37,4 +38,8 @@ export class ControlledForm extends Component {
   }
 }
 
-export default ControlledForm;
+export const mapDispatchToProps = (dispatch) => ({
+  selectInitialLocation: (initialLocation) => dispatch(setInitialLocation(initialLocation))
+})
+
+export default connect(null, mapDispatchToProps)(ControlledForm);
