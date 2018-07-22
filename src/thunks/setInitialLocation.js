@@ -1,20 +1,18 @@
-import { fetchInitialLocationSuccess, hasErrored } from '../actions';
-import { key } from '../helper/apiKey';
+import { fetchInitialLocationSuccess} from '../actions';
+import { fetchEstimates } from './fetchEstimates';
+import { fetchNumberOfSources } from './fetchNumberOfSources'; 
+import { fetchPercentileRank } from './fetchPercentileRank';
+import { fetchStandardError } from './fetchStandardError';
 
-export const setInitialLocation = (location) => {
+export const setInitialLocation = (location, dataSet, dataBase) => {
   // convert full location into ISO ALPHA-3 // 
+  const isoAlpha3 = location;
   return async (dispatch) => {
-    try {
-      const url = `https://www.quandl.com/api/v3/datasets/WWGI/${location}_VA_EST.json?api_key=${key}`
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw Error(response.statusText);
-      }
-      const locationData = await response.json();
-      // clean data that returns from fetch //
-      dispatch(fetchInitialLocationSuccess(locationData));
-    } catch (error) {
-      dispatch(hasErrored(true))
-    }
+    const estimates = await dispatch(fetchEstimates(isoAlpha3, dataSet, dataBase));
+    const numberOfSources = await dispatch(fetchNumberOfSources(isoAlpha3, dataSet, dataBase));
+    const percentileRank = await dispatch(fetchPercentileRank(isoAlpha3, dataSet, dataBase));
+    const standardError = await dispatch(fetchStandardError(isoAlpha3, dataSet, dataBase));
+    const locationData = {estimates, numberOfSources, percentileRank, standardError}
+    dispatch(fetchInitialLocationSuccess(locationData));
   }
 }
