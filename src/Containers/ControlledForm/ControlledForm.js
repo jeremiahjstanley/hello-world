@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setInitialLocation } from '../../thunks/setInitialLocation'
+import { setInitialLocation } from '../../thunks/setInitialLocation';
+import { dataMetrics } from '../../helper/dataMetrics';
 
 export class ControlledForm extends Component {
   constructor() {
     super()
 
     this.state = {
-      initialLocation: ''
+      initialLocation: '',
+      initialMetric: dataMetrics[0]
     }
   }
 
@@ -18,10 +20,25 @@ export class ControlledForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.selectInitialLocation(this.state.initialLocation);
+    const location = this.state.initialLocation;
+    const dataSet = this.state.initialMetric.dataset_code;
+    const dataBase = this.state.initialMetric.database_code;
+    this.props.selectInitialLocation(location, dataSet, dataBase);
+  }
+
+  selectMetric = (event) => {
+    const initialMetric = dataMetrics.find(metric => event.target.value === metric.name);
+    this.setState({ initialMetric })
   }
 
   render() {
+
+    const options = dataMetrics.map((metric, index) => (
+      <option key={index}>
+        {metric.name}
+      </option>
+    ))
+
     return (
       <form onSubmit={this.handleSubmit}>
        <input
@@ -30,6 +47,9 @@ export class ControlledForm extends Component {
          placeholder='enter a country'
          onChange={this.handleChange}
        /> 
+       <select onChange={this.selectMetric}>
+        { options }
+       </select>
        <button>
          Search
        </button>
@@ -39,7 +59,7 @@ export class ControlledForm extends Component {
 }
 
 export const mapDispatchToProps = (dispatch) => ({
-  selectInitialLocation: (initialLocation) => dispatch(setInitialLocation(initialLocation))
+  selectInitialLocation: (initialLocation, dataSet, dataBase) => dispatch(setInitialLocation(initialLocation, dataSet, dataBase))
 })
 
 export default connect(null, mapDispatchToProps)(ControlledForm);
