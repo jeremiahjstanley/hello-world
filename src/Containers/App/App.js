@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import ControlledForm from '../ControlledForm/ControlledForm'
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
 
   render() {
     return (
