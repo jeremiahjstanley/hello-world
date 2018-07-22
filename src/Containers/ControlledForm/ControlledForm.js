@@ -59,7 +59,7 @@ export class ControlledForm extends Component {
 }
 
 export const mapDispatchToProps = (dispatch) => ({
-  selectInitialLocation: (initialLocation, dataSet, dataBase) => dispatch(setInitialLocation(initialLocation, dataSet, dataBase))
+  selectInitialLocation: (location, dataSet, dataBase) => dispatch(setInitialLocation(location, dataSet, dataBase))
 })
 
 export default connect(null, mapDispatchToProps)(ControlledForm);

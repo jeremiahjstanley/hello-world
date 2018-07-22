@@ -1,0 +1,8 @@
+.statistics-container {
+  margin: 0 auto,
+}
+
+.subordinate-graphs {
+  display: flex;
+  justify-content: space-around;
+}

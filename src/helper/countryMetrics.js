@@ -1,3251 +1,3248 @@
 export const countries = [
   {
-    name: 'Afghanistan'
-    alpha-2: 'AF'
-    alpha-3: 'AFG'
-    country-code: '004'
-    iso_3166-2: 'ISO 3166-2: AF'
-    region: 'Asia'
-    sub-region: 'Southern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '034'
-    intermediate-region-code: ''
-  },
-  {
-    name: ' Åland Islands'
-    alpha-2: 'AX'
-    alpha-3: 'ALA'
-    country-code: '248'
-    iso_3166-2: 'ISO 3166-2: AX'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Albania'
-    alpha-2: 'AL'
-    alpha-3: 'ALB'
-    country-code: '008'
-    iso_3166-2: 'ISO 3166-2: AL'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Algeria'
-    alpha-2: 'DZ'
-    alpha-3: 'DZA'
-    country-code: '012'
-    iso_3166-2: 'ISO 3166-2: DZ'
-    region: 'Africa'
-    sub-region: 'Northern Africa'
-    intermediate-region: ''
-    region-code: '002'
-    sub-region-code: '015'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'American Samoa'
-    alpha-2: 'AS'
-    alpha-3: 'ASM'
-    country-code: '016'
-    iso_3166-2: 'ISO 3166-2: AS'
-    region: 'Oceania'
-    sub-region: 'Polynesia'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '061'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Andorra'
-    alpha-2: 'AD'
-    alpha-3: 'AND'
-    country-code: '020'
-    iso_3166-2: 'ISO 3166-2: AD'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Angola'
-    alpha-2: 'AO'
-    alpha-3: 'AGO'
-    country-code: '024'
-    iso_3166-2: 'ISO 3166-2: AO'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Anguilla'
-    alpha-2: 'AI'
-    alpha-3: 'AIA'
-    country-code: '660'
-    iso_3166-2: 'ISO 3166-2: AI'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Antarctica'
-    alpha-2: 'AQ'
-    alpha-3: 'ATA'
-    country-code: '010'
-    iso_3166-2: 'ISO 3166-2: AQ'
-    region: ''
-    sub-region: ''
-    intermediate-region: ''
-    region-code: ''
-    sub-region-code: ''
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Antigua and Barbuda'
-    alpha-2: 'AG'
-    alpha-3: 'ATG'
-    country-code: '028'
-    iso_3166-2: 'ISO 3166-2: AG'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Argentina'
-    alpha-2: 'AR'
-    alpha-3: 'ARG'
-    country-code: '032'
-    iso_3166-2: 'ISO 3166-2: AR'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'Armenia'
-    alpha-2: 'AM'
-    alpha-3: 'ARM'
-    country-code: '051'
-    iso_3166-2: 'ISO 3166-2: AM'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Aruba'
-    alpha-2: 'AW'
-    alpha-3: 'ABW'
-    country-code: '533'
-    iso_3166-2: 'ISO 3166-2: AW'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Australia'
-    alpha-2: 'AU'
-    alpha-3: 'AUS'
-    country-code: '036'
-    iso_3166-2: 'ISO 3166-2: AU'
-    region: 'Oceania'
-    sub-region: 'Australia and New Zealand'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '053'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Austria'
-    alpha-2: 'AT'
-    alpha-3: 'AUT'
-    country-code: '040'
-    iso_3166-2: 'ISO 3166-2: AT'
-    region: 'Europe'
-    sub-region: 'Western Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '155'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Azerbaijan'
-    alpha-2: 'AZ'
-    alpha-3: 'AZE'
-    country-code: '031'
-    iso_3166-2: 'ISO 3166-2: AZ'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Bahamas'
-    alpha-2: 'BS'
-    alpha-3: 'BHS'
-    country-code: '044'
-    iso_3166-2: 'ISO 3166-2: BS'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Bahrain'
-    alpha-2: 'BH'
-    alpha-3: 'BHR'
-    country-code: '048'
-    iso_3166-2: 'ISO 3166-2: BH'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Bangladesh'
-    alpha-2: 'BD'
-    alpha-3: 'BGD'
-    country-code: '050'
-    iso_3166-2: 'ISO 3166-2: BD'
-    region: 'Asia'
-    sub-region: 'Southern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '034'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Barbados'
-    alpha-2: 'BB'
-    alpha-3: 'BRB'
-    country-code: '052'
-    iso_3166-2: 'ISO 3166-2: BB'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Belarus'
-    alpha-2: 'BY'
-    alpha-3: 'BLR'
-    country-code: '112'
-    iso_3166-2: 'ISO 3166-2: BY'
-    region: 'Europe'
-    sub-region: 'Eastern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '151'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Belgium'
-    alpha-2: 'BE'
-    alpha-3: 'BEL'
-    country-code: '056'
-    iso_3166-2: 'ISO 3166-2: BE'
-    region: 'Europe'
-    sub-region: 'Western Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '155'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Belize'
-    alpha-2: 'BZ'
-    alpha-3: 'BLZ'
-    country-code: '084'
-    iso_3166-2: 'ISO 3166-2: BZ'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Central America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '013'
-  },
-  {
-    name: 'Benin'
-    alpha-2: 'BJ'
-    alpha-3: 'BEN'
-    country-code: '204'
-    iso_3166-2: 'ISO 3166-2: BJ'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Bermuda'
-    alpha-2: 'BM'
-    alpha-3: 'BMU'
-    country-code: '060'
-    iso_3166-2: 'ISO 3166-2: BM'
-    region: 'Americas'
-    sub-region: 'Northern America'
-    intermediate-region: ''
-    region-code: '019'
-    sub-region-code: '021'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Bhutan'
-    alpha-2: 'BT'
-    alpha-3: 'BTN'
-    country-code: '064'
-    iso_3166-2: 'ISO 3166-2: BT'
-    region: 'Asia'
-    sub-region: 'Southern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '034'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Bolivia (Plurinational State of)'
-    alpha-2: 'BO'
-    alpha-3: 'BOL'
-    country-code: '068'
-    iso_3166-2: 'ISO 3166-2: BO'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'Bonaire
-     Sint Eustatius and Saba'
-     alpha-2: 'BQ'
-    alpha-3: 'BES'
-    country-code: '535'
-    iso_3166-2: 'ISO 3166-2: BQ'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Bosnia and Herzegovina'
-    alpha-2: 'BA'
-    alpha-3: 'BIH'
-    country-code: '070'
-    iso_3166-2: 'ISO 3166-2: BA'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Botswana'
-    alpha-2: 'BW'
-    alpha-3: 'BWA'
-    country-code: '072'
-    iso_3166-2: 'ISO 3166-2: BW'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Southern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '018'
-  },
-  {
-    name: 'Bouvet Island'
-    alpha-2: 'BV'
-    alpha-3: 'BVT'
-    country-code: '074'
-    iso_3166-2: 'ISO 3166-2: BV'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'Brazil'
-    alpha-2: 'BR'
-    alpha-3: 'BRA'
-    country-code: '076'
-    iso_3166-2: 'ISO 3166-2: BR'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'British Indian Ocean Territory'
-    alpha-2: 'IO'
-    alpha-3: 'IOT'
-    country-code: '086'
-    iso_3166-2: 'ISO 3166-2: IO'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Brunei Darussalam'
-    alpha-2: 'BN'
-    alpha-3: 'BRN'
-    country-code: '096'
-    iso_3166-2: 'ISO 3166-2: BN'
-    region: 'Asia'
-    sub-region: 'South-eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '035'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Bulgaria'
-    alpha-2: 'BG'
-    alpha-3: 'BGR'
-    country-code: '100'
-    iso_3166-2: 'ISO 3166-2: BG'
-    region: 'Europe'
-    sub-region: 'Eastern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '151'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Burkina Faso'
-    alpha-2: 'BF'
-    alpha-3: 'BFA'
-    country-code: '854'
-    iso_3166-2: 'ISO 3166-2: BF'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Burundi'
-    alpha-2: 'BI'
-    alpha-3: 'BDI'
-    country-code: '108'
-    iso_3166-2: 'ISO 3166-2: BI'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Cabo Verde'
-    alpha-2: 'CV'
-    alpha-3: 'CPV'
-    country-code: '132'
-    iso_3166-2: 'ISO 3166-2: CV'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Cambodia'
-    alpha-2: 'KH'
-    alpha-3: 'KHM'
-    country-code: '116'
-    iso_3166-2: 'ISO 3166-2: KH'
-    region: 'Asia'
-    sub-region: 'South-eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '035'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Cameroon'
-    alpha-2: 'CM'
-    alpha-3: 'CMR'
-    country-code: '120'
-    iso_3166-2: 'ISO 3166-2: CM'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Canada'
-    alpha-2: 'CA'
-    alpha-3: 'CAN'
-    country-code: '124'
-    iso_3166-2: 'ISO 3166-2: CA'
-    region: 'Americas'
-    sub-region: 'Northern America'
-    intermediate-region: ''
-    region-code: '019'
-    sub-region-code: '021'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Cayman Islands'
-    alpha-2: 'KY'
-    alpha-3: 'CYM'
-    country-code: '136'
-    iso_3166-2: 'ISO 3166-2: KY'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Central African Republic'
-    alpha-2: 'CF'
-    alpha-3: 'CAF'
-    country-code: '140'
-    iso_3166-2: 'ISO 3166-2: CF'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Chad'
-    alpha-2: 'TD'
-    alpha-3: 'TCD'
-    country-code: '148'
-    iso_3166-2: 'ISO 3166-2: TD'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Chile'
-    alpha-2: 'CL'
-    alpha-3: 'CHL'
-    country-code: '152'
-    iso_3166-2: 'ISO 3166-2: CL'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'China'
-    alpha-2: 'CN'
-    alpha-3: 'CHN'
-    country-code: '156'
-    iso_3166-2: 'ISO 3166-2: CN'
-    region: 'Asia'
-    sub-region: 'Eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '030'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Christmas Island'
-    alpha-2: 'CX'
-    alpha-3: 'CXR'
-    country-code: '162'
-    iso_3166-2: 'ISO 3166-2: CX'
-    region: 'Oceania'
-    sub-region: 'Australia and New Zealand'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '053'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Cocos (Keeling) Islands'
-    alpha-2: 'CC'
-    alpha-3: 'CCK'
-    country-code: '166'
-    iso_3166-2: 'ISO 3166-2: CC'
-    region: 'Oceania'
-    sub-region: 'Australia and New Zealand'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '053'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Colombia'
-    alpha-2: 'CO'
-    alpha-3: 'COL'
-    country-code: '170'
-    iso_3166-2: 'ISO 3166-2: CO'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'Comoros'
-    alpha-2: 'KM'
-    alpha-3: 'COM'
-    country-code: '174'
-    iso_3166-2: 'ISO 3166-2: KM'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Congo'
-    alpha-2: 'CG'
-    alpha-3: 'COG'
-    country-code: '178'
-    iso_3166-2: 'ISO 3166-2: CG'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Congo (Democratic Republic of the)'
-    alpha-2: 'CD'
-    alpha-3: 'COD'
-    country-code: '180'
-    iso_3166-2: 'ISO 3166-2: CD'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Cook Islands'
-    alpha-2: 'CK'
-    alpha-3: 'COK'
-    country-code: '184'
-    iso_3166-2: 'ISO 3166-2: CK'
-    region: 'Oceania'
-    sub-region: 'Polynesia'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '061'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Costa Rica'
-    alpha-2: 'CR'
-    alpha-3: 'CRI'
-    country-code: '188'
-    iso_3166-2: 'ISO 3166-2: CR'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Central America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '013'
-  },
-  {
-    name: 'Côte d'Ivoire'
-    alpha-2: 'CI'
-    alpha-3: 'CIV'
-    country-code: '384'
-    iso_3166-2: 'ISO 3166-2: CI'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Croatia'
-    alpha-2: 'HR'
-    alpha-3: 'HRV'
-    country-code: '191'
-    iso_3166-2: 'ISO 3166-2: HR'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Cuba'
-    alpha-2: 'CU'
-    alpha-3: 'CUB'
-    country-code: '192'
-    iso_3166-2: 'ISO 3166-2: CU'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Curaçao'
-    alpha-2: 'CW'
-    alpha-3: 'CUW'
-    country-code: '531'
-    iso_3166-2: 'ISO 3166-2: CW'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Cyprus'
-    alpha-2: 'CY'
-    alpha-3: 'CYP'
-    country-code: '196'
-    iso_3166-2: 'ISO 3166-2: CY'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Czechia'
-    alpha-2: 'CZ'
-    alpha-3: 'CZE'
-    country-code: '203'
-    iso_3166-2: 'ISO 3166-2: CZ'
-    region: 'Europe'
-    sub-region: 'Eastern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '151'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Denmark'
-    alpha-2: 'DK'
-    alpha-3: 'DNK'
-    country-code: '208'
-    iso_3166-2: 'ISO 3166-2: DK'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Djibouti'
-    alpha-2: 'DJ'
-    alpha-3: 'DJI'
-    country-code: '262'
-    iso_3166-2: 'ISO 3166-2: DJ'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Dominica'
-    alpha-2: 'DM'
-    alpha-3: 'DMA'
-    country-code: '212'
-    iso_3166-2: 'ISO 3166-2: DM'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Dominican Republic'
-    alpha-2: 'DO'
-    alpha-3: 'DOM'
-    country-code: '214'
-    iso_3166-2: 'ISO 3166-2: DO'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Ecuador'
-    alpha-2: 'EC'
-    alpha-3: 'ECU'
-    country-code: '218'
-    iso_3166-2: 'ISO 3166-2: EC'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'Egypt'
-    alpha-2: 'EG'
-    alpha-3: 'EGY'
-    country-code: '818'
-    iso_3166-2: 'ISO 3166-2: EG'
-    region: 'Africa'
-    sub-region: 'Northern Africa'
-    intermediate-region: ''
-    region-code: '002'
-    sub-region-code: '015'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'El Salvador'
-    alpha-2: 'SV'
-    alpha-3: 'SLV'
-    country-code: '222'
-    iso_3166-2: 'ISO 3166-2: SV'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Central America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '013'
-  },
-  {
-    name: 'Equatorial Guinea'
-    alpha-2: 'GQ'
-    alpha-3: 'GNQ'
-    country-code: '226'
-    iso_3166-2: 'ISO 3166-2: GQ'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Eritrea'
-    alpha-2: 'ER'
-    alpha-3: 'ERI'
-    country-code: '232'
-    iso_3166-2: 'ISO 3166-2: ER'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Estonia'
-    alpha-2: 'EE'
-    alpha-3: 'EST'
-    country-code: '233'
-    iso_3166-2: 'ISO 3166-2: EE'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Ethiopia'
-    alpha-2: 'ET'
-    alpha-3: 'ETH'
-    country-code: '231'
-    iso_3166-2: 'ISO 3166-2: ET'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Falkland Islands (Malvinas)'
-    alpha-2: 'FK'
-    alpha-3: 'FLK'
-    country-code: '238'
-    iso_3166-2: 'ISO 3166-2: FK'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'Faroe Islands'
-    alpha-2: 'FO'
-    alpha-3: 'FRO'
-    country-code: '234'
-    iso_3166-2: 'ISO 3166-2: FO'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Fiji'
-    alpha-2: 'FJ'
-    alpha-3: 'FJI'
-    country-code: '242'
-    iso_3166-2: 'ISO 3166-2: FJ'
-    region: 'Oceania'
-    sub-region: 'Melanesia'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '054'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Finland'
-    alpha-2: 'FI'
-    alpha-3: 'FIN'
-    country-code: '246'
-    iso_3166-2: 'ISO 3166-2: FI'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'France'
-    alpha-2: 'FR'
-    alpha-3: 'FRA'
-    country-code: '250'
-    iso_3166-2: 'ISO 3166-2: FR'
-    region: 'Europe'
-    sub-region: 'Western Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '155'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'French Guiana'
-    alpha-2: 'GF'
-    alpha-3: 'GUF'
-    country-code: '254'
-    iso_3166-2: 'ISO 3166-2: GF'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'French Polynesia'
-    alpha-2: 'PF'
-    alpha-3: 'PYF'
-    country-code: '258'
-    iso_3166-2: 'ISO 3166-2: PF'
-    region: 'Oceania'
-    sub-region: 'Polynesia'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '061'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'French Southern Territories'
-    alpha-2: 'TF'
-    alpha-3: 'ATF'
-    country-code: '260'
-    iso_3166-2: 'ISO 3166-2: TF'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Gabon'
-    alpha-2: 'GA'
-    alpha-3: 'GAB'
-    country-code: '266'
-    iso_3166-2: 'ISO 3166-2: GA'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Middle Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '017'
-  },
-  {
-    name: 'Gambia'
-    alpha-2: 'GM'
-    alpha-3: 'GMB'
-    country-code: '270'
-    iso_3166-2: 'ISO 3166-2: GM'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Georgia'
-    alpha-2: 'GE'
-    alpha-3: 'GEO'
-    country-code: '268'
-    iso_3166-2: 'ISO 3166-2: GE'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Germany'
-    alpha-2: 'DE'
-    alpha-3: 'DEU'
-    country-code: '276'
-    iso_3166-2: 'ISO 3166-2: DE'
-    region: 'Europe'
-    sub-region: 'Western Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '155'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Ghana'
-    alpha-2: 'GH'
-    alpha-3: 'GHA'
-    country-code: '288'
-    iso_3166-2: 'ISO 3166-2: GH'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Gibraltar'
-    alpha-2: 'GI'
-    alpha-3: 'GIB'
-    country-code: '292'
-    iso_3166-2: 'ISO 3166-2: GI'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Greece'
-    alpha-2: 'GR'
-    alpha-3: 'GRC'
-    country-code: '300'
-    iso_3166-2: 'ISO 3166-2: GR'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Greenland'
-    alpha-2: 'GL'
-    alpha-3: 'GRL'
-    country-code: '304'
-    iso_3166-2: 'ISO 3166-2: GL'
-    region: 'Americas'
-    sub-region: 'Northern America'
-    intermediate-region: ''
-    region-code: '019'
-    sub-region-code: '021'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Grenada'
-    alpha-2: 'GD'
-    alpha-3: 'GRD'
-    country-code: '308'
-    iso_3166-2: 'ISO 3166-2: GD'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Guadeloupe'
-    alpha-2: 'GP'
-    alpha-3: 'GLP'
-    country-code: '312'
-    iso_3166-2: 'ISO 3166-2: GP'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Guam'
-    alpha-2: 'GU'
-    alpha-3: 'GUM'
-    country-code: '316'
-    iso_3166-2: 'ISO 3166-2: GU'
-    region: 'Oceania'
-    sub-region: 'Micronesia'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '057'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Guatemala'
-    alpha-2: 'GT'
-    alpha-3: 'GTM'
-    country-code: '320'
-    iso_3166-2: 'ISO 3166-2: GT'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Central America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '013'
-  },
-  {
-    name: 'Guernsey'
-    alpha-2: 'GG'
-    alpha-3: 'GGY'
-    country-code: '831'
-    iso_3166-2: 'ISO 3166-2: GG'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: 'Channel Islands'
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: '830'
-  },
-  {
-    name: 'Guinea'
-    alpha-2: 'GN'
-    alpha-3: 'GIN'
-    country-code: '324'
-    iso_3166-2: 'ISO 3166-2: GN'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Guinea-Bissau'
-    alpha-2: 'GW'
-    alpha-3: 'GNB'
-    country-code: '624'
-    iso_3166-2: 'ISO 3166-2: GW'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Guyana'
-    alpha-2: 'GY'
-    alpha-3: 'GUY'
-    country-code: '328'
-    iso_3166-2: 'ISO 3166-2: GY'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'South America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '005'
-  },
-  {
-    name: 'Haiti'
-    alpha-2: 'HT'
-    alpha-3: 'HTI'
-    country-code: '332'
-    iso_3166-2: 'ISO 3166-2: HT'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Heard Island and McDonald Islands'
-    alpha-2: 'HM'
-    alpha-3: 'HMD'
-    country-code: '334'
-    iso_3166-2: 'ISO 3166-2: HM'
-    region: 'Oceania'
-    sub-region: 'Australia and New Zealand'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '053'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Holy See'
-    alpha-2: 'VA'
-    alpha-3: 'VAT'
-    country-code: '336'
-    iso_3166-2: 'ISO 3166-2: VA'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Honduras'
-    alpha-2: 'HN'
-    alpha-3: 'HND'
-    country-code: '340'
-    iso_3166-2: 'ISO 3166-2: HN'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Central America'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '013'
-  },
-  {
-    name: 'Hong Kong'
-    alpha-2: 'HK'
-    alpha-3: 'HKG'
-    country-code: '344'
-    iso_3166-2: 'ISO 3166-2: HK'
-    region: 'Asia'
-    sub-region: 'Eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '030'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Hungary'
-    alpha-2: 'HU'
-    alpha-3: 'HUN'
-    country-code: '348'
-    iso_3166-2: 'ISO 3166-2: HU'
-    region: 'Europe'
-    sub-region: 'Eastern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '151'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Iceland'
-    alpha-2: 'IS'
-    alpha-3: 'ISL'
-    country-code: '352'
-    iso_3166-2: 'ISO 3166-2: IS'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'India'
-    alpha-2: 'IN'
-    alpha-3: 'IND'
-    country-code: '356'
-    iso_3166-2: 'ISO 3166-2: IN'
-    region: 'Asia'
-    sub-region: 'Southern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '034'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Indonesia'
-    alpha-2: 'ID'
-    alpha-3: 'IDN'
-    country-code: '360'
-    iso_3166-2: 'ISO 3166-2: ID'
-    region: 'Asia'
-    sub-region: 'South-eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '035'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Iran (Islamic Republic of)'
-    alpha-2: 'IR'
-    alpha-3: 'IRN'
-    country-code: '364'
-    iso_3166-2: 'ISO 3166-2: IR'
-    region: 'Asia'
-    sub-region: 'Southern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '034'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Iraq'
-    alpha-2: 'IQ'
-    alpha-3: 'IRQ'
-    country-code: '368'
-    iso_3166-2: 'ISO 3166-2: IQ'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Ireland'
-    alpha-2: 'IE'
-    alpha-3: 'IRL'
-    country-code: '372'
-    iso_3166-2: 'ISO 3166-2: IE'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Isle of Man'
-    alpha-2: 'IM'
-    alpha-3: 'IMN'
-    country-code: '833'
-    iso_3166-2: 'ISO 3166-2: IM'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Israel'
-    alpha-2: 'IL'
-    alpha-3: 'ISR'
-    country-code: '376'
-    iso_3166-2: 'ISO 3166-2: IL'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Italy'
-    alpha-2: 'IT'
-    alpha-3: 'ITA'
-    country-code: '380'
-    iso_3166-2: 'ISO 3166-2: IT'
-    region: 'Europe'
-    sub-region: 'Southern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '039'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Jamaica'
-    alpha-2: 'JM'
-    alpha-3: 'JAM'
-    country-code: '388'
-    iso_3166-2: 'ISO 3166-2: JM'
-    region: 'Americas'
-    sub-region: 'Latin America and the Caribbean'
-    intermediate-region: 'Caribbean'
-    region-code: '019'
-    sub-region-code: '419'
-    intermediate-region-code: '029'
-  },
-  {
-    name: 'Japan'
-    alpha-2: 'JP'
-    alpha-3: 'JPN'
-    country-code: '392'
-    iso_3166-2: 'ISO 3166-2: JP'
-    region: 'Asia'
-    sub-region: 'Eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '030'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Jersey'
-    alpha-2: 'JE'
-    alpha-3: 'JEY'
-    country-code: '832'
-    iso_3166-2: 'ISO 3166-2: JE'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: 'Channel Islands'
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: '830'
-  },
-  {
-    name: 'Jordan'
-    alpha-2: 'JO'
-    alpha-3: 'JOR'
-    country-code: '400'
-    iso_3166-2: 'ISO 3166-2: JO'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Kazakhstan'
-    alpha-2: 'KZ'
-    alpha-3: 'KAZ'
-    country-code: '398'
-    iso_3166-2: 'ISO 3166-2: KZ'
-    region: 'Asia'
-    sub-region: 'Central Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '143'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Kenya'
-    alpha-2: 'KE'
-    alpha-3: 'KEN'
-    country-code: '404'
-    iso_3166-2: 'ISO 3166-2: KE'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Eastern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '014'
-  },
-  {
-    name: 'Kiribati'
-    alpha-2: 'KI'
-    alpha-3: 'KIR'
-    country-code: '296'
-    iso_3166-2: 'ISO 3166-2: KI'
-    region: 'Oceania'
-    sub-region: 'Micronesia'
-    intermediate-region: ''
-    region-code: '009'
-    sub-region-code: '057'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Korea (Democratic People's Republic of)'
-    alpha-2: 'KP'
-    alpha-3: 'PRK'
-    country-code: '408'
-    iso_3166-2: 'ISO 3166-2: KP'
-    region: 'Asia'
-    sub-region: 'Eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '030'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Korea (Republic of)'
-    alpha-2: 'KR'
-    alpha-3: 'KOR'
-    country-code: '410'
-    iso_3166-2: 'ISO 3166-2: KR'
-    region: 'Asia'
-    sub-region: 'Eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '030'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Kuwait'
-    alpha-2: 'KW'
-    alpha-3: 'KWT'
-    country-code: '414'
-    iso_3166-2: 'ISO 3166-2: KW'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Kyrgyzstan'
-    alpha-2: 'KG'
-    alpha-3: 'KGZ'
-    country-code: '417'
-    iso_3166-2: 'ISO 3166-2: KG'
-    region: 'Asia'
-    sub-region: 'Central Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '143'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Lao People's Democratic Republic'
-    alpha-2: 'LA'
-    alpha-3: 'LAO'
-    country-code: '418'
-    iso_3166-2: 'ISO 3166-2: LA'
-    region: 'Asia'
-    sub-region: 'South-eastern Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '035'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Latvia'
-    alpha-2: 'LV'
-    alpha-3: 'LVA'
-    country-code: '428'
-    iso_3166-2: 'ISO 3166-2: LV'
-    region: 'Europe'
-    sub-region: 'Northern Europe'
-    intermediate-region: ''
-    region-code: '150'
-    sub-region-code: '154'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Lebanon'
-    alpha-2: 'LB'
-    alpha-3: 'LBN'
-    country-code: '422'
-    iso_3166-2: 'ISO 3166-2: LB'
-    region: 'Asia'
-    sub-region: 'Western Asia'
-    intermediate-region: ''
-    region-code: '142'
-    sub-region-code: '145'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Lesotho'
-    alpha-2: 'LS'
-    alpha-3: 'LSO'
-    country-code: '426'
-    iso_3166-2: 'ISO 3166-2: LS'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Southern Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '018'
-  },
-  {
-    name: 'Liberia'
-    alpha-2: 'LR'
-    alpha-3: 'LBR'
-    country-code: '430'
-    iso_3166-2: 'ISO 3166-2: LR'
-    region: 'Africa'
-    sub-region: 'Sub-Saharan Africa'
-    intermediate-region: 'Western Africa'
-    region-code: '002'
-    sub-region-code: '202'
-    intermediate-region-code: '011'
-  },
-  {
-    name: 'Libya'
-    alpha-2: 'LY'
-    alpha-3: 'LBY'
-    country-code: '434'
-    iso_3166-2: 'ISO 3166-2: LY'
-    region: 'Africa'
-    sub-region: 'Northern Africa'
-    intermediate-region: ''
-    region-code: '002'
-    sub-region-code: '015'
-    intermediate-region-code: ''
-  },
-  {
-    name: 'Liechtenstein'
-    alpha-2: 'LI'
-    alpha-3: 'LIE'
-    country-code: '438'
-    iso_3166-2: 'ISO 3166-2: LI'
-    region: 'Europe'
-    sub-region: 'Western Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '155',
-    intermediate-region-code: ''  
+    name: 'Afghanistan',
+    alpha_2: 'AF',
+    alpha_3: 'AFG',
+    country_code: '004',
+    iso_3166_2: 'ISO 3166-2: AF',
+    region: 'Asia',
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
+  },
+  {
+    name: ' Åland Islands',
+    alpha_2: 'AX',
+    alpha_3: 'ALA',
+    country_code: '248',
+    iso_3166_2: 'ISO 3166-2: AX',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Albania',
+    alpha_2: 'AL',
+    alpha_3: 'ALB',
+    country_code: '008',
+    iso_3166_2: 'ISO 3166-2: AL',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Algeria',
+    alpha_2: 'DZ',
+    alpha_3: 'DZA',
+    country_code: '012',
+    iso_3166_2: 'ISO 3166-2: DZ',
+    region: 'Africa',
+    sub_region: 'Northern Africa',
+    intermediate_region: '',
+    region_code: '002',
+    sub_region_code: '015',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'American Samoa',
+    alpha_2: 'AS',
+    alpha_3: 'ASM',
+    country_code: '016',
+    iso_3166_2: 'ISO 3166-2: AS',
+    region: 'Oceania',
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Andorra',
+    alpha_2: 'AD',
+    alpha_3: 'AND',
+    country_code: '020',
+    iso_3166_2: 'ISO 3166-2: AD',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Angola',
+    alpha_2: 'AO',
+    alpha_3: 'AGO',
+    country_code: '024',
+    iso_3166_2: 'ISO 3166-2: AO',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017',
+  },
+  {
+    name: 'Anguilla',
+    alpha_2: 'AI',
+    alpha_3: 'AIA',
+    country_code: '660',
+    iso_3166_2: 'ISO 3166-2: AI',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Antarctica',
+    alpha_2: 'AQ',
+    alpha_3: 'ATA',
+    country_code: '010',
+    iso_3166_2: 'ISO 3166-2: AQ',
+    region: '',
+    sub_region: '',
+    intermediate_region: '',
+    region_code: '',
+    sub_region_code: '',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Antigua and Barbuda',
+    alpha_2: 'AG',
+    alpha_3: 'ATG',
+    country_code: '028',
+    iso_3166_2: 'ISO 3166-2: AG',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Argentina',
+    alpha_2: 'AR',
+    alpha_3: 'ARG',
+    country_code: '032',
+    iso_3166_2: 'ISO 3166-2: AR',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005',
+  },
+  {
+    name: 'Armenia',
+    alpha_2: 'AM',
+    alpha_3: 'ARM',
+    country_code: '051',
+    iso_3166_2: 'ISO 3166-2: AM',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Aruba',
+    alpha_2: 'AW',
+    alpha_3: 'ABW',
+    country_code: '533',
+    iso_3166_2: 'ISO 3166-2: AW',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Australia',
+    alpha_2: 'AU',
+    alpha_3: 'AUS',
+    country_code: '036',
+    iso_3166_2: 'ISO 3166-2: AU',
+    region: 'Oceania',
+    sub_region: 'Australia and New Zealand',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '053',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Austria',
+    alpha_2: 'AT',
+    alpha_3: 'AUT',
+    country_code: '040',
+    iso_3166_2: 'ISO 3166-2: AT',
+    region: 'Europe',
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Azerbaijan',
+    alpha_2: 'AZ',
+    alpha_3: 'AZE',
+    country_code: '031',
+    iso_3166_2: 'ISO 3166-2: AZ',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Bahamas',
+    alpha_2: 'BS',
+    alpha_3: 'BHS',
+    country_code: '044',
+    iso_3166_2: 'ISO 3166-2: BS',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Bahrain',
+    alpha_2: 'BH',
+    alpha_3: 'BHR',
+    country_code: '048',
+    iso_3166_2: 'ISO 3166-2: BH',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Bangladesh',
+    alpha_2: 'BD',
+    alpha_3: 'BGD',
+    country_code: '050',
+    iso_3166_2: 'ISO 3166-2: BD',
+    region: 'Asia',
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Barbados',
+    alpha_2: 'BB',
+    alpha_3: 'BRB',
+    country_code: '052',
+    iso_3166_2: 'ISO 3166-2: BB',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Belarus',
+    alpha_2: 'BY',
+    alpha_3: 'BLR',
+    country_code: '112',
+    iso_3166_2: 'ISO 3166-2: BY',
+    region: 'Europe',
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Belgium',
+    alpha_2: 'BE',
+    alpha_3: 'BEL',
+    country_code: '056',
+    iso_3166_2: 'ISO 3166-2: BE',
+    region: 'Europe',
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Belize',
+    alpha_2: 'BZ',
+    alpha_3: 'BLZ',
+    country_code: '084',
+    iso_3166_2: 'ISO 3166-2: BZ',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013',
+  },
+  {
+    name: 'Benin',
+    alpha_2: 'BJ',
+    alpha_3: 'BEN',
+    country_code: '204',
+    iso_3166_2: 'ISO 3166-2: BJ',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011',
+  },
+  {
+    name: 'Bermuda',
+    alpha_2: 'BM',
+    alpha_3: 'BMU',
+    country_code: '060',
+    iso_3166_2: 'ISO 3166-2: BM',
+    region: 'Americas',
+    sub_region: 'Northern America',
+    intermediate_region: '',
+    region_code: '019',
+    sub_region_code: '021',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Bhutan',
+    alpha_2: 'BT',
+    alpha_3: 'BTN',
+    country_code: '064',
+    iso_3166_2: 'ISO 3166-2: BT',
+    region: 'Asia',
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Bolivia (Plurinational State of)',
+    alpha_2: 'BO',
+    alpha_3: 'BOL',
+    country_code: '068',
+    iso_3166_2: 'ISO 3166-2: BO',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005',
+  },
+  {
+    name: 'Bonaire Sint Eustatius and Saba',
+     alpha_2: 'BQ',
+    alpha_3: 'BES',
+    country_code: '535',
+    iso_3166_2: 'ISO 3166-2: BQ',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Bosnia and Herzegovina',
+    alpha_2: 'BA',
+    alpha_3: 'BIH',
+    country_code: '070',
+    iso_3166_2: 'ISO 3166-2: BA',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Botswana',
+    alpha_2: 'BW',
+    alpha_3: 'BWA',
+    country_code: '072',
+    iso_3166_2: 'ISO 3166-2: BW',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Southern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '018',
+  },
+  {
+    name: 'Bouvet Island',
+    alpha_2: 'BV',
+    alpha_3: 'BVT',
+    country_code: '074',
+    iso_3166_2: 'ISO 3166-2: BV',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005',
+  },
+  {
+    name: 'Brazil',
+    alpha_2: 'BR',
+    alpha_3: 'BRA',
+    country_code: '076',
+    iso_3166_2: 'ISO 3166-2: BR',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005',
+  },
+  {
+    name: 'British Indian Ocean Territory',
+    alpha_2: 'IO',
+    alpha_3: 'IOT',
+    country_code: '086',
+    iso_3166_2: 'ISO 3166-2: IO',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014',
+  },
+  {
+    name: 'Brunei Darussalam',
+    alpha_2: 'BN',
+    alpha_3: 'BRN',
+    country_code: '096',
+    iso_3166_2: 'ISO 3166-2: BN',
+    region: 'Asia',
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Bulgaria',
+    alpha_2: 'BG',
+    alpha_3: 'BGR',
+    country_code: '100',
+    iso_3166_2: 'ISO 3166-2: BG',
+    region: 'Europe',
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Burkina Faso',
+    alpha_2: 'BF',
+    alpha_3: 'BFA',
+    country_code: '854',
+    iso_3166_2: 'ISO 3166-2: BF',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011',
+  },
+  {
+    name: 'Burundi',
+    alpha_2: 'BI',
+    alpha_3: 'BDI',
+    country_code: '108',
+    iso_3166_2: 'ISO 3166-2: BI',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014',
+  },
+  {
+    name: 'Cabo Verde',
+    alpha_2: 'CV',
+    alpha_3: 'CPV',
+    country_code: '132',
+    iso_3166_2: 'ISO 3166-2: CV',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011',
+  },
+  {
+    name: 'Cambodia',
+    alpha_2: 'KH',
+    alpha_3: 'KHM',
+    country_code: '116',
+    iso_3166_2: 'ISO 3166-2: KH',
+    region: 'Asia',
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Cameroon',
+    alpha_2: 'CM',
+    alpha_3: 'CMR',
+    country_code: '120',
+    iso_3166_2: 'ISO 3166-2: CM',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017',
+  },
+  {
+    name: 'Canada',
+    alpha_2: 'CA',
+    alpha_3: 'CAN',
+    country_code: '124',
+    iso_3166_2: 'ISO 3166-2: CA',
+    region: 'Americas',
+    sub_region: 'Northern America',
+    intermediate_region: '',
+    region_code: '019',
+    sub_region_code: '021',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Cayman Islands',
+    alpha_2: 'KY',
+    alpha_3: 'CYM',
+    country_code: '136',
+    iso_3166_2: 'ISO 3166-2: KY',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Central African Republic',
+    alpha_2: 'CF',
+    alpha_3: 'CAF',
+    country_code: '140',
+    iso_3166_2: 'ISO 3166-2: CF',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017',
+  },
+  {
+    name: 'Chad',
+    alpha_2: 'TD',
+    alpha_3: 'TCD',
+    country_code: '148',
+    iso_3166_2: 'ISO 3166-2: TD',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017',
+  },
+  {
+    name: 'Chile',
+    alpha_2: 'CL',
+    alpha_3: 'CHL',
+    country_code: '152',
+    iso_3166_2: 'ISO 3166-2: CL',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005',
+  },
+  {
+    name: 'China',
+    alpha_2: 'CN',
+    alpha_3: 'CHN',
+    country_code: '156',
+    iso_3166_2: 'ISO 3166-2: CN',
+    region: 'Asia',
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Christmas Island',
+    alpha_2: 'CX',
+    alpha_3: 'CXR',
+    country_code: '162',
+    iso_3166_2: 'ISO 3166-2: CX',
+    region: 'Oceania',
+    sub_region: 'Australia and New Zealand',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '053',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Cocos (Keeling) Islands',
+    alpha_2: 'CC',
+    alpha_3: 'CCK',
+    country_code: '166',
+    iso_3166_2: 'ISO 3166-2: CC',
+    region: 'Oceania',
+    sub_region: 'Australia and New Zealand',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '053',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Colombia',
+    alpha_2: 'CO',
+    alpha_3: 'COL',
+    country_code: '170',
+    iso_3166_2: 'ISO 3166-2: CO',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005',
+  },
+  {
+    name: 'Comoros',
+    alpha_2: 'KM',
+    alpha_3: 'COM',
+    country_code: '174',
+    iso_3166_2: 'ISO 3166-2: KM',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014',
+  },
+  {
+    name: 'Congo',
+    alpha_2: 'CG',
+    alpha_3: 'COG',
+    country_code: '178',
+    iso_3166_2: 'ISO 3166-2: CG',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017',
+  },
+  {
+    name: 'Congo (Democratic Republic of the)',
+    alpha_2: 'CD',
+    alpha_3: 'COD',
+    country_code: '180',
+    iso_3166_2: 'ISO 3166-2: CD',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017',
+  },
+  {
+    name: 'Cook Islands',
+    alpha_2: 'CK',
+    alpha_3: 'COK',
+    country_code: '184',
+    iso_3166_2: 'ISO 3166-2: CK',
+    region: 'Oceania',
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Costa Rica',
+    alpha_2: 'CR',
+    alpha_3: 'CRI',
+    country_code: '188',
+    iso_3166_2: 'ISO 3166-2: CR',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013',
+  },
+  {
+    name: 'Côte d\'Ivoire',
+    alpha_2: 'CI',
+    alpha_3: 'CIV',
+    country_code: '384',
+    iso_3166_2: 'ISO 3166-2: CI',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011',
+  },
+  {
+    name: 'Croatia',
+    alpha_2: 'HR',
+    alpha_3: 'HRV',
+    country_code: '191',
+    iso_3166_2: 'ISO 3166-2: HR',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Cuba',
+    alpha_2: 'CU',
+    alpha_3: 'CUB',
+    country_code: '192',
+    iso_3166_2: 'ISO 3166-2: CU',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Curaçao',
+    alpha_2: 'CW',
+    alpha_3: 'CUW',
+    country_code: '531',
+    iso_3166_2: 'ISO 3166-2: CW',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Cyprus',
+    alpha_2: 'CY',
+    alpha_3: 'CYP',
+    country_code: '196',
+    iso_3166_2: 'ISO 3166-2: CY',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Czechia',
+    alpha_2: 'CZ',
+    alpha_3: 'CZE',
+    country_code: '203',
+    iso_3166_2: 'ISO 3166-2: CZ',
+    region: 'Europe',
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Denmark',
+    alpha_2: 'DK',
+    alpha_3: 'DNK',
+    country_code: '208',
+    iso_3166_2: 'ISO 3166-2: DK',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Djibouti',
+    alpha_2: 'DJ',
+    alpha_3: 'DJI',
+    country_code: '262',
+    iso_3166_2: 'ISO 3166-2: DJ',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014',
+  },
+  {
+    name: 'Dominica',
+    alpha_2: 'DM',
+    alpha_3: 'DMA',
+    country_code: '212',
+    iso_3166_2: 'ISO 3166-2: DM',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
+  },
+  {
+    name: 'Dominican Republic',
+    alpha_2: 'DO',
+    alpha_3: 'DOM',
+    country_code: '214',
+    iso_3166_2: 'ISO 3166-2: DO',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
+  },
+  {
+    name: 'Ecuador',
+    alpha_2: 'EC',
+    alpha_3: 'ECU',
+    country_code: '218',
+    iso_3166_2: 'ISO 3166-2: EC',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
+  },
+  {
+    name: 'Egypt',
+    alpha_2: 'EG',
+    alpha_3: 'EGY',
+    country_code: '818',
+    iso_3166_2: 'ISO 3166-2: EG',
+    region: 'Africa',
+    sub_region: 'Northern Africa',
+    intermediate_region: '',
+    region_code: '002',
+    sub_region_code: '015',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'El Salvador',
+    alpha_2: 'SV',
+    alpha_3: 'SLV',
+    country_code: '222',
+    iso_3166_2: 'ISO 3166-2: SV',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013',
+  },
+  {
+    name: 'Equatorial Guinea',
+    alpha_2: 'GQ',
+    alpha_3: 'GNQ',
+    country_code: '226',
+    iso_3166_2: 'ISO 3166-2: GQ',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017',
+  },
+  {
+    name: 'Eritrea',
+    alpha_2: 'ER',
+    alpha_3: 'ERI',
+    country_code: '232',
+    iso_3166_2: 'ISO 3166-2: ER',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
+  },
+  {
+    name: 'Estonia',
+    alpha_2: 'EE',
+    alpha_3: 'EST',
+    country_code: '233',
+    iso_3166_2: 'ISO 3166-2: EE',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Ethiopia',
+    alpha_2: 'ET',
+    alpha_3: 'ETH',
+    country_code: '231',
+    iso_3166_2: 'ISO 3166-2: ET',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
+  },
+  {
+    name: 'Falkland Islands (Malvinas)',
+    alpha_2: 'FK',
+    alpha_3: 'FLK',
+    country_code: '238',
+    iso_3166_2: 'ISO 3166-2: FK',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
+  },
+  {
+    name: 'Faroe Islands',
+    alpha_2: 'FO',
+    alpha_3: 'FRO',
+    country_code: '234',
+    iso_3166_2: 'ISO 3166-2: FO',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Fiji',
+    alpha_2: 'FJ',
+    alpha_3: 'FJI',
+    country_code: '242',
+    iso_3166_2: 'ISO 3166-2: FJ',
+    region: 'Oceania',
+    sub_region: 'Melanesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '054',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Finland',
+    alpha_2: 'FI',
+    alpha_3: 'FIN',
+    country_code: '246',
+    iso_3166_2: 'ISO 3166-2: FI',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'France',
+    alpha_2: 'FR',
+    alpha_3: 'FRA',
+    country_code: '250',
+    iso_3166_2: 'ISO 3166-2: FR',
+    region: 'Europe',
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'French Guiana',
+    alpha_2: 'GF',
+    alpha_3: 'GUF',
+    country_code: '254',
+    iso_3166_2: 'ISO 3166-2: GF',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
+  },
+  {
+    name: 'French Polynesia',
+    alpha_2: 'PF',
+    alpha_3: 'PYF',
+    country_code: '258',
+    iso_3166_2: 'ISO 3166-2: PF',
+    region: 'Oceania',
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'French Southern Territories',
+    alpha_2: 'TF',
+    alpha_3: 'ATF',
+    country_code: '260',
+    iso_3166_2: 'ISO 3166-2: TF',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
+  },
+  {
+    name: 'Gabon',
+    alpha_2: 'GA',
+    alpha_3: 'GAB',
+    country_code: '266',
+    iso_3166_2: 'ISO 3166-2: GA',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017'
+  },
+  {
+    name: 'Gambia',
+    alpha_2: 'GM',
+    alpha_3: 'GMB',
+    country_code: '270',
+    iso_3166_2: 'ISO 3166-2: GM',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011',
+  },
+  {
+    name: 'Georgia',
+    alpha_2: 'GE',
+    alpha_3: 'GEO',
+    country_code: '268',
+    iso_3166_2: 'ISO 3166-2: GE',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Germany',
+    alpha_2: 'DE',
+    alpha_3: 'DEU',
+    country_code: '276',
+    iso_3166_2: 'ISO 3166-2: DE',
+    region: 'Europe',
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Ghana',
+    alpha_2: 'GH',
+    alpha_3: 'GHA',
+    country_code: '288',
+    iso_3166_2: 'ISO 3166-2: GH',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
+  },
+  {
+    name: 'Gibraltar',
+    alpha_2: 'GI',
+    alpha_3: 'GIB',
+    country_code: '292',
+    iso_3166_2: 'ISO 3166-2: GI',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Greece',
+    alpha_2: 'GR',
+    alpha_3: 'GRC',
+    country_code: '300',
+    iso_3166_2: 'ISO 3166-2: GR',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Greenland',
+    alpha_2: 'GL',
+    alpha_3: 'GRL',
+    country_code: '304',
+    iso_3166_2: 'ISO 3166-2: GL',
+    region: 'Americas',
+    sub_region: 'Northern America',
+    intermediate_region: '',
+    region_code: '019',
+    sub_region_code: '021',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Grenada',
+    alpha_2: 'GD',
+    alpha_3: 'GRD',
+    country_code: '308',
+    iso_3166_2: 'ISO 3166-2: GD',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
+  },
+  {
+    name: 'Guadeloupe',
+    alpha_2: 'GP',
+    alpha_3: 'GLP',
+    country_code: '312',
+    iso_3166_2: 'ISO 3166-2: GP',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
+  },
+  {
+    name: 'Guam',
+    alpha_2: 'GU',
+    alpha_3: 'GUM',
+    country_code: '316',
+    iso_3166_2: 'ISO 3166-2: GU',
+    region: 'Oceania',
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Guatemala',
+    alpha_2: 'GT',
+    alpha_3: 'GTM',
+    country_code: '320',
+    iso_3166_2: 'ISO 3166-2: GT',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013'
+  },
+  {
+    name: 'Guernsey',
+    alpha_2: 'GG',
+    alpha_3: 'GGY',
+    country_code: '831',
+    iso_3166_2: 'ISO 3166-2: GG',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: 'Channel Islands',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: '830'
+  },
+  {
+    name: 'Guinea',
+    alpha_2: 'GN',
+    alpha_3: 'GIN',
+    country_code: '324',
+    iso_3166_2: 'ISO 3166-2: GN',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
+  },
+  {
+    name: 'Guinea-Bissau',
+    alpha_2: 'GW',
+    alpha_3: 'GNB',
+    country_code: '624',
+    iso_3166_2: 'ISO 3166-2: GW',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
+  },
+  {
+    name: 'Guyana',
+    alpha_2: 'GY',
+    alpha_3: 'GUY',
+    country_code: '328',
+    iso_3166_2: 'ISO 3166-2: GY',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
+  },
+  {
+    name: 'Haiti',
+    alpha_2: 'HT',
+    alpha_3: 'HTI',
+    country_code: '332',
+    iso_3166_2: 'ISO 3166-2: HT',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
+  },
+  {
+    name: 'Heard Island and McDonald Islands',
+    alpha_2: 'HM',
+    alpha_3: 'HMD',
+    country_code: '334',
+    iso_3166_2: 'ISO 3166-2: HM',
+    region: 'Oceania',
+    sub_region: 'Australia and New Zealand',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '053',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Holy See',
+    alpha_2: 'VA',
+    alpha_3: 'VAT',
+    country_code: '336',
+    iso_3166_2: 'ISO 3166-2: VA',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Honduras',
+    alpha_2: 'HN',
+    alpha_3: 'HND',
+    country_code: '340',
+    iso_3166_2: 'ISO 3166-2: HN',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013',
+  },
+  {
+    name: 'Hong Kong',
+    alpha_2: 'HK',
+    alpha_3: 'HKG',
+    country_code: '344',
+    iso_3166_2: 'ISO 3166-2: HK',
+    region: 'Asia',
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Hungary',
+    alpha_2: 'HU',
+    alpha_3: 'HUN',
+    country_code: '348',
+    iso_3166_2: 'ISO 3166-2: HU',
+    region: 'Europe',
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Iceland',
+    alpha_2: 'IS',
+    alpha_3: 'ISL',
+    country_code: '352',
+    iso_3166_2: 'ISO 3166-2: IS',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'India',
+    alpha_2: 'IN',
+    alpha_3: 'IND',
+    country_code: '356',
+    iso_3166_2: 'ISO 3166-2: IN',
+    region: 'Asia',
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Indonesia',
+    alpha_2: 'ID',
+    alpha_3: 'IDN',
+    country_code: '360',
+    iso_3166_2: 'ISO 3166-2: ID',
+    region: 'Asia',
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Iran (Islamic Republic of)',
+    alpha_2: 'IR',
+    alpha_3: 'IRN',
+    country_code: '364',
+    iso_3166_2: 'ISO 3166-2: IR',
+    region: 'Asia',
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Iraq',
+    alpha_2: 'IQ',
+    alpha_3: 'IRQ',
+    country_code: '368',
+    iso_3166_2: 'ISO 3166-2: IQ',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Ireland',
+    alpha_2: 'IE',
+    alpha_3: 'IRL',
+    country_code: '372',
+    iso_3166_2: 'ISO 3166-2: IE',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Isle of Man',
+    alpha_2: 'IM',
+    alpha_3: 'IMN',
+    country_code: '833',
+    iso_3166_2: 'ISO 3166-2: IM',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Israel',
+    alpha_2: 'IL',
+    alpha_3: 'ISR',
+    country_code: '376',
+    iso_3166_2: 'ISO 3166-2: IL',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Italy',
+    alpha_2: 'IT',
+    alpha_3: 'ITA',
+    country_code: '380',
+    iso_3166_2: 'ISO 3166-2: IT',
+    region: 'Europe',
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Jamaica',
+    alpha_2: 'JM',
+    alpha_3: 'JAM',
+    country_code: '388',
+    iso_3166_2: 'ISO 3166-2: JM',
+    region: 'Americas',
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029',
+  },
+  {
+    name: 'Japan',
+    alpha_2: 'JP',
+    alpha_3: 'JPN',
+    country_code: '392',
+    iso_3166_2: 'ISO 3166-2: JP',
+    region: 'Asia',
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Jersey',
+    alpha_2: 'JE',
+    alpha_3: 'JEY',
+    country_code: '832',
+    iso_3166_2: 'ISO 3166-2: JE',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: 'Channel Islands',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: '830',
+  },
+  {
+    name: 'Jordan',
+    alpha_2: 'JO',
+    alpha_3: 'JOR',
+    country_code: '400',
+    iso_3166_2: 'ISO 3166-2: JO',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Kazakhstan',
+    alpha_2: 'KZ',
+    alpha_3: 'KAZ',
+    country_code: '398',
+    iso_3166_2: 'ISO 3166-2: KZ',
+    region: 'Asia',
+    sub_region: 'Central Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '143',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Kenya',
+    alpha_2: 'KE',
+    alpha_3: 'KEN',
+    country_code: '404',
+    iso_3166_2: 'ISO 3166-2: KE',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014',
+  },
+  {
+    name: 'Kiribati',
+    alpha_2: 'KI',
+    alpha_3: 'KIR',
+    country_code: '296',
+    iso_3166_2: 'ISO 3166-2: KI',
+    region: 'Oceania',
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Korea (Democratic People\'s Republic of)',
+    alpha_2: 'KP',
+    alpha_3: 'PRK',
+    country_code: '408',
+    iso_3166_2: 'ISO 3166-2: KP',
+    region: 'Asia',
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Korea (Republic of)',
+    alpha_2: 'KR',
+    alpha_3: 'KOR',
+    country_code: '410',
+    iso_3166_2: 'ISO 3166-2: KR',
+    region: 'Asia',
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Kuwait',
+    alpha_2: 'KW',
+    alpha_3: 'KWT',
+    country_code: '414',
+    iso_3166_2: 'ISO 3166-2: KW',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Kyrgyzstan',
+    alpha_2: 'KG',
+    alpha_3: 'KGZ',
+    country_code: '417',
+    iso_3166_2: 'ISO 3166-2: KG',
+    region: 'Asia',
+    sub_region: 'Central Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '143',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Lao People\'s Democratic Republic',
+    alpha_2: 'LA',
+    alpha_3: 'LAO',
+    country_code: '418',
+    iso_3166_2: 'ISO 3166-2: LA',
+    region: 'Asia',
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Latvia',
+    alpha_2: 'LV',
+    alpha_3: 'LVA',
+    country_code: '428',
+    iso_3166_2: 'ISO 3166-2: LV',
+    region: 'Europe',
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Lebanon',
+    alpha_2: 'LB',
+    alpha_3: 'LBN',
+    country_code: '422',
+    iso_3166_2: 'ISO 3166-2: LB',
+    region: 'Asia',
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Lesotho',
+    alpha_2: 'LS',
+    alpha_3: 'LSO',
+    country_code: '426',
+    iso_3166_2: 'ISO 3166-2: LS',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Southern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '018',
+  },
+  {
+    name: 'Liberia',
+    alpha_2: 'LR',
+    alpha_3: 'LBR',
+    country_code: '430',
+    iso_3166_2: 'ISO 3166-2: LR',
+    region: 'Africa',
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
+  },
+  {
+    name: 'Libya',
+    alpha_2: 'LY',
+    alpha_3: 'LBY',
+    country_code: '434',
+    iso_3166_2: 'ISO 3166-2: LY',
+    region: 'Africa',
+    sub_region: 'Northern Africa',
+    intermediate_region: '',
+    region_code: '002',
+    sub_region_code: '015',
+    intermediate_region_code: ''
+  },
+  {
+    name: 'Liechtenstein',
+    alpha_2: 'LI',
+    alpha_3: 'LIE',
+    country_code: '438',
+    iso_3166_2: 'ISO 3166-2: LI',
+    region: 'Europe',
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''  
   },
   {
     name: 'Lithuania',
-    alpha-2: 'LT',
-    alpha-3: 'LTU',
-    country-code: '440',
-    iso_3166-2: 'ISO 3166-2: LT',
+    alpha_2: 'LT',
+    alpha_3: 'LTU',
+    country_code: '440',
+    iso_3166_2: 'ISO 3166-2: LT',
     region: 'Europe',
-    sub-region: 'Northern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '154',
-    intermediate-region-code: ''  
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''  
   },
   {
     name: 'Luxembourg',
-    alpha-2: 'LU',
-    alpha-3: 'LUX',
-    country-code: '442',
-    iso_3166-2: 'ISO 3166-2: LU',
+    alpha_2: 'LU',
+    alpha_3: 'LUX',
+    country_code: '442',
+    iso_3166_2: 'ISO 3166-2: LU',
     region: 'Europe',
-    sub-region: 'Western Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '155',
-    intermediate-region-code: ''
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
     
   },
   {
     name: 'Macao',
-    alpha-2: 'MO',
-    alpha-3: 'MAC',
-    country-code: '446',
-    iso_3166-2: 'ISO 3166-2: MO',
+    alpha_2: 'MO',
+    alpha_3: 'MAC',
+    country_code: '446',
+    iso_3166_2: 'ISO 3166-2: MO',
     region: 'Asia',
-    sub-region: 'Eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '030',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
     
   },
   {
     name: 'Macedonia (the former Yugoslav Republic of)',
-    alpha-2: 'MK',
-    alpha-3: 'MKD',
-    country-code: '807',
-    iso_3166-2: 'ISO 3166-2: MK',
+    alpha_2: 'MK',
+    alpha_3: 'MKD',
+    country_code: '807',
+    iso_3166_2: 'ISO 3166-2: MK',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
     
   },
   {
     name: 'Madagascar',
-    alpha-2: 'MG',
-    alpha-3: 'MDG',
-    country-code: '450',
-    iso_3166-2: 'ISO 3166-2: MG',
+    alpha_2: 'MG',
+    alpha_3: 'MDG',
+    country_code: '450',
+    iso_3166_2: 'ISO 3166-2: MG',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
     
   },
   {
     name: 'Malawi',
-    alpha-2: 'MW',
-    alpha-3: 'MWI',
-    country-code: '454',
-    iso_3166-2: 'ISO 3166-2: MW',
+    alpha_2: 'MW',
+    alpha_3: 'MWI',
+    country_code: '454',
+    iso_3166_2: 'ISO 3166-2: MW',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
     
   },
   {
     name: 'Malaysia',
-    alpha-2: 'MY',
-    alpha-3: 'MYS',
-    country-code: '458',
-    iso_3166-2: 'ISO 3166-2: MY',
+    alpha_2: 'MY',
+    alpha_3: 'MYS',
+    country_code: '458',
+    iso_3166_2: 'ISO 3166-2: MY',
     region: 'Asia',
-    sub-region: 'South-eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '035',
-    intermediate-region-code: ''
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
     
   },
   {
     name: 'Maldives',
-    alpha-2: 'MV',
-    alpha-3: 'MDV',
-    country-code: '462',
-    iso_3166-2: 'ISO 3166-2: MV',
+    alpha_2: 'MV',
+    alpha_3: 'MDV',
+    country_code: '462',
+    iso_3166_2: 'ISO 3166-2: MV',
     region: 'Asia',
-    sub-region: 'Southern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '034',
-    intermediate-region-code: ''
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
     
   },
   {
     name: 'Mali',
-    alpha-2: 'ML',
-    alpha-3: 'MLI',
-    country-code: '466',
-    iso_3166-2: 'ISO 3166-2: ML',
+    alpha_2: 'ML',
+    alpha_3: 'MLI',
+    country_code: '466',
+    iso_3166_2: 'ISO 3166-2: ML',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
     
   },
   {
     name: 'Malta',
-    alpha-2: 'MT',
-    alpha-3: 'MLT',
-    country-code: '470',
-    iso_3166-2: 'ISO 3166-2: MT',
+    alpha_2: 'MT',
+    alpha_3: 'MLT',
+    country_code: '470',
+    iso_3166_2: 'ISO 3166-2: MT',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
     
   },
   {
     name: 'Marshall Islands',
-    alpha-2: 'MH',
-    alpha-3: 'MHL',
-    country-code: '584',
-    iso_3166-2: 'ISO 3166-2: MH',
+    alpha_2: 'MH',
+    alpha_3: 'MHL',
+    country_code: '584',
+    iso_3166_2: 'ISO 3166-2: MH',
     region: 'Oceania',
-    sub-region: 'Micronesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '057',
-    intermediate-region-code: ''
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
   },
   {
     name: 'Martinique',
-    alpha-2: 'MQ',
-    alpha-3: 'MTQ',
-    country-code: '474',
-    iso_3166-2: 'ISO 3166-2: MQ',
+    alpha_2: 'MQ',
+    alpha_3: 'MTQ',
+    country_code: '474',
+    iso_3166_2: 'ISO 3166-2: MQ',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Mauritania',
-    alpha-2: 'MR',
-    alpha-3: 'MRT',
-    country-code: '478',
-    iso_3166-2: 'ISO 3166-2: MR',
+    alpha_2: 'MR',
+    alpha_3: 'MRT',
+    country_code: '478',
+    iso_3166_2: 'ISO 3166-2: MR',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
   },
   {
     name: 'Mauritius',
-    alpha-2: 'MU',
-    alpha-3: 'MUS',
-    country-code: '480',
-    iso_3166-2: 'ISO 3166-2: MU',
+    alpha_2: 'MU',
+    alpha_3: 'MUS',
+    country_code: '480',
+    iso_3166_2: 'ISO 3166-2: MU',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Mayotte',
-    alpha-2: 'YT',
-    alpha-3: 'MYT',
-    country-code: '175',
-    iso_3166-2: 'ISO 3166-2: YT',
+    alpha_2: 'YT',
+    alpha_3: 'MYT',
+    country_code: '175',
+    iso_3166_2: 'ISO 3166-2: YT',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Mexico',
-    alpha-2: 'MX',
-    alpha-3: 'MEX',
-    country-code: '484',
-    iso_3166-2: 'ISO 3166-2: MX',
+    alpha_2: 'MX',
+    alpha_3: 'MEX',
+    country_code: '484',
+    iso_3166_2: 'ISO 3166-2: MX',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Central America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '013'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013'
   },
   {
     name: 'Micronesia (Federated States of)',
-    alpha-2: 'FM',
-    alpha-3: 'FSM',
-    country-code: '583',
-    iso_3166-2: 'ISO 3166-2: FM',
+    alpha_2: 'FM',
+    alpha_3: 'FSM',
+    country_code: '583',
+    iso_3166_2: 'ISO 3166-2: FM',
     region: 'Oceania',
-    sub-region: 'Micronesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '057',
-    intermediate-region-code: ''
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
   },
   {
     name: 'Moldova (Republic of)',
-    alpha-2: 'MD',
-    alpha-3: 'MDA',
-    country-code: '498',
-    iso_3166-2: 'ISO 3166-2: MD',
+    alpha_2: 'MD',
+    alpha_3: 'MDA',
+    country_code: '498',
+    iso_3166_2: 'ISO 3166-2: MD',
     region: 'Europe',
-    sub-region: 'Eastern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '151',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
   },
   {
     name: 'Monaco',
-    alpha-2: 'MC',
-    alpha-3: 'MCO',
-    country-code: '492',
-    iso_3166-2: 'ISO 3166-2: MC',
+    alpha_2: 'MC',
+    alpha_3: 'MCO',
+    country_code: '492',
+    iso_3166_2: 'ISO 3166-2: MC',
     region: 'Europe',
-    sub-region: 'Western Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '155',
-    intermediate-region-code: ''
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
   },
   {
     name: 'Mongolia',
-    alpha-2: 'MN',
-    alpha-3: 'MNG',
-    country-code: '496',
-    iso_3166-2: 'ISO 3166-2: MN',
+    alpha_2: 'MN',
+    alpha_3: 'MNG',
+    country_code: '496',
+    iso_3166_2: 'ISO 3166-2: MN',
     region: 'Asia',
-    sub-region: 'Eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '030',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
   },
   {
     name: 'Montenegro',
-    alpha-2: 'ME',
-    alpha-3: 'MNE',
-    country-code: '499',
-    iso_3166-2: 'ISO 3166-2: ME',
+    alpha_2: 'ME',
+    alpha_3: 'MNE',
+    country_code: '499',
+    iso_3166_2: 'ISO 3166-2: ME',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
   },
   {
     name: 'Montserrat',
-    alpha-2: 'MS',
-    alpha-3: 'MSR',
-    country-code: '500',
-    iso_3166-2: 'ISO 3166-2: MS',
+    alpha_2: 'MS',
+    alpha_3: 'MSR',
+    country_code: '500',
+    iso_3166_2: 'ISO 3166-2: MS',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Morocco',
-    alpha-2: 'MA',
-    alpha-3: 'MAR',
-    country-code: '504',
-    iso_3166-2: 'ISO 3166-2: MA',
+    alpha_2: 'MA',
+    alpha_3: 'MAR',
+    country_code: '504',
+    iso_3166_2: 'ISO 3166-2: MA',
     region: 'Africa',
-    sub-region: 'Northern Africa',
-    intermediate-region: '',
-    region-code: '002',
-    sub-region-code: '015',
-    intermediate-region-code: ''
+    sub_region: 'Northern Africa',
+    intermediate_region: '',
+    region_code: '002',
+    sub_region_code: '015',
+    intermediate_region_code: ''
   },
   {
     name: 'Mozambique',
-    alpha-2: 'MZ',
-    alpha-3: 'MOZ',
-    country-code: '508',
-    iso_3166-2: 'ISO 3166-2: MZ',
+    alpha_2: 'MZ',
+    alpha_3: 'MOZ',
+    country_code: '508',
+    iso_3166_2: 'ISO 3166-2: MZ',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Myanmar',
-    alpha-2: 'MM',
-    alpha-3: 'MMR',
-    country-code: '104',
-    iso_3166-2: 'ISO 3166-2: MM',
+    alpha_2: 'MM',
+    alpha_3: 'MMR',
+    country_code: '104',
+    iso_3166_2: 'ISO 3166-2: MM',
     region: 'Asia',
-    sub-region: 'South-eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '035',
-    intermediate-region-code: ''
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
   },
   {
     name: 'Namibia',
-    alpha-2: 'NA',
-    alpha-3: 'NAM',
-    country-code: '516',
-    iso_3166-2: 'ISO 3166-2: NA',
+    alpha_2: 'NA',
+    alpha_3: 'NAM',
+    country_code: '516',
+    iso_3166_2: 'ISO 3166-2: NA',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Southern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '018'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Southern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '018'
   },
   {
     name: 'Nauru',
-    alpha-2: 'NR',
-    alpha-3: 'NRU',
-    country-code: '520',
-    iso_3166-2: 'ISO 3166-2: NR',
+    alpha_2: 'NR',
+    alpha_3: 'NRU',
+    country_code: '520',
+    iso_3166_2: 'ISO 3166-2: NR',
     region: 'Oceania',
-    sub-region: 'Micronesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '057',
-    intermediate-region-code: ''
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
   },
   {
     name: 'Nepal',
-    alpha-2: 'NP',
-    alpha-3: 'NPL',
-    country-code: '524',
-    iso_3166-2: 'ISO 3166-2: NP',
+    alpha_2: 'NP',
+    alpha_3: 'NPL',
+    country_code: '524',
+    iso_3166_2: 'ISO 3166-2: NP',
     region: 'Asia',
-    sub-region: 'Southern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '034',
-    intermediate-region-code: ''
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
   },
   {
     name: 'Netherlands',
-    alpha-2: 'NL',
-    alpha-3: 'NLD',
-    country-code: '528',
-    iso_3166-2: 'ISO 3166-2: NL',
+    alpha_2: 'NL',
+    alpha_3: 'NLD',
+    country_code: '528',
+    iso_3166_2: 'ISO 3166-2: NL',
     region: 'Europe',
-    sub-region: 'Western Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '155',
-    intermediate-region-code: ''
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
   },
   {
     name: 'New Caledonia',
-    alpha-2: 'NC',
-    alpha-3: 'NCL',
-    country-code: '540',
-    iso_3166-2: 'ISO 3166-2: NC',
+    alpha_2: 'NC',
+    alpha_3: 'NCL',
+    country_code: '540',
+    iso_3166_2: 'ISO 3166-2: NC',
     region: 'Oceania',
-    sub-region: 'Melanesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '054',
-    intermediate-region-code: ''
+    sub_region: 'Melanesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '054',
+    intermediate_region_code: ''
   },
   {
     name: 'New Zealand',
-    alpha-2: 'NZ',
-    alpha-3: 'NZL',
-    country-code: '554',
-    iso_3166-2: 'ISO 3166-2: NZ',
+    alpha_2: 'NZ',
+    alpha_3: 'NZL',
+    country_code: '554',
+    iso_3166_2: 'ISO 3166-2: NZ',
     region: 'Oceania',
-    sub-region: 'Australia and New Zealand',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '053',
-    intermediate-region-code: ''
+    sub_region: 'Australia and New Zealand',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '053',
+    intermediate_region_code: ''
   },
   {
     name: 'Nicaragua',
-    alpha-2: 'NI',
-    alpha-3: 'NIC',
-    country-code: '558',
-    iso_3166-2: 'ISO 3166-2: NI',
+    alpha_2: 'NI',
+    alpha_3: 'NIC',
+    country_code: '558',
+    iso_3166_2: 'ISO 3166-2: NI',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Central America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '013'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013'
   },
   {
     name: 'Niger',
-    alpha-2: 'NE',
-    alpha-3: 'NER',
-    country-code: '562',
-    iso_3166-2: 'ISO 3166-2: NE',
+    alpha_2: 'NE',
+    alpha_3: 'NER',
+    country_code: '562',
+    iso_3166_2: 'ISO 3166-2: NE',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
   },
   {
     name: 'Nigeria',
-    alpha-2: 'NG',
-    alpha-3: 'NGA',
-    country-code: '566',
-    iso_3166-2: 'ISO 3166-2: NG',
+    alpha_2: 'NG',
+    alpha_3: 'NGA',
+    country_code: '566',
+    iso_3166_2: 'ISO 3166-2: NG',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
   },
   {
     name: 'Niue',
-    alpha-2: 'NU',
-    alpha-3: 'NIU',
-    country-code: '570',
-    iso_3166-2: 'ISO 3166-2: NU',
+    alpha_2: 'NU',
+    alpha_3: 'NIU',
+    country_code: '570',
+    iso_3166_2: 'ISO 3166-2: NU',
     region: 'Oceania',
-    sub-region: 'Polynesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '061',
-    intermediate-region-code: ''
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
   },
   {
     name: 'Norfolk Island',
-    alpha-2: 'NF',
-    alpha-3: 'NFK',
-    country-code: '574',
-    iso_3166-2: 'ISO 3166-2: NF',
+    alpha_2: 'NF',
+    alpha_3: 'NFK',
+    country_code: '574',
+    iso_3166_2: 'ISO 3166-2: NF',
     region: 'Oceania',
-    sub-region: 'Australia and New Zealand',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '053',
-    intermediate-region-code: ''
+    sub_region: 'Australia and New Zealand',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '053',
+    intermediate_region_code: ''
   },
   {
     name: 'Northern Mariana Islands',
-    alpha-2: 'MP',
-    alpha-3: 'MNP',
-    country-code: '580',
-    iso_3166-2: 'ISO 3166-2: MP',
+    alpha_2: 'MP',
+    alpha_3: 'MNP',
+    country_code: '580',
+    iso_3166_2: 'ISO 3166-2: MP',
     region: 'Oceania',
-    sub-region: 'Micronesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '057',
-    intermediate-region-code: ''
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
   },
   {
     name: 'Norway',
-    alpha-2: 'NO',
-    alpha-3: 'NOR',
-    country-code: '578',
-    iso_3166-2: 'ISO 3166-2: NO',
+    alpha_2: 'NO',
+    alpha_3: 'NOR',
+    country_code: '578',
+    iso_3166_2: 'ISO 3166-2: NO',
     region: 'Europe',
-    sub-region: 'Northern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '154',
-    intermediate-region-code: ''
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
   },
   {
     name: 'Oman',
-    alpha-2: 'OM',
-    alpha-3: 'OMN',
-    country-code: '512',
-    iso_3166-2: 'ISO 3166-2: OM',
+    alpha_2: 'OM',
+    alpha_3: 'OMN',
+    country_code: '512',
+    iso_3166_2: 'ISO 3166-2: OM',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
     name: 'Pakistan',
-    alpha-2: 'PK',
-    alpha-3: 'PAK',
-    country-code: '586',
-    iso_3166-2: 'ISO 3166-2: PK',
+    alpha_2: 'PK',
+    alpha_3: 'PAK',
+    country_code: '586',
+    iso_3166_2: 'ISO 3166-2: PK',
     region: 'Asia',
-    sub-region: 'Southern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '034',
-    intermediate-region-code: ''
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
   },
   {
     name: 'Palau',
-    alpha-2: 'PW',
-    alpha-3: 'PLW',
-    country-code: '585',
-    iso_3166-2: 'ISO 3166-2: PW',
+    alpha_2: 'PW',
+    alpha_3: 'PLW',
+    country_code: '585',
+    iso_3166_2: 'ISO 3166-2: PW',
     region: 'Oceania',
-    sub-region: 'Micronesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '057',
-    intermediate-region-code: ''
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
   },
   {
-    name: 'Palestine,
-     State of',
-     alpha-2: 'PS',
-    alpha-3: 'PSE',
-    country-code: '275',
-    iso_3166-2: 'ISO 3166-2: PS',
+    name: 'Palestine, State of',
+    alpha_2: 'PS',
+    alpha_3: 'PSE',
+    country_code: '275',
+    iso_3166_2: 'ISO 3166-2: PS',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
     name: 'Panama',
-    alpha-2: 'PA',
-    alpha-3: 'PAN',
-    country-code: '591',
-    iso_3166-2: 'ISO 3166-2: PA',
+    alpha_2: 'PA',
+    alpha_3: 'PAN',
+    country_code: '591',
+    iso_3166_2: 'ISO 3166-2: PA',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Central America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '013'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Central America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '013'
   },
   {
     name: 'Papua New Guinea',
-    alpha-2: 'PG',
-    alpha-3: 'PNG',
-    country-code: '598',
-    iso_3166-2: 'ISO 3166-2: PG',
+    alpha_2: 'PG',
+    alpha_3: 'PNG',
+    country_code: '598',
+    iso_3166_2: 'ISO 3166-2: PG',
     region: 'Oceania',
-    sub-region: 'Melanesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '054',
-    intermediate-region-code: ''
+    sub_region: 'Melanesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '054',
+    intermediate_region_code: ''
   },
   {
     name: 'Paraguay',
-    alpha-2: 'PY',
-    alpha-3: 'PRY',
-    country-code: '600',
-    iso_3166-2: 'ISO 3166-2: PY',
+    alpha_2: 'PY',
+    alpha_3: 'PRY',
+    country_code: '600',
+    iso_3166_2: 'ISO 3166-2: PY',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'South America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '005'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
   },
   {
     name: 'Peru',
-    alpha-2: 'PE',
-    alpha-3: 'PER',
-    country-code: '604',
-    iso_3166-2: 'ISO 3166-2: PE',
+    alpha_2: 'PE',
+    alpha_3: 'PER',
+    country_code: '604',
+    iso_3166_2: 'ISO 3166-2: PE',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'South America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '005'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
   },
   {
     name: 'Philippines',
-    alpha-2: 'PH',
-    alpha-3: 'PHL',
-    country-code: '608',
-    iso_3166-2: 'ISO 3166-2: PH',
+    alpha_2: 'PH',
+    alpha_3: 'PHL',
+    country_code: '608',
+    iso_3166_2: 'ISO 3166-2: PH',
     region: 'Asia',
-    sub-region: 'South-eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '035',
-    intermediate-region-code: ''
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
   },
   {
     name: 'Pitcairn',
-    alpha-2: 'PN',
-    alpha-3: 'PCN',
-    country-code: '612',
-    iso_3166-2: 'ISO 3166-2: PN',
+    alpha_2: 'PN',
+    alpha_3: 'PCN',
+    country_code: '612',
+    iso_3166_2: 'ISO 3166-2: PN',
     region: 'Oceania',
-    sub-region: 'Polynesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '061',
-    intermediate-region-code: ''
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
   },
   {
     name: 'Poland',
-    alpha-2: 'PL',
-    alpha-3: 'POL',
-    country-code: '616',
-    iso_3166-2: 'ISO 3166-2: PL',
+    alpha_2: 'PL',
+    alpha_3: 'POL',
+    country_code: '616',
+    iso_3166_2: 'ISO 3166-2: PL',
     region: 'Europe',
-    sub-region: 'Eastern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '151',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
   },
   {
     name: 'Portugal',
-    alpha-2: 'PT',
-    alpha-3: 'PRT',
-    country-code: '620',
-    iso_3166-2: 'ISO 3166-2: PT',
+    alpha_2: 'PT',
+    alpha_3: 'PRT',
+    country_code: '620',
+    iso_3166_2: 'ISO 3166-2: PT',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
   },
   {
     name: 'Puerto Rico',
-    alpha-2: 'PR',
-    alpha-3: 'PRI',
-    country-code: '630',
-    iso_3166-2: 'ISO 3166-2: PR',
+    alpha_2: 'PR',
+    alpha_3: 'PRI',
+    country_code: '630',
+    iso_3166_2: 'ISO 3166-2: PR',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Qatar',
-    alpha-2: 'QA',
-    alpha-3: 'QAT',
-    country-code: '634',
-    iso_3166-2: 'ISO 3166-2: QA',
+    alpha_2: 'QA',
+    alpha_3: 'QAT',
+    country_code: '634',
+    iso_3166_2: 'ISO 3166-2: QA',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
     name: 'Réunion',
-    alpha-2: 'RE',
-    alpha-3: 'REU',
-    country-code: '638',
-    iso_3166-2: 'ISO 3166-2: RE',
+    alpha_2: 'RE',
+    alpha_3: 'REU',
+    country_code: '638',
+    iso_3166_2: 'ISO 3166-2: RE',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Romania',
-    alpha-2: 'RO',
-    alpha-3: 'ROU',
-    country-code: '642',
-    iso_3166-2: 'ISO 3166-2: RO',
+    alpha_2: 'RO',
+    alpha_3: 'ROU',
+    country_code: '642',
+    iso_3166_2: 'ISO 3166-2: RO',
     region: 'Europe',
-    sub-region: 'Eastern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '151',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
   },
   {
     name: 'Russian Federation',
-    alpha-2: 'RU',
-    alpha-3: 'RUS',
-    country-code: '643',
-    iso_3166-2: 'ISO 3166-2: RU',
+    alpha_2: 'RU',
+    alpha_3: 'RUS',
+    country_code: '643',
+    iso_3166_2: 'ISO 3166-2: RU',
     region: 'Europe',
-    sub-region: 'Eastern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '151',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
   },
   {
     name: 'Rwanda',
-    alpha-2: 'RW',
-    alpha-3: 'RWA',
-    country-code: '646',
-    iso_3166-2: 'ISO 3166-2: RW',
+    alpha_2: 'RW',
+    alpha_3: 'RWA',
+    country_code: '646',
+    iso_3166_2: 'ISO 3166-2: RW',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Saint Barthélemy',
-    alpha-2: 'BL',
-    alpha-3: 'BLM',
-    country-code: '652',
-    iso_3166-2: 'ISO 3166-2: BL',
+    alpha_2: 'BL',
+    alpha_3: 'BLM',
+    country_code: '652',
+    iso_3166_2: 'ISO 3166-2: BL',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
-    name: 'Saint Helena,
-     Ascension and Tristan da Cunha',
-     alpha-2: 'SH',
-    alpha-3: 'SHN',
-    country-code: '654',
-    iso_3166-2: 'ISO 3166-2: SH',
+    name: 'Saint Helena, Ascension and Tristan da Cunha',
+     alpha_2: 'SH',
+    alpha_3: 'SHN',
+    country_code: '654',
+    iso_3166_2: 'ISO 3166-2: SH',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
   },
   {
     name: 'Saint Kitts and Nevis',
-    alpha-2: 'KN',
-    alpha-3: 'KNA',
-    country-code: '659',
-    iso_3166-2: 'ISO 3166-2: KN',
+    alpha_2: 'KN',
+    alpha_3: 'KNA',
+    country_code: '659',
+    iso_3166_2: 'ISO 3166-2: KN',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Saint Lucia',
-    alpha-2: 'LC',
-    alpha-3: 'LCA',
-    country-code: '662',
-    iso_3166-2: 'ISO 3166-2: LC',
+    alpha_2: 'LC',
+    alpha_3: 'LCA',
+    country_code: '662',
+    iso_3166_2: 'ISO 3166-2: LC',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Saint Martin (French part)',
-    alpha-2: 'MF',
-    alpha-3: 'MAF',
-    country-code: '663',
-    iso_3166-2: 'ISO 3166-2: MF',
+    alpha_2: 'MF',
+    alpha_3: 'MAF',
+    country_code: '663',
+    iso_3166_2: 'ISO 3166-2: MF',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Saint Pierre and Miquelon',
-    alpha-2: 'PM',
-    alpha-3: 'SPM',
-    country-code: '666',
-    iso_3166-2: 'ISO 3166-2: PM',
+    alpha_2: 'PM',
+    alpha_3: 'SPM',
+    country_code: '666',
+    iso_3166_2: 'ISO 3166-2: PM',
     region: 'Americas',
-    sub-region: 'Northern America',
-    intermediate-region: '',
-    region-code: '019',
-    sub-region-code: '021',
-    intermediate-region-code: ''
+    sub_region: 'Northern America',
+    intermediate_region: '',
+    region_code: '019',
+    sub_region_code: '021',
+    intermediate_region_code: ''
   },
   {
     name: 'Saint Vincent and the Grenadines',
-    alpha-2: 'VC',
-    alpha-3: 'VCT',
-    country-code: '670',
-    iso_3166-2: 'ISO 3166-2: VC',
+    alpha_2: 'VC',
+    alpha_3: 'VCT',
+    country_code: '670',
+    iso_3166_2: 'ISO 3166-2: VC',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Samoa',
-    alpha-2: 'WS',
-    alpha-3: 'WSM',
-    country-code: '882',
-    iso_3166-2: 'ISO 3166-2: WS',
+    alpha_2: 'WS',
+    alpha_3: 'WSM',
+    country_code: '882',
+    iso_3166_2: 'ISO 3166-2: WS',
     region: 'Oceania',
-    sub-region: 'Polynesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '061',
-    intermediate-region-code: ''
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
   },
   {
     name: 'San Marino',
-    alpha-2: 'SM',
-    alpha-3: 'SMR',
-    country-code: '674',
-    iso_3166-2: 'ISO 3166-2: SM',
+    alpha_2: 'SM',
+    alpha_3: 'SMR',
+    country_code: '674',
+    iso_3166_2: 'ISO 3166-2: SM',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
   },
   {
     name: 'Sao Tome and Principe',
-    alpha-2: 'ST',
-    alpha-3: 'STP',
-    country-code: '678',
-    iso_3166-2: 'ISO 3166-2: ST',
+    alpha_2: 'ST',
+    alpha_3: 'STP',
+    country_code: '678',
+    iso_3166_2: 'ISO 3166-2: ST',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Middle Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '017'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Middle Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '017'
   },
   {
     name: 'Saudi Arabia',
-    alpha-2: 'SA',
-    alpha-3: 'SAU',
-    country-code: '682',
-    iso_3166-2: 'ISO 3166-2: SA',
+    alpha_2: 'SA',
+    alpha_3: 'SAU',
+    country_code: '682',
+    iso_3166_2: 'ISO 3166-2: SA',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
     name: 'Senegal',
-    alpha-2: 'SN',
-    alpha-3: 'SEN',
-    country-code: '686',
-    iso_3166-2: 'ISO 3166-2: SN',
+    alpha_2: 'SN',
+    alpha_3: 'SEN',
+    country_code: '686',
+    iso_3166_2: 'ISO 3166-2: SN',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
   },
   {
     name: 'Serbia',
-    alpha-2: 'RS',
-    alpha-3: 'SRB',
-    country-code: '688',
-    iso_3166-2: 'ISO 3166-2: RS',
+    alpha_2: 'RS',
+    alpha_3: 'SRB',
+    country_code: '688',
+    iso_3166_2: 'ISO 3166-2: RS',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
   },
   {
     name: 'Seychelles',
-    alpha-2: 'SC',
-    alpha-3: 'SYC',
-    country-code: '690',
-    iso_3166-2: 'ISO 3166-2: SC',
+    alpha_2: 'SC',
+    alpha_3: 'SYC',
+    country_code: '690',
+    iso_3166_2: 'ISO 3166-2: SC',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Sierra Leone',
-    alpha-2: 'SL',
-    alpha-3: 'SLE',
-    country-code: '694',
-    iso_3166-2: 'ISO 3166-2: SL',
+    alpha_2: 'SL',
+    alpha_3: 'SLE',
+    country_code: '694',
+    iso_3166_2: 'ISO 3166-2: SL',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
   },
   {
     name: 'Singapore',
-    alpha-2: 'SG',
-    alpha-3: 'SGP',
-    country-code: '702',
-    iso_3166-2: 'ISO 3166-2: SG',
+    alpha_2: 'SG',
+    alpha_3: 'SGP',
+    country_code: '702',
+    iso_3166_2: 'ISO 3166-2: SG',
     region: 'Asia',
-    sub-region: 'South-eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '035',
-    intermediate-region-code: ''
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
   },
   {
     name: 'Sint Maarten (Dutch part)',
-    alpha-2: 'SX',
-    alpha-3: 'SXM',
-    country-code: '534',
-    iso_3166-2: 'ISO 3166-2: SX',
+    alpha_2: 'SX',
+    alpha_3: 'SXM',
+    country_code: '534',
+    iso_3166_2: 'ISO 3166-2: SX',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Slovakia',
-    alpha-2: 'SK',
-    alpha-3: 'SVK',
-    country-code: '703',
-    iso_3166-2: 'ISO 3166-2: SK',
+    alpha_2: 'SK',
+    alpha_3: 'SVK',
+    country_code: '703',
+    iso_3166_2: 'ISO 3166-2: SK',
     region: 'Europe',
-    sub-region: 'Eastern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '151',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
   },
   {
     name: 'Slovenia',
-    alpha-2: 'SI',
-    alpha-3: 'SVN',
-    country-code: '705',
-    iso_3166-2: 'ISO 3166-2: SI',
+    alpha_2: 'SI',
+    alpha_3: 'SVN',
+    country_code: '705',
+    iso_3166_2: 'ISO 3166-2: SI',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
   },
   {
     name: 'Solomon Islands',
-    alpha-2: 'SB',
-    alpha-3: 'SLB',
-    country-code: '090',
-    iso_3166-2: 'ISO 3166-2: SB',
+    alpha_2: 'SB',
+    alpha_3: 'SLB',
+    country_code: '090',
+    iso_3166_2: 'ISO 3166-2: SB',
     region: 'Oceania',
-    sub-region: 'Melanesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '054',
-    intermediate-region-code: ''
+    sub_region: 'Melanesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '054',
+    intermediate_region_code: ''
   },
   {
     name: 'Somalia',
-    alpha-2: 'SO',
-    alpha-3: 'SOM',
-    country-code: '706',
-    iso_3166-2: 'ISO 3166-2: SO',
+    alpha_2: 'SO',
+    alpha_3: 'SOM',
+    country_code: '706',
+    iso_3166_2: 'ISO 3166-2: SO',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'South Africa',
-    alpha-2: 'ZA',
-    alpha-3: 'ZAF',
-    country-code: '710',
-    iso_3166-2: 'ISO 3166-2: ZA',
+    alpha_2: 'ZA',
+    alpha_3: 'ZAF',
+    country_code: '710',
+    iso_3166_2: 'ISO 3166-2: ZA',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Southern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '018'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Southern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '018'
   },
   {
     name: 'South Georgia and the South Sandwich Islands',
-    alpha-2: 'GS',
-    alpha-3: 'SGS',
-    country-code: '239',
-    iso_3166-2: 'ISO 3166-2: GS',
+    alpha_2: 'GS',
+    alpha_3: 'SGS',
+    country_code: '239',
+    iso_3166_2: 'ISO 3166-2: GS',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'South America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '005'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
   },
   {
     name: 'South Sudan',
-    alpha-2: 'SS',
-    alpha-3: 'SSD',
-    country-code: '728',
-    iso_3166-2: 'ISO 3166-2: SS',
+    alpha_2: 'SS',
+    alpha_3: 'SSD',
+    country_code: '728',
+    iso_3166_2: 'ISO 3166-2: SS',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Spain',
-    alpha-2: 'ES',
-    alpha-3: 'ESP',
-    country-code: '724',
-    iso_3166-2: 'ISO 3166-2: ES',
+    alpha_2: 'ES',
+    alpha_3: 'ESP',
+    country_code: '724',
+    iso_3166_2: 'ISO 3166-2: ES',
     region: 'Europe',
-    sub-region: 'Southern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '039',
-    intermediate-region-code: ''
+    sub_region: 'Southern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '039',
+    intermediate_region_code: ''
   },
   {
     name: 'Sri Lanka',
-    alpha-2: 'LK',
-    alpha-3: 'LKA',
-    country-code: '144',
-    iso_3166-2: 'ISO 3166-2: LK',
+    alpha_2: 'LK',
+    alpha_3: 'LKA',
+    country_code: '144',
+    iso_3166_2: 'ISO 3166-2: LK',
     region: 'Asia',
-    sub-region: 'Southern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '034',
-    intermediate-region-code: ''
+    sub_region: 'Southern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '034',
+    intermediate_region_code: ''
   },
   {
     name: 'Sudan',
-    alpha-2: 'SD',
-    alpha-3: 'SDN',
-    country-code: '729',
-    iso_3166-2: 'ISO 3166-2: SD',
+    alpha_2: 'SD',
+    alpha_3: 'SDN',
+    country_code: '729',
+    iso_3166_2: 'ISO 3166-2: SD',
     region: 'Africa',
-    sub-region: 'Northern Africa',
-    intermediate-region: '',
-    region-code: '002',
-    sub-region-code: '015',
-    intermediate-region-code: ''
+    sub_region: 'Northern Africa',
+    intermediate_region: '',
+    region_code: '002',
+    sub_region_code: '015',
+    intermediate_region_code: ''
   },
   {
     name: 'Suriname',
-    alpha-2: 'SR',
-    alpha-3: 'SUR',
-    country-code: '740',
-    iso_3166-2: 'ISO 3166-2: SR',
+    alpha_2: 'SR',
+    alpha_3: 'SUR',
+    country_code: '740',
+    iso_3166_2: 'ISO 3166-2: SR',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'South America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '005'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
   },
   {
     name: 'Svalbard and Jan Mayen',
-    alpha-2: 'SJ',
-    alpha-3: 'SJM',
-    country-code: '744',
-    iso_3166-2: 'ISO 3166-2: SJ',
+    alpha_2: 'SJ',
+    alpha_3: 'SJM',
+    country_code: '744',
+    iso_3166_2: 'ISO 3166-2: SJ',
     region: 'Europe',
-    sub-region: 'Northern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '154',
-    intermediate-region-code: ''
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
   },
   {
     name: 'Swaziland',
-    alpha-2: 'SZ',
-    alpha-3: 'SWZ',
-    country-code: '748',
-    iso_3166-2: 'ISO 3166-2: SZ',
+    alpha_2: 'SZ',
+    alpha_3: 'SWZ',
+    country_code: '748',
+    iso_3166_2: 'ISO 3166-2: SZ',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Southern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '018'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Southern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '018'
   },
   {
     name: 'Sweden',
-    alpha-2: 'SE',
-    alpha-3: 'SWE',
-    country-code: '752',
-    iso_3166-2: 'ISO 3166-2: SE',
+    alpha_2: 'SE',
+    alpha_3: 'SWE',
+    country_code: '752',
+    iso_3166_2: 'ISO 3166-2: SE',
     region: 'Europe',
-    sub-region: 'Northern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '154',
-    intermediate-region-code: ''
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
   },
   {
     name: 'Switzerland',
-    alpha-2: 'CH',
-    alpha-3: 'CHE',
-    country-code: '756',
-    iso_3166-2: 'ISO 3166-2: CH',
+    alpha_2: 'CH',
+    alpha_3: 'CHE',
+    country_code: '756',
+    iso_3166_2: 'ISO 3166-2: CH',
     region: 'Europe',
-    sub-region: 'Western Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '155',
-    intermediate-region-code: ''
+    sub_region: 'Western Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '155',
+    intermediate_region_code: ''
   },
   {
     name: 'Syrian Arab Republic',
-    alpha-2: 'SY',
-    alpha-3: 'SYR',
-    country-code: '760',
-    iso_3166-2: 'ISO 3166-2: SY',
+    alpha_2: 'SY',
+    alpha_3: 'SYR',
+    country_code: '760',
+    iso_3166_2: 'ISO 3166-2: SY',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
-    name: 'Taiwan,
-     Province of China',
-     alpha-2: 'TW',
-    alpha-3: 'TWN',
-    country-code: '158',
-    iso_3166-2: 'ISO 3166-2: TW',
+    name: 'Taiwan, Province of China',
+     alpha_2: 'TW',
+    alpha_3: 'TWN',
+    country_code: '158',
+    iso_3166_2: 'ISO 3166-2: TW',
     region: 'Asia',
-    sub-region: 'Eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '030',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '030',
+    intermediate_region_code: ''
   },
   {
     name: 'Tajikistan',
-    alpha-2: 'TJ',
-    alpha-3: 'TJK',
-    country-code: '762',
-    iso_3166-2: 'ISO 3166-2: TJ',
+    alpha_2: 'TJ',
+    alpha_3: 'TJK',
+    country_code: '762',
+    iso_3166_2: 'ISO 3166-2: TJ',
     region: 'Asia',
-    sub-region: 'Central Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '143',
-    intermediate-region-code: ''
+    sub_region: 'Central Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '143',
+    intermediate_region_code: ''
   },
   {
-    name: 'Tanzania,
-     United Republic of',
-     alpha-2: 'TZ',
-    alpha-3: 'TZA',
-    country-code: '834',
-    iso_3166-2: 'ISO 3166-2: TZ',
+    name: 'Tanzania, United Republic of',
+     alpha_2: 'TZ',
+    alpha_3: 'TZA',
+    country_code: '834',
+    iso_3166_2: 'ISO 3166-2: TZ',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Thailand',
-    alpha-2: 'TH',
-    alpha-3: 'THA',
-    country-code: '764',
-    iso_3166-2: 'ISO 3166-2: TH',
+    alpha_2: 'TH',
+    alpha_3: 'THA',
+    country_code: '764',
+    iso_3166_2: 'ISO 3166-2: TH',
     region: 'Asia',
-    sub-region: 'South-eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '035',
-    intermediate-region-code: ''
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
   },
   {
     name: 'Timor-Leste',
-    alpha-2: 'TL',
-    alpha-3: 'TLS',
-    country-code: '626',
-    iso_3166-2: 'ISO 3166-2: TL',
+    alpha_2: 'TL',
+    alpha_3: 'TLS',
+    country_code: '626',
+    iso_3166_2: 'ISO 3166-2: TL',
     region: 'Asia',
-    sub-region: 'South-eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '035',
-    intermediate-region-code: ''
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
   },
   {
     name: 'Togo',
-    alpha-2: 'TG',
-    alpha-3: 'TGO',
-    country-code: '768',
-    iso_3166-2: 'ISO 3166-2: TG',
+    alpha_2: 'TG',
+    alpha_3: 'TGO',
+    country_code: '768',
+    iso_3166_2: 'ISO 3166-2: TG',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Western Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '011'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Western Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '011'
   },
   {
     name: 'Tokelau',
-    alpha-2: 'TK',
-    alpha-3: 'TKL',
-    country-code: '772',
-    iso_3166-2: 'ISO 3166-2: TK',
+    alpha_2: 'TK',
+    alpha_3: 'TKL',
+    country_code: '772',
+    iso_3166_2: 'ISO 3166-2: TK',
     region: 'Oceania',
-    sub-region: 'Polynesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '061',
-    intermediate-region-code: ''
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
   },
   {
     name: 'Tonga',
-    alpha-2: 'TO',
-    alpha-3: 'TON',
-    country-code: '776',
-    iso_3166-2: 'ISO 3166-2: TO',
+    alpha_2: 'TO',
+    alpha_3: 'TON',
+    country_code: '776',
+    iso_3166_2: 'ISO 3166-2: TO',
     region: 'Oceania',
-    sub-region: 'Polynesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '061',
-    intermediate-region-code: ''
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
   },
   {
     name: 'Trinidad and Tobago',
-    alpha-2: 'TT',
-    alpha-3: 'TTO',
-    country-code: '780',
-    iso_3166-2: 'ISO 3166-2: TT',
+    alpha_2: 'TT',
+    alpha_3: 'TTO',
+    country_code: '780',
+    iso_3166_2: 'ISO 3166-2: TT',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Tunisia',
-    alpha-2: 'TN',
-    alpha-3: 'TUN',
-    country-code: '788',
-    iso_3166-2: 'ISO 3166-2: TN',
+    alpha_2: 'TN',
+    alpha_3: 'TUN',
+    country_code: '788',
+    iso_3166_2: 'ISO 3166-2: TN',
     region: 'Africa',
-    sub-region: 'Northern Africa',
-    intermediate-region: '',
-    region-code: '002',
-    sub-region-code: '015',
-    intermediate-region-code: ''
+    sub_region: 'Northern Africa',
+    intermediate_region: '',
+    region_code: '002',
+    sub_region_code: '015',
+    intermediate_region_code: ''
   },
   {
     name: 'Turkey',
-    alpha-2: 'TR',
-    alpha-3: 'TUR',
-    country-code: '792',
-    iso_3166-2: 'ISO 3166-2: TR',
+    alpha_2: 'TR',
+    alpha_3: 'TUR',
+    country_code: '792',
+    iso_3166_2: 'ISO 3166-2: TR',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
     name: 'Turkmenistan',
-    alpha-2: 'TM',
-    alpha-3: 'TKM',
-    country-code: '795',
-    iso_3166-2: 'ISO 3166-2: TM',
+    alpha_2: 'TM',
+    alpha_3: 'TKM',
+    country_code: '795',
+    iso_3166_2: 'ISO 3166-2: TM',
     region: 'Asia',
-    sub-region: 'Central Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '143',
-    intermediate-region-code: ''
+    sub_region: 'Central Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '143',
+    intermediate_region_code: ''
   },
   {
     name: 'Turks and Caicos Islands',
-    alpha-2: 'TC',
-    alpha-3: 'TCA',
-    country-code: '796',
-    iso_3166-2: 'ISO 3166-2: TC',
+    alpha_2: 'TC',
+    alpha_3: 'TCA',
+    country_code: '796',
+    iso_3166_2: 'ISO 3166-2: TC',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Tuvalu',
-    alpha-2: 'TV',
-    alpha-3: 'TUV',
-    country-code: '798',
-    iso_3166-2: 'ISO 3166-2: TV',
+    alpha_2: 'TV',
+    alpha_3: 'TUV',
+    country_code: '798',
+    iso_3166_2: 'ISO 3166-2: TV',
     region: 'Oceania',
-    sub-region: 'Polynesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '061',
-    intermediate-region-code: ''
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
   },
   {
     name: 'Uganda',
-    alpha-2: 'UG',
-    alpha-3: 'UGA',
-    country-code: '800',
-    iso_3166-2: 'ISO 3166-2: UG',
+    alpha_2: 'UG',
+    alpha_3: 'UGA',
+    country_code: '800',
+    iso_3166_2: 'ISO 3166-2: UG',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Ukraine',
-    alpha-2: 'UA',
-    alpha-3: 'UKR',
-    country-code: '804',
-    iso_3166-2: 'ISO 3166-2: UA',
+    alpha_2: 'UA',
+    alpha_3: 'UKR',
+    country_code: '804',
+    iso_3166_2: 'ISO 3166-2: UA',
     region: 'Europe',
-    sub-region: 'Eastern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '151',
-    intermediate-region-code: ''
+    sub_region: 'Eastern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '151',
+    intermediate_region_code: ''
   },
   {
     name: 'United Arab Emirates',
-    alpha-2: 'AE',
-    alpha-3: 'ARE',
-    country-code: '784',
-    iso_3166-2: 'ISO 3166-2: AE',
+    alpha_2: 'AE',
+    alpha_3: 'ARE',
+    country_code: '784',
+    iso_3166_2: 'ISO 3166-2: AE',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
     name: 'United Kingdom of Great Britain and Northern Ireland',
-    alpha-2: 'GB',
-    alpha-3: 'GBR',
-    country-code: '826',
-    iso_3166-2: 'ISO 3166-2: GB',
+    alpha_2: 'GB',
+    alpha_3: 'GBR',
+    country_code: '826',
+    iso_3166_2: 'ISO 3166-2: GB',
     region: 'Europe',
-    sub-region: 'Northern Europe',
-    intermediate-region: '',
-    region-code: '150',
-    sub-region-code: '154',
-    intermediate-region-code: ''
+    sub_region: 'Northern Europe',
+    intermediate_region: '',
+    region_code: '150',
+    sub_region_code: '154',
+    intermediate_region_code: ''
   },
   {
     name: 'United States of America',
-    alpha-2: 'US',
-    alpha-3: 'USA',
-    country-code: '840',
-    iso_3166-2: 'ISO 3166-2: US',
+    alpha_2: 'US',
+    alpha_3: 'USA',
+    country_code: '840',
+    iso_3166_2: 'ISO 3166-2: US',
     region: 'Americas',
-    sub-region: 'Northern America',
-    intermediate-region: '',
-    region-code: '019',
-    sub-region-code: '021',
-    intermediate-region-code: ''
+    sub_region: 'Northern America',
+    intermediate_region: '',
+    region_code: '019',
+    sub_region_code: '021',
+    intermediate_region_code: ''
   },
   {
     name: 'United States Minor Outlying Islands',
-    alpha-2: 'UM',
-    alpha-3: 'UMI',
-    country-code: '581',
-    iso_3166-2: 'ISO 3166-2: UM',
+    alpha_2: 'UM',
+    alpha_3: 'UMI',
+    country_code: '581',
+    iso_3166_2: 'ISO 3166-2: UM',
     region: 'Oceania',
-    sub-region: 'Micronesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '057',
-    intermediate-region-code: ''
+    sub_region: 'Micronesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '057',
+    intermediate_region_code: ''
   },
   {
     name: 'Uruguay',
-    alpha-2: 'UY',
-    alpha-3: 'URY',
-    country-code: '858',
-    iso_3166-2: 'ISO 3166-2: UY',
+    alpha_2: 'UY',
+    alpha_3: 'URY',
+    country_code: '858',
+    iso_3166_2: 'ISO 3166-2: UY',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'South America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '005'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
   },
   {
     name: 'Uzbekistan',
-    alpha-2: 'UZ',
-    alpha-3: 'UZB',
-    country-code: '860',
-    iso_3166-2: 'ISO 3166-2: UZ',
+    alpha_2: 'UZ',
+    alpha_3: 'UZB',
+    country_code: '860',
+    iso_3166_2: 'ISO 3166-2: UZ',
     region: 'Asia',
-    sub-region: 'Central Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '143',
-    intermediate-region-code: ''
+    sub_region: 'Central Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '143',
+    intermediate_region_code: ''
   },
   {
     name: 'Vanuatu',
-    alpha-2: 'VU',
-    alpha-3: 'VUT',
-    country-code: '548',
-    iso_3166-2: 'ISO 3166-2: VU',
+    alpha_2: 'VU',
+    alpha_3: 'VUT',
+    country_code: '548',
+    iso_3166_2: 'ISO 3166-2: VU',
     region: 'Oceania',
-    sub-region: 'Melanesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '054',
-    intermediate-region-code: ''
+    sub_region: 'Melanesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '054',
+    intermediate_region_code: ''
   },
   {
     name: 'Venezuela (Bolivarian Republic of)',
-    alpha-2: 'VE',
-    alpha-3: 'VEN',
-    country-code: '862',
-    iso_3166-2: 'ISO 3166-2: VE',
+    alpha_2: 'VE',
+    alpha_3: 'VEN',
+    country_code: '862',
+    iso_3166_2: 'ISO 3166-2: VE',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'South America',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '005'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'South America',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '005'
   },
   {
     name: 'Viet Nam',
-    alpha-2: 'VN',
-    alpha-3: 'VNM',
-    country-code: '704',
-    iso_3166-2: 'ISO 3166-2: VN',
+    alpha_2: 'VN',
+    alpha_3: 'VNM',
+    country_code: '704',
+    iso_3166_2: 'ISO 3166-2: VN',
     region: 'Asia',
-    sub-region: 'South-eastern Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '035',
-    intermediate-region-code: ''
+    sub_region: 'South-eastern Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '035',
+    intermediate_region_code: ''
   },
   {
     name: 'Virgin Islands (British)',
-    alpha-2: 'VG',
-    alpha-3: 'VGB',
-    country-code: '092',
-    iso_3166-2: 'ISO 3166-2: VG',
+    alpha_2: 'VG',
+    alpha_3: 'VGB',
+    country_code: '092',
+    iso_3166_2: 'ISO 3166-2: VG',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Virgin Islands (U.S.)',
-    alpha-2: 'VI',
-    alpha-3: 'VIR',
-    country-code: '850',
-    iso_3166-2: 'ISO 3166-2: VI',
+    alpha_2: 'VI',
+    alpha_3: 'VIR',
+    country_code: '850',
+    iso_3166_2: 'ISO 3166-2: VI',
     region: 'Americas',
-    sub-region: 'Latin America and the Caribbean',
-    intermediate-region: 'Caribbean',
-    region-code: '019',
-    sub-region-code: '419',
-    intermediate-region-code: '029'
+    sub_region: 'Latin America and the Caribbean',
+    intermediate_region: 'Caribbean',
+    region_code: '019',
+    sub_region_code: '419',
+    intermediate_region_code: '029'
   },
   {
     name: 'Wallis and Futuna',
-    alpha-2: 'WF',
-    alpha-3: 'WLF',
-    country-code: '876',
-    iso_3166-2: 'ISO 3166-2: WF',
+    alpha_2: 'WF',
+    alpha_3: 'WLF',
+    country_code: '876',
+    iso_3166_2: 'ISO 3166-2: WF',
     region: 'Oceania',
-    sub-region: 'Polynesia',
-    intermediate-region: '',
-    region-code: '009',
-    sub-region-code: '061',
-    intermediate-region-code: ''
+    sub_region: 'Polynesia',
+    intermediate_region: '',
+    region_code: '009',
+    sub_region_code: '061',
+    intermediate_region_code: ''
   },
   {
     name: 'Western Sahara',
-    alpha-2: 'EH',
-    alpha-3: 'ESH',
-    country-code: '732',
-    iso_3166-2: 'ISO 3166-2: EH',
+    alpha_2: 'EH',
+    alpha_3: 'ESH',
+    country_code: '732',
+    iso_3166_2: 'ISO 3166-2: EH',
     region: 'Africa',
-    sub-region: 'Northern Africa',
-    intermediate-region: '',
-    region-code: '002',
-    sub-region-code: '015',
-    intermediate-region-code: ''
+    sub_region: 'Northern Africa',
+    intermediate_region: '',
+    region_code: '002',
+    sub_region_code: '015',
+    intermediate_region_code: ''
   },
   {
     name: 'Yemen',
-    alpha-2: 'YE',
-    alpha-3: 'YEM',
-    country-code: '887',
-    iso_3166-2: 'ISO 3166-2: YE',
+    alpha_2: 'YE',
+    alpha_3: 'YEM',
+    country_code: '887',
+    iso_3166_2: 'ISO 3166-2: YE',
     region: 'Asia',
-    sub-region: 'Western Asia',
-    intermediate-region: '',
-    region-code: '142',
-    sub-region-code: '145',
-    intermediate-region-code: ''
+    sub_region: 'Western Asia',
+    intermediate_region: '',
+    region_code: '142',
+    sub_region_code: '145',
+    intermediate_region_code: ''
   },
   {
     name: 'Zambia',
-    alpha-2: 'ZM',
-    alpha-3: 'ZMB',
-    country-code: '894',
-    iso_3166-2: 'ISO 3166-2: ZM',
+    alpha_2: 'ZM',
+    alpha_3: 'ZMB',
+    country_code: '894',
+    iso_3166_2: 'ISO 3166-2: ZM',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
   },
   {
     name: 'Zimbabwe',
-    alpha-2: 'ZW',
-    alpha-3: 'ZWE',
-    country-code: '716',
-    iso_3166-2: 'ISO 3166-2: ZW',
+    alpha_2: 'ZW',
+    alpha_3: 'ZWE',
+    country_code: '716',
+    iso_3166_2: 'ISO 3166-2: ZW',
     region: 'Africa',
-    sub-region: 'Sub-Saharan Africa',
-    intermediate-region: 'Eastern Africa',
-    region-code: '002',
-    sub-region-code: '202',
-    intermediate-region-code: '014'}]
+    sub_region: 'Sub-Saharan Africa',
+    intermediate_region: 'Eastern Africa',
+    region_code: '002',
+    sub_region_code: '202',
+    intermediate_region_code: '014'
+   }
+]
