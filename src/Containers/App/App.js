@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import ControlledForm from '../ControlledForm/ControlledForm'
+import StatisticsContainer from '../StatisticsContainer/StatisticsContainer'
 import './App.css';
 
 export class App extends Component {
@@ -13,6 +14,7 @@ export class App extends Component {
         </header>
         <ControlledForm />
         { this.props.hasErrored ? <p>Sorry! There was an error loading your result.</p> : ''}
+        <StatisticsContainer />
       </div>
     );
   }
