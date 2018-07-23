@@ -1,65 +1,38 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setInitialLocation } from '../../thunks/setInitialLocation';
-import { dataMetrics } from '../../helper/dataMetrics';
+import { setLocation } from '../../thunks/setLocation';
+import CountryInputField from '../CountryInputField/CountryInputField';
+import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
+import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 
 export class ControlledForm extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      initialLocation: '',
-      initialMetric: dataMetrics[0]
-    }
-  }
-
-  handleChange = (event) => {
-    const initialLocation = event.target.value;
-    this.setState({ initialLocation });
-  }
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const location = this.state.initialLocation;
-    const dataSet = this.state.initialMetric.dataset_code;
-    const dataBase = this.state.initialMetric.database_code;
-    this.props.selectInitialLocation(location, dataSet, dataBase);
-  }
-
-  selectMetric = (event) => {
-    const initialMetric = dataMetrics.find(metric => event.target.value === metric.name);
-    this.setState({ initialMetric })
-  }
+    const { location, dataSet, dataBase} = this.props;
+    this.props.selectLocation(location, dataSet, dataBase);
+  };
 
   render() {
-
-    const options = dataMetrics.map((metric, index) => (
-      <option key={index}>
-        {metric.name}
-      </option>
-    ))
-
     return (
       <form onSubmit={this.handleSubmit}>
-       <input
-         value={this.state.initialLocation}
-         type='text'
-         placeholder='enter a country'
-         onChange={this.handleChange}
-       /> 
-       <select onChange={this.selectMetric}>
-        { options }
-       </select>
-       <button>
-         Search
-       </button>
+        <CountryInputField />
+        <DataBaseSelectField />
+        <DataSetSelectField />
+        <button>Search</button>
      </form>
     )
-  }
-}
+  };
+};
+
+export const mapStateToProps = (state) => ({
+  location: state.location.alpha_3,
+  dataBase: state.dataBase.database_code,
+  dataSet: state.dataSet.dataset_code
+});
 
 export const mapDispatchToProps = (dispatch) => ({
-  selectInitialLocation: (location, dataSet, dataBase) => dispatch(setInitialLocation(location, dataSet, dataBase))
-})
+  selectLocation: (location, dataSet, dataBase) => dispatch(setLocation(location, dataSet, dataBase))
+});
 
-export default connect(null, mapDispatchToProps)(ControlledForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ControlledForm);

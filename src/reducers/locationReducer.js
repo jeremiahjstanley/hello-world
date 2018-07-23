@@ -1,7 +1,7 @@
-export const initialLocation = (state = [], action) => {
+export const location = (state = {}, action) => {
   switch(action.type) {
-    case 'FETCH_INITIAL_LOCATION_SUCCESS':
-      return action.initialLocation;
+    case 'SET_LOCATION':
+      return action.location;
     default: 
       return state;
   }
