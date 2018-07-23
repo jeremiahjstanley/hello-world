@@ -1,8 +1,14 @@
 import { combineReducers } from 'redux';
-import { initialLocation } from './locationReducer';
+import { location } from './locationReducer';
+import { locationData } from './locationDataReducer';
+import { dataBase } from './dataBaseReducer';
+import { dataSet } from './dataSetReducer';
 import { hasErrored } from './errorReducer'
 
 export const rootReducer = combineReducers({
-  initialLocation,
+  location,
+  dataBase,
+  dataSet,
+  locationData,
   hasErrored
 })
