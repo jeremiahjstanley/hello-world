@@ -1,48 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, BarChart, Bar } from 'recharts';
+import { Link, withRouter } from 'react-router-dom'; 
+import GovernanceIndicatorsStatistics from '../GovernanceIndicatorsStatistics/GovernanceIndicatorsStatistics';
 import './StatisticsContainer.css'
 
 
-export const  StatisticsContainer = (props) => {
+export const  StatisticsContainer = ({location, dataBase, dataSet, locationData}) => {
   return (
-    <div className="statistics-container">
-      <LineChart width={900} height={300} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-        <Line type="monotone" dataKey="Percentile Rank" stroke="#8884d8" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip/>
-        <Legend />
-      </LineChart>
-      <div className="subordinate-graphs">
-        <BarChart width={300} height={150} data={props.locationData}>
-          <Bar dataKey="Number of Sources" fill='#8884d8'/>
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip/>
-          <Legend />
-        </BarChart>
-        <LineChart width={300} height={150} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-          <Line type="monotone" dataKey="Standard Error" stroke="#8884d8" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip/>
-          <Legend />
-        </LineChart>
-        <LineChart width={300} height={150} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-          <Line type="monotone" dataKey="Estimate" stroke="#8884d8" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip/>
-          <Legend />
-        </LineChart>
-      </div>
+    <div>
+      <h1>{dataBase.name} - {dataSet.name}</h1>
+      <GovernanceIndicatorsStatistics/>
+      <Link to='/stats/compare'>
+        See how {location.name} stacks up against...
+      </Link>
     </div>
   )
 }
 
 export const mapStateToProps = (state) => ({
+  location: state.location,
+  dataBase: state.dataBase,
+  dataSet: state.dataSet,
   locationData: state.locationData
 });
 
-export default connect(mapStateToProps)(StatisticsContainer);
+export default withRouter(connect(mapStateToProps)(StatisticsContainer));

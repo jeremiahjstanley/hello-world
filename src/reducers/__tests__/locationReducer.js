@@ -10,7 +10,7 @@ describe('locationReducer', () => {
     expect(actual).toEqual(expected);
   })
   it('should return the state with a location object', () => {
-    const expected = { //act better mock data here
+    const expected = {
         name: 'Belgium',
         alpha_2: 'BE',
         alpha_3: 'BEL',

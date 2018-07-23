@@ -27,9 +27,20 @@ ShallowWrapper {
                     Hello, World
           </h1>
 </header>,
-        <Connect(ControlledForm) />,
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+/>,
         "",
-        <Connect(Component) />,
+        <Route
+          component={[Function]}
+          path="/stats"
+/>,
+        <Route
+          component={[Function]}
+          path="/stats/compare"
+/>,
       ],
       "className": "App",
     },
@@ -66,7 +77,11 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -76,7 +91,22 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "component": [Function],
+          "path": "/stats",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/stats/compare",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -100,9 +130,20 @@ ShallowWrapper {
                         Hello, World
             </h1>
 </header>,
-          <Connect(ControlledForm) />,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/"
+/>,
           "",
-          <Connect(Component) />,
+          <Route
+            component={[Function]}
+            path="/stats"
+/>,
+          <Route
+            component={[Function]}
+            path="/stats/compare"
+/>,
         ],
         "className": "App",
       },
@@ -139,7 +180,11 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -149,7 +194,22 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "component": [Function],
+            "path": "/stats",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/stats/compare",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

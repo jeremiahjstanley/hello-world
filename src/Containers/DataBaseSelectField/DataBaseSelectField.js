@@ -8,22 +8,23 @@ export class DataBaseSelectField extends Component {
     super()
 
     this.state = {
-      dataBase: {name: dataMetrics[0].name, database_code: dataMetrics[0].database_code}
-    }
+      dataBase: {
+        name: 'Worldwide Governance Indicators', 
+        database_code: 'WWGI'
+      }
+    };
   }
 
   componentDidMount() {
-    this.props.selectDataBase(this.state.dataBase)
+    this.props.selectDataBase(this.state.dataBase);
   }
 
   selectMetric = (event) => {
-    const dataBase = dataMetrics.find(metric => event.target.value === metric.name);
-    const dataStore = {name: dataBase.name, database_code: dataBase.database_code}
-    this.props.selectDataBase(dataStore)
+    const metric = dataMetrics.find(metric => event.target.value === metric.name);
+    this.props.selectDataBase({name: metric.name, database_code: metric.database_code});
   }
 
   render() {
-
     const options = dataMetrics.map((metric, index) => (
       <option key={index}>
         { metric.name }

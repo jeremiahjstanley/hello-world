@@ -3,6 +3,11 @@ export const setLocation = (location) => ({
   location
 });
 
+export const addComparisonLocation = (location) => ({
+  type: 'ADD_COMPARISON_LOCATION',
+  location
+});
+
 export const setDataBase= (dataBase) => ({
   type: 'SET_DATABASE',
   dataBase

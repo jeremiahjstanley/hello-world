@@ -5,7 +5,8 @@ import { fetchNumberOfSources } from './fetchNumberOfSources';
 import { fetchPercentileRank } from './fetchPercentileRank';
 import { fetchStandardError } from './fetchStandardError';
 
-export const setLocation = (location, dataSet, dataBase) => {  return async (dispatch) => {
+export const fetchInitialLocation = (location, dataSet, dataBase) => {  
+  return async (dispatch) => {
     const estimates = await dispatch(fetchEstimates(location, dataSet, dataBase));
     const numberOfSources = await dispatch(fetchNumberOfSources(location, dataSet, dataBase));
     const percentileRank = await dispatch(fetchPercentileRank(location, dataSet, dataBase));
