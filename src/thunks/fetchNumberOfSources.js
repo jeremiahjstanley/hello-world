@@ -9,9 +9,7 @@ export const fetchNumberOfSources = (isoAlpha3, dataSet, dataBase) => {
       if (!response.ok) {
         throw Error(response.statusText);
       }
-      const locationData = await response.json();
-      // clean data that returns from fetch //
-      return locationData;
+      return await response.json();
     } catch (error) {
       dispatch(hasErrored(true));
     }
