@@ -2,14 +2,14 @@ import * as actions from '../index';
 
 describe('Actions', () => {
 
-  describe('fetchInitialLocationSuccess', () => {
+  describe('fetchLocationDataSuccess', () => {
     it('Should create an initial Location object', () => {
       let expected = {
-                      type: 'FETCH_INITIAL_LOCATION_SUCCESS',
-                      initialLocation: {name: 'Canada'}
+                      type: 'FETCH_LOCATION_DATA_SUCCESS',
+                      locationData: {name: 'Canada'}
                     };
 
-      let actual = actions.fetchInitialLocationSuccess({name: 'Canada'});
+      let actual = actions.fetchLocationDataSuccess({name: 'Canada'});
 
       expect(expected).toEqual(actual);
     });
