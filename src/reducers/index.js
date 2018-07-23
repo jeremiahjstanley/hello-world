@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
-import { initialLocation, hasErrored } from './locationReducer'
+import { initialLocation } from './locationReducer';
+import { hasErrored } from './errorReducer'
 
 export const rootReducer = combineReducers({
   initialLocation,
