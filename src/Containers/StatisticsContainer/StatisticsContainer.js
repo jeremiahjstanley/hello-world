@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, BarChart, Bar } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, BarChart, Bar } from 'recharts';
 import './StatisticsContainer.css'
 
 
 export const  StatisticsContainer = (props) => {
-  console.log(props.initialLocation)
   return (
     <div className="statistics-container">
-      <LineChart width={900} height={300} data={props.initialLocation} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+      <LineChart width={900} height={300} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
         <Line type="monotone" dataKey="Percentile Rank" stroke="#8884d8" />
         <XAxis dataKey="name" />
         <YAxis />
@@ -16,21 +15,21 @@ export const  StatisticsContainer = (props) => {
         <Legend />
       </LineChart>
       <div className="subordinate-graphs">
-        <BarChart width={300} height={150} data={props.initialLocation}>
+        <BarChart width={300} height={150} data={props.locationData}>
           <Bar dataKey="Number of Sources" fill='#8884d8'/>
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip/>
           <Legend />
         </BarChart>
-        <LineChart width={300} height={150} data={props.initialLocation} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+        <LineChart width={300} height={150} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
           <Line type="monotone" dataKey="Standard Error" stroke="#8884d8" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip/>
           <Legend />
         </LineChart>
-        <LineChart width={300} height={150} data={props.initialLocation} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+        <LineChart width={300} height={150} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
           <Line type="monotone" dataKey="Estimate" stroke="#8884d8" />
           <XAxis dataKey="name" />
           <YAxis />
@@ -43,7 +42,7 @@ export const  StatisticsContainer = (props) => {
 }
 
 export const mapStateToProps = (state) => ({
-  initialLocation: state.initialLocation
+  locationData: state.locationData
 });
 
 export default connect(mapStateToProps)(StatisticsContainer);
