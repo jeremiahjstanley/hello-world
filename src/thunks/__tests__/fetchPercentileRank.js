@@ -1,7 +1,7 @@
-import { fetchEstimates } from '../fetchEstimates';
+import { fetchPercentileRank } from '../fetchPercentileRank';
 import { hasErrored } from '../../actions'
 
-describe('fetchEstimates', () => {
+describe('fetchPercentileRank', () => {
   let mockISO;
   let mockDataBase;
   let mockDataSet;
@@ -10,7 +10,7 @@ describe('fetchEstimates', () => {
   beforeEach(() => {
     mockISO = 'FRA';
     mockDataBase = 'WWGI';
-    mockDataSet = 'RL';
+    mockDataSet = 'NO_SRC';
     mockDispatch = jest.fn();
   });
 
@@ -19,7 +19,7 @@ describe('fetchEstimates', () => {
       ok: false
     }));
 
-    const thunk = fetchEstimates(mockISO, mockDataSet, mockDataBase);
+    const thunk = fetchPercentileRank(mockISO, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch)
 
@@ -33,7 +33,7 @@ describe('fetchEstimates', () => {
       })
     }));
 
-    const thunk = fetchEstimates(mockISO, mockDataBase, mockDataBase)
+    const thunk = fetchPercentileRank(mockISO, mockDataBase, mockDataBase)
 
     const expected = await thunk(mockDispatch);
 

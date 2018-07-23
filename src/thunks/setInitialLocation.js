@@ -1,4 +1,4 @@
-import { fetchInitialLocationSuccess} from '../actions';
+import { fetchInitialLocationSuccess } from '../actions';
 import { goveranceIndicatorCleaner } from '../helper/dataCleaner'
 import { fetchEstimates } from './fetchEstimates';
 import { fetchNumberOfSources } from './fetchNumberOfSources'; 

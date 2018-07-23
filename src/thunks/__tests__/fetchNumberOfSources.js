@@ -1,7 +1,7 @@
-import { fetchEstimates } from '../fetchEstimates';
+import { fetchNumberOfSources } from '../fetchNumberOfSources';
 import { hasErrored } from '../../actions'
 
-describe('fetchEstimates', () => {
+describe('fetchNumberOfSources', () => {
   let mockISO;
   let mockDataBase;
   let mockDataSet;
@@ -19,7 +19,7 @@ describe('fetchEstimates', () => {
       ok: false
     }));
 
-    const thunk = fetchEstimates(mockISO, mockDataSet, mockDataBase);
+    const thunk = fetchNumberOfSources(mockISO, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch)
 
@@ -33,7 +33,7 @@ describe('fetchEstimates', () => {
       })
     }));
 
-    const thunk = fetchEstimates(mockISO, mockDataBase, mockDataBase)
+    const thunk = fetchNumberOfSources(mockISO, mockDataBase, mockDataBase)
 
     const expected = await thunk(mockDispatch);
 
