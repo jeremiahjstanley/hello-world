@@ -1,4 +1,4 @@
-import { setLocation } from '../setLocation';
+import { fetchInitialLocation } from '../fetchInitialLocation';
 import { fetchLocationDataSuccess } from '../../actions'
 import { countries } from '../../helper/countryMetrics';
 import { goveranceIndicatorCleaner } from '../../helper/dataCleaner'
@@ -13,7 +13,7 @@ jest.mock('../fetchPercentileRank');
 jest.mock('../fetchStandardError');
 jest.mock('../../helper/dataCleaner');
 
-describe('setLocation', () => {
+describe('fetchInitialLocation', () => {
   let mockDispatch;
   let mockLocation;
   let mockDataSet;
@@ -29,7 +29,7 @@ describe('setLocation', () => {
   });
 
   it('should dispatch fetchEstimates with the correct arguments', async () => {
-    const thunk = setLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchInitialLocation(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -37,7 +37,7 @@ describe('setLocation', () => {
   });
 
   it('should dispatch fetchNumberOfSources with the correct arguments', async () => {
-    const thunk = setLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchInitialLocation(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -45,7 +45,7 @@ describe('setLocation', () => {
   });
 
   it('should dispatch fetchPercentileRank with the correct arguments', async () => {
-    const thunk = setLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchInitialLocation(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -53,7 +53,7 @@ describe('setLocation', () => {
   });
 
   it('should dispatch fetchStandardError with the correct arguments', async () => {
-    const thunk = setLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchInitialLocation(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -61,7 +61,7 @@ describe('setLocation', () => {
   });
 
   it('should call goveranceIndicatorCleaner with the correct arguments', async () => {
-    const thunk = setLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchInitialLocation(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -69,7 +69,7 @@ describe('setLocation', () => {
   });
 
   it('should dispatch fetchInitialLocationSuccess with the correct arguments', async () => {
-    const thunk = setLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchInitialLocation(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
