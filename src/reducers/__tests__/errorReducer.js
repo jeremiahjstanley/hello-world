@@ -9,7 +9,7 @@ describe('errorReducer', () => {
 
     expect(actual).toEqual(expected);
   })
-  it('should return the state with an intial location', () => {
+  it('should return the state with an error object', () => {
     const expected = true;
 
     const actual = hasErrored(undefined, actions.hasErrored(true));
