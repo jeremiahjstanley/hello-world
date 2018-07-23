@@ -8,36 +8,50 @@ export class DataSetSelectField extends Component {
     super()
 
     this.state = {
-      dataSet: dataMetrics[0].datasets[0]
-    }
+      dataSet: {
+        name: 'Voice and Accountability', 
+        dataset_code: 'VA'
+      }
+    };
   }
 
   componentDidMount() {
-    this.props.selectDataSet(this.state.dataSet)
+    this.props.selectDataSet(this.state.dataSet);
   }
 
   selectMetric = (event) => {
-    const dataSet = this.props.dataSet.find(metric => event.target.value === metric.name);
-    this.props.selectDataSet({...dataSet})
+    const dataSet = this.state.dataBase.datasets.find(dataset => event.target.value === dataset.name);
+    this.props.selectDataSet({...dataSet});
+  }
+
+  handleUpdate = () => {
+    const dataBase = dataMetrics.find(metric => this.props.dataBase === metric.name);
+    this.setState({dataBase});    
   }
 
   render() {
-    // const options = this.props.dataSet.map((metric, index) => (
-    //   <option key={index}>
-    //     { metric.name }
-    //   </option>
-    // ))
-    const options = 'cat'
+    if (this.state.dataBase) {
+      const options = this.state.dataBase.datasets.map((metric, index) => (
+        <option key={index}>
+          { metric.name }
+        </option>
+      ));
+      return (
+        <select onChange={this.selectMetric}>
+          { options }
+        </select>
+      ) 
+    } else
     return (
-      <select onChange={this.selectMetric}>
-        { options }
+      <select onClick={this.handleUpdate}>
+        <option>{this.state.dataSet.name}</option>
       </select>
     )
   };
 }
 
 export const mapStateToProps = (state) => ({
-  dataSet: state.dataBase.datasets 
+  dataBase: state.dataBase.name
 })
 
 export const mapDispatchToProps = (dispatch) => ({
