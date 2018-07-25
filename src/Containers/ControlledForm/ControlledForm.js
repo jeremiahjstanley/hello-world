@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
-import { setLocation, addComparisonLocation } from '../../actions';
+import { setLocation } from '../../actions';
 import { countries } from '../../helper/countryMetrics';
-import { fetchInitialLocation } from '../../thunks/fetchInitialLocation';
-import CountryInputField from '../CountryInputField/CountryInputField';
+import { fetchLocation } from '../../thunks/fetchLocation';
 import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
 import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
+import './ControlledForm.css';
 
 export class ControlledForm extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      dataBase: {
+        location: ''
+      }
+    };
+  }
 
   handleChange = (event) => {
     const input = event.target.value;
@@ -18,28 +26,35 @@ export class ControlledForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const location = this.state.location;
+    const location = [this.state.location];
     const { dataSet, dataBase } = this.props;
     this.props.selectLocation(location);
-    this.props.addComparisonLocation(location);
-    this.props.fetchInitialLocation(location.alpha_3, dataSet, dataBase);
+    this.props.fetchLocation(location, dataSet, dataBase);
     this.props.history.push('/stats');
   };
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <p>I'm curious about...</p>
-        <input
-            type='text'
-            placeholder='enter a country'
-            onChange={this.handleChange}
-         /> 
-        <p>and their...</p>
-        <DataBaseSelectField />
-        <p>but specifically, </p>
-        <DataSetSelectField />
-        <button>Search</button>
+        <div>
+          <p>I'm curious about...</p>
+          <input
+              type='text'
+              placeholder='Enter a Country'
+              onChange={this.handleChange}
+          /> 
+        </div>
+        <div>
+          <p>and their...</p>
+          <DataBaseSelectField />
+        </div>
+        <div>
+          <p>but specifically, </p>
+          <DataSetSelectField />
+        </div>
+        <button disabled={!this.state.location}>
+          Search
+        </button>
      </form>
     )
   };
@@ -52,8 +67,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   selectLocation: (location) => dispatch(setLocation(location)),
-  addComparisonLocation: (location) => dispatch(addComparisonLocation(location)),
-  fetchInitialLocation: (location, dataSet, dataBase) => dispatch(fetchInitialLocation(location, dataSet, dataBase))
+  fetchLocation: (location, dataSet, dataBase) => dispatch(fetchLocation(location, dataSet, dataBase))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlledForm);
