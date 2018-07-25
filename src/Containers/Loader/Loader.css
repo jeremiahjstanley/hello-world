@@ -1,0 +1,19 @@
+.loader {
+	margin: 5rem;
+}
+
+.load-icon {
+	animation: load-icon-spin infinite 10s linear;
+	width: 6rem;
+}
+
+.loading-feedback {
+	display: block;
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+@keyframes load-icon-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
