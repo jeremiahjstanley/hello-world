@@ -1,0 +1,38 @@
+form {
+  display: inline-block;
+  text-align: left;
+  max-width: 40rem;
+}
+
+form p,input, select, button  {
+  font-family: Avenir Next;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+form, p {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+input, select  {
+  background-color: #FFFFFF;
+  border: none;
+  border-bottom: 1px solid #000000;
+  max-width: 25rem;
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+button {
+  background-color: #000000;
+  color: #FFFFFF;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+button:disabled {
+  opacity: .2
+}

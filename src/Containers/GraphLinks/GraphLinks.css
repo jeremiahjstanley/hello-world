@@ -1,0 +1,8 @@
+.graph-links {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.graph-links a {
+	font-size: .75rem;
+}

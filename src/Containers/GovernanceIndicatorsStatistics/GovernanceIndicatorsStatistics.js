@@ -1,47 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, BarChart, Bar } from 'recharts';
+import Loader from '../Loader/Loader'
+import { bar, Line } from 'react-chartjs-2'
 
-
-export const GovernanceIndicatorsStatistics = (props) => {
-  return (
-    <div className="statistics-container">
-      <LineChart width={900} height={300} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-        <Line type="monotone" dataKey="Percentile Rank" stroke="#8884d8" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip/>
-        <Legend />
-      </LineChart>
-      <div className="subordinate-graphs">
-        <BarChart width={300} height={150} data={props.locationData}>
-          <Bar dataKey="Number of Sources" fill='#8884d8'/>
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip/>
-          <Legend />
-        </BarChart>
-        <LineChart width={300} height={150} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-          <Line type="monotone" dataKey="Standard Error" stroke="#8884d8" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip/>
-          <Legend />
-        </LineChart>
-        <LineChart width={300} height={150} data={props.locationData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
-          <Line type="monotone" dataKey="Estimate" stroke="#8884d8" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip/>
-          <Legend />
-        </LineChart>
-      </div>
-    </div>
-  )
+export class GovernanceIndicatorsStatistics extends Component {
+  
+  render () {
+    if (this.props.estimates) {
+      return (
+        <div className="statistics-container">
+          <h1>{this.props.dataBase.name} - {this.dataSet.name}</h1>
+          <Line
+            data={this.props.percentileRank.data}
+            legend={this.props.percentileRank.legend}
+          />
+        </div>
+      )
+  } else
+      return (
+        <div>
+          <Loader/>
+        </div>
+      )
+  }
 }
 
 export const mapStateToProps = (state) => ({
-  locationData: state.locationData
+  location: state.location,
+  dataBase: state.dataBase,
+  dataSet: state.dataSet,
+  estimates: state.locationData.cleanEstimates,
+  numberOfSources: state.locationData.cleanNumberOfSources,
+  percentileRank: state.locationData.cleanPercentileRank,
+  standardError: state.locationData.cleanStandardError
 });
 
 export default connect(mapStateToProps)(GovernanceIndicatorsStatistics);

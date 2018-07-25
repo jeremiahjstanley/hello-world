@@ -1,15 +1,36 @@
-export const goveranceIndicatorCleaner = (estimates, numberOfSources, percentileRank, standardError) => {
-  const cleanEstimates = estimates.dataset.data.map(dataPoint => {
-    return {"name": dataPoint[0], "Estimate": dataPoint[1]}
-  });
-  const cleanNumberOfSources = numberOfSources.dataset.data.map((dataPoint, index) => {
-    return {...cleanEstimates[index], "name": dataPoint[0], "Number of Sources": dataPoint[1]}
-  })
-  const cleanPercentileRank = percentileRank.dataset.data.map((dataPoint, index) => {
-    return {...cleanNumberOfSources[index], "name": dataPoint[0], "Percentile Rank": dataPoint[1]}
-  })
-  const cleanStandardError = standardError.dataset.data.map((dataPoint, index) => {
-    return {...cleanPercentileRank[index], "name": dataPoint[0], "Standard Error": dataPoint[1]}
-  })
-  return cleanStandardError
-}
+export const dataCleaner = (graphData) => ({
+  data: {
+    labels: graphData.dataset.data.map(dataPoint => dataPoint[0]).reverse(),
+    datasets: [
+      {
+        label: graphData.dataset.name,
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderndColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: graphData.dataset.data.map(dataPoint => dataPoint[1]).reverse()
+      }
+    ]
+  },
+  legend: {
+    display: true,
+    position: 'bottom'
+  }
+});
+
+
+
+

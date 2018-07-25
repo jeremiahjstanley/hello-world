@@ -62,15 +62,8 @@ ShallowWrapper {
            - 
           Voice and Accountability
 </h1>,
-        <Connect(Component) />,
-        <Link
-          replace={false}
-          to="/stats/compare"
->
-          See how 
-          Belgium
-           stacks up against...
-</Link>,
+        <Connect(GovernanceIndicatorsStatistics) />,
+        <withRouter(Connect(Component)) />,
       ],
     },
     "ref": null,
@@ -106,22 +99,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            "See how ",
-            "Belgium",
-            " stacks up against...",
-          ],
-          "replace": false,
-          "to": "/stats/compare",
-        },
+        "nodeType": "function",
+        "props": Object {},
         "ref": null,
-        "rendered": Array [
-          "See how ",
-          "Belgium",
-          " stacks up against...",
-        ],
+        "rendered": null,
         "type": [Function],
       },
     ],
@@ -139,15 +120,8 @@ ShallowWrapper {
              - 
             Voice and Accountability
 </h1>,
-          <Connect(Component) />,
-          <Link
-            replace={false}
-            to="/stats/compare"
->
-            See how 
-            Belgium
-             stacks up against...
-</Link>,
+          <Connect(GovernanceIndicatorsStatistics) />,
+          <withRouter(Connect(Component)) />,
         ],
       },
       "ref": null,
@@ -183,22 +157,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              "See how ",
-              "Belgium",
-              " stacks up against...",
-            ],
-            "replace": false,
-            "to": "/stats/compare",
-          },
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
-          "rendered": Array [
-            "See how ",
-            "Belgium",
-            " stacks up against...",
-          ],
+          "rendered": null,
           "type": [Function],
         },
       ],

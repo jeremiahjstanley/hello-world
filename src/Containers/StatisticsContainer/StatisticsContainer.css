@@ -1,8 +1,19 @@
-.statistics-container {
-  margin: 0 auto,
+
+
+h1, a {
+  font-family: Avenir Next;
+  font-weight: 100;
+
 }
 
-.subordinate-graphs {
-  display: flex;
-  justify-content: space-around;
+h1 {
+  font-size: 2em;
+}
+
+a {
+  font-size: 1.25em;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000000;
+
 }

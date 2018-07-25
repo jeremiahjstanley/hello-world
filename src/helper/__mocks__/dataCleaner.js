@@ -1,3 +1,3 @@
-export const goveranceIndicatorCleaner = jest.fn().mockImplementation(() => {
+export const dataCleaner = jest.fn().mockImplementation(() => {
   return [];
 });

@@ -1,4 +1,4 @@
-export const location = (state = {}, action) => {
+export const location = (state = [], action) => {
   switch(action.type) {
     case 'SET_LOCATION':
       return action.location;
