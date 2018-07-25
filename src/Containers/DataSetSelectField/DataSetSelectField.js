@@ -24,9 +24,13 @@ export class DataSetSelectField extends Component {
     this.props.selectDataSet({...dataSet});
   }
 
-  handleUpdate = () => {
-    const dataBase = dataMetrics.find(metric => this.props.dataBase === metric.name);
-    this.setState({dataBase});    
+  static getDerivedStateFromProps(props, state) {
+    if (props.dataBase) {
+      return {
+        dataBase: dataMetrics.find(metric => props.dataBase === metric.name),
+      };
+    }
+    return state
   }
 
   render() {
@@ -43,9 +47,7 @@ export class DataSetSelectField extends Component {
       ) 
     } else
     return (
-      <select onClick={this.handleUpdate}>
-        <option>{this.state.dataSet.name}</option>
-      </select>
+      <p>Loading...</p>
     )
   };
 }
