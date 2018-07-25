@@ -19,11 +19,11 @@ export class App extends Component {
         </header>
         <Route exact path='/' component={ControlledForm}/>
         { this.props.hasErrored ? <p>Sorry! There was an error loading your result.</p> : ''}
-        <Route path='/stats' component={StatisticsContainer}/>
         <Route exact path='/stats' component={GraphLinks}/>
         <Route path='/stats/compare' component={AddComparisonForm}/>
         <Route path='/stats/change_data_base' component={ChangeDataBaseForm}/>
         <Route path='/stats/change_data_set' component={ChangeDataSetForm}/>
+        <Route path='/stats' component={StatisticsContainer}/>
       </div>
     );
   }
