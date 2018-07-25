@@ -35,7 +35,7 @@ export const dataMetrics = [
   },
   {
     name: 'Worldwide Development Indicators',
-    database_code: 'WWEI',
+    database_code: 'WWDI',
     datasets: [
       {
         name: 'Agricultural land (sq. km)',
