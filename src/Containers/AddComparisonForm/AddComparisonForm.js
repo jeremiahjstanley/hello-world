@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import { setLocation } from '../../actions';
 import { countries } from '../../helper/countryMetrics';
-import { fetchLocation } from '../../thunks/fetchLocation';
+import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
+import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
 
 export class AddComparisonForm extends Component {
   constructor() {
@@ -25,7 +26,9 @@ export class AddComparisonForm extends Component {
     if (this.state.additionalLocation) {
       const locations = [...location, this.state.additionalLocation];
       this.props.selectLocation(locations);
-      this.props.fetchLocation(locations, dataSet, dataBase);
+      ((dataBase === 'WWGI') ? 
+        this.props.fetchGovernanceIndicators(locations, dataSet, dataBase) : 
+        this.props.fetchDevelopmentIndicators(locations, dataSet, dataBase));
       this.props.history.push('/stats');
     }
   };
@@ -58,7 +61,8 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   selectLocation: (location) => dispatch(setLocation(location)),
-  fetchLocation: (locations, dataBase, dataSet) => dispatch(fetchLocation(locations, dataBase, dataSet))
+  fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet)),
+  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AddComparisonForm));
