@@ -8,15 +8,7 @@ export class DataSetSelectField extends Component {
     super()
 
     this.state = {
-      dataSet: {
-        name: 'Voice and Accountability', 
-        dataset_code: 'VA'
-      }
     };
-  }
-
-  componentDidMount() {
-    this.props.selectDataSet(this.state.dataSet);
   }
 
   selectMetric = (event) => {
@@ -25,7 +17,9 @@ export class DataSetSelectField extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
+    console.log(props)
     if (props.dataBase) {
+      console.log(props)
       return {
         dataBase: dataMetrics.find(metric => props.dataBase === metric.name),
       };
@@ -47,7 +41,7 @@ export class DataSetSelectField extends Component {
       ) 
     } else
     return (
-      <p>Loading...</p>
+      <p className='loading-text'>Loading...</p>
     )
   };
 }
