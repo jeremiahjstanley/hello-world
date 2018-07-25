@@ -3,9 +3,9 @@ import * as actions from '../../actions';
 
 describe('locationDataReducer', () => {
   it('should return the initial state', () => {
-    const expected = [];
+    const expected = {};
 
-    const actual = locationData(undefined, []);
+    const actual = locationData(undefined, {});
 
     expect(actual).toEqual(expected);
   })
