@@ -6,3 +6,16 @@
 .graph-links a {
 	font-size: .75rem;
 }
+
+.change-form {
+	display: inline-flex;
+}
+
+.change-form-button {
+	margin: 0 0 0 3rem;
+	padding: 0 1rem;
+}
+
+.back-button {
+	margin-right: 3rem;
+}
