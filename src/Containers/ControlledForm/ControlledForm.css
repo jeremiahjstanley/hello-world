@@ -36,3 +36,7 @@ button {
 button:disabled {
   opacity: .2
 }
+
+.loading-text {
+  margin: 0;
+}

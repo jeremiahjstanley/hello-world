@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setLocation } from '../../actions';
+import { setLocation, setDataBase, setDataSet } from '../../actions';
 import { countries } from '../../helper/countryMetrics';
 import { fetchLocation } from '../../thunks/fetchLocation';
 import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
@@ -13,9 +13,19 @@ export class ControlledForm extends Component {
 
     this.state = {
       dataBase: {
-        location: ''
+        name: 'Worldwide Governance Indicators', 
+        database_code: 'WWGI'
+      },
+      dataSet: {
+        name: 'Voice and Accountability', 
+        dataset_code: 'VA'
       }
     };
+  }
+
+  componentDidMount() {
+    this.props.selectDataBase(this.state.dataBase);
+    this.props.selectDataSet(this.state.dataSet);
   }
 
   handleChange = (event) => {
@@ -46,7 +56,7 @@ export class ControlledForm extends Component {
         </div>
         <div>
           <p>and their...</p>
-          <DataBaseSelectField />
+          <DataBaseSelectField/>
         </div>
         <div>
           <p>but specifically, </p>
@@ -66,6 +76,8 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
+  selectDataBase: (dataBase) => dispatch(setDataBase(dataBase)),
+  selectDataSet: (dataSet) => dispatch(setDataSet(dataSet)),
   selectLocation: (location) => dispatch(setLocation(location)),
   fetchLocation: (location, dataSet, dataBase) => dispatch(fetchLocation(location, dataSet, dataBase))
 });
