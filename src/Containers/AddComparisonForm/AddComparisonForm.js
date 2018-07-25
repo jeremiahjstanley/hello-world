@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
 import { setLocation } from '../../actions';
 import { countries } from '../../helper/countryMetrics';
 import { fetchLocation } from '../../thunks/fetchLocation';
+
 export class AddComparisonForm extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+    };
+  }
 
   handleChange = (event) => {
     const input = event.target.value;
@@ -24,14 +32,20 @@ export class AddComparisonForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input
-          type='text'
-          placeholder='enter a country'
-          onChange={this.handleChange}
-        /> 
-        <button>Add</button>
-     </form>
+      <div className='change-form-container'>
+        <Link to='/stats' className='back-button'>◀ back</Link>
+        <form onSubmit={this.handleSubmit} className='change-form'>
+          <input
+            type='text'
+            placeholder='enter a country'
+            onChange={this.handleChange}
+          /> 
+          <button 
+            disabled={!this.state.additionalLocation}
+            className='change-form-button'
+          >Add</button>
+       </form>
+     </div>
     )
   };
 };
@@ -47,4 +61,4 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchLocation: (locations, dataBase, dataSet) => dispatch(fetchLocation(locations, dataBase, dataSet))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(AddComparisonForm);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AddComparisonForm));
