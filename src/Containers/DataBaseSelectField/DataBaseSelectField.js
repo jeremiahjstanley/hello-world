@@ -4,20 +4,6 @@ import { setDataBase } from '../../actions';
 import { dataMetrics } from '../../helper/dataMetrics';
 
 export class DataBaseSelectField extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      dataBase: {
-        name: 'Worldwide Governance Indicators', 
-        database_code: 'WWGI'
-      }
-    };
-  }
-
-  componentDidMount() {
-    this.props.selectDataBase(this.state.dataBase);
-  }
 
   selectMetric = (event) => {
     const metric = dataMetrics.find(metric => event.target.value === metric.name);
