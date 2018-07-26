@@ -40,3 +40,7 @@ button:disabled {
 .loading-text {
   margin: 0;
 }
+
+.explanation-button {
+  text-align: center;
+}
