@@ -2,11 +2,57 @@
   text-align: center;
 }
 
-
 .App-title {
   font-family: Avenir Next;
   font-weight: 100;
   font-size: 10em;
-  margin: 5rem auto 3rem;
+  margin: 2.5rem
 }
+
+.App-header {
+  margin: 2.5rem auto 3rem;
+}
+
+.explanation-button {
+  display: block;
+}
+
+.explanation-paragraph {
+	text-align: justify;
+	width: 60%
+}
+
+.App-title {
+  
+  background: linear-gradient(270deg, #00f1ff, #e700ff, #0081ff, #ff0063);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+	-webkit-animation: hello 1s linear infinite;
+	-moz-animation: hello 1s linear infinite;
+	animation: hello 1s linear infinite;
+
+	@-webkit-keyframes hello {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@-moz-keyframes hello {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+	@keyframes hello { 
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 50%}
+	}
+}
+
+background-size: 800% 800%;
 
