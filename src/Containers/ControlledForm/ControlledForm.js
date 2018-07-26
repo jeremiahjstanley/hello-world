@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setLocation, setDataBase, setDataSet } from '../../actions';
+import { Link } from 'react-router-dom';
 import { countries } from '../../helper/countryMetrics';
-import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
+import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
+import { setLocation, setDataBase, setDataSet } from '../../actions';
 import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
 import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 import './ControlledForm.css';
 
 export class ControlledForm extends Component {
+  
   constructor() {
     super()
 
@@ -22,12 +24,12 @@ export class ControlledForm extends Component {
         dataset_code: 'VA'
       }
     };
-  }
+  };
 
   componentDidMount() {
     this.props.selectDataBase(this.state.dataBase);
     this.props.selectDataSet(this.state.dataSet);
-  }
+  };
 
   handleChange = (event) => {
     const input = event.target.value.toLowerCase();
@@ -50,18 +52,19 @@ export class ControlledForm extends Component {
     const suggestions = countries.filter(country => {
       const regex = new RegExp(this.state.input, 'gi');
       return country.name.match(regex) || country.alpha_3.match(regex);
-    })
+    });
     return suggestions.splice(0, 4).map(country => {
         return <option>{country.name}</option>
     });
-  }
+  };
 
   render() {
 
-
     return (
+
       <form onSubmit={this.handleSubmit}>
         <div>
+          <Link to='/why' className='explanation-button'>▼</Link>
           <p>I'm curious about...</p>
           <input
               type='text'
@@ -85,7 +88,8 @@ export class ControlledForm extends Component {
           Search
         </button>
      </form>
-    )
+
+    );
   };
 };
 
@@ -95,11 +99,11 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
+  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet)),
+  fetchGovernanceIndicators: (location, dataSet, dataBase) => dispatch(fetchGovernanceIndicators(location, dataSet, dataBase)),
   selectDataBase: (dataBase) => dispatch(setDataBase(dataBase)),
   selectDataSet: (dataSet) => dispatch(setDataSet(dataSet)),
-  selectLocation: (location) => dispatch(setLocation(location)),
-  fetchGovernanceIndicators: (location, dataSet, dataBase) => dispatch(fetchGovernanceIndicators(location, dataSet, dataBase)),
-  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet))
+  selectLocation: (location) => dispatch(setLocation(location))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlledForm);
