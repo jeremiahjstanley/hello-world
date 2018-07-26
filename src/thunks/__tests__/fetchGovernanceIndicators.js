@@ -1,4 +1,4 @@
-import { fetchLocation } from '../fetchLocation';
+import { fetchGovernanceIndicators } from '../fetchGovernanceIndicators';
 import { fetchLocationDataSuccess } from '../../actions'
 import { countries } from '../../helper/countryMetrics';
 import { dataCleaner } from '../../helper/dataCleaner'
@@ -13,7 +13,7 @@ jest.mock('../fetchPercentileRank');
 jest.mock('../fetchStandardError');
 jest.mock('../../helper/dataCleaner');
 
-describe('fetchLocation', () => {
+describe('fetchGovernanceIndicators', () => {
   let mockDispatch;
   let mockLocation;
   let mockDataSet;
@@ -29,7 +29,7 @@ describe('fetchLocation', () => {
   });
 
   it('should dispatch fetchEstimates with the correct arguments', async () => {
-    const thunk = fetchLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchGovernanceIndicators(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -37,7 +37,7 @@ describe('fetchLocation', () => {
   });
 
   it('should dispatch fetchNumberOfSources with the correct arguments', async () => {
-    const thunk = fetchLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchGovernanceIndicators(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -45,7 +45,7 @@ describe('fetchLocation', () => {
   });
 
   it('should dispatch fetchPercentileRank with the correct arguments', async () => {
-    const thunk = fetchLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchGovernanceIndicators(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -53,7 +53,7 @@ describe('fetchLocation', () => {
   });
 
   it('should dispatch fetchStandardError with the correct arguments', async () => {
-    const thunk = fetchLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchGovernanceIndicators(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
@@ -61,15 +61,15 @@ describe('fetchLocation', () => {
   });
 
   it('should call dataCleaner with the correct arguments', async () => {
-    const thunk = fetchLocation(mockLocation, mockDataSet, mockDataBase);
+    const thunk = fetchGovernanceIndicators(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 
     expect(dataCleaner).toHaveBeenCalled();
   });
 
-  it('should dispatch fetchLocationSuccess with the correct arguments', async () => {
-    const thunk = fetchLocation(mockLocation, mockDataSet, mockDataBase);
+  it('should dispatch fetchLocationDataSuccess with the correct arguments', async () => {
+    const thunk = fetchGovernanceIndicators(mockLocation, mockDataSet, mockDataBase);
 
     await thunk(mockDispatch);
 

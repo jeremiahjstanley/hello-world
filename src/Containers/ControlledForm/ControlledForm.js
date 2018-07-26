@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setLocation, setDataBase, setDataSet } from '../../actions';
 import { countries } from '../../helper/countryMetrics';
-import { fetchLocation } from '../../thunks/fetchLocation';
+import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
+import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
 import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
 import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 import './ControlledForm.css';
@@ -29,9 +30,9 @@ export class ControlledForm extends Component {
   }
 
   handleChange = (event) => {
-    const input = event.target.value;
-    const location = countries.find(country => input === country.name);
-    this.setState({location});
+    const input = event.target.value.toLowerCase();
+    const location = countries.find(country => input === country.name.toLowerCase());
+    this.setState({location, input});
   };
 
   handleSubmit = (event) => {
@@ -39,11 +40,25 @@ export class ControlledForm extends Component {
     const location = [this.state.location];
     const { dataSet, dataBase } = this.props;
     this.props.selectLocation(location);
-    this.props.fetchLocation(location, dataSet, dataBase);
+    ((dataBase === 'WWGI') ? 
+      this.props.fetchGovernanceIndicators(location, dataSet, dataBase):
+      this.props.fetchDevelopmentIndicators(location, dataSet, dataBase));
     this.props.history.push('/stats');
   };
 
+  countryTypeAhead = () => {
+    const suggestions = countries.filter(country => {
+      const regex = new RegExp(this.state.input, 'gi');
+      return country.name.match(regex) || country.alpha_3.match(regex);
+    })
+    return suggestions.splice(0, 4).map(country => {
+        return <option>{country.name}</option>
+    });
+  }
+
   render() {
+
+
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
@@ -52,11 +67,15 @@ export class ControlledForm extends Component {
               type='text'
               placeholder='Enter a Country'
               onChange={this.handleChange}
+              list="countries"
           /> 
+          <datalist id="countries">
+            { this.countryTypeAhead() }
+          </datalist>
         </div>
         <div>
           <p>and their...</p>
-          <DataBaseSelectField/>
+          <DataBaseSelectField />
         </div>
         <div>
           <p>but specifically, </p>
@@ -79,7 +98,8 @@ export const mapDispatchToProps = (dispatch) => ({
   selectDataBase: (dataBase) => dispatch(setDataBase(dataBase)),
   selectDataSet: (dataSet) => dispatch(setDataSet(dataSet)),
   selectLocation: (location) => dispatch(setLocation(location)),
-  fetchLocation: (location, dataSet, dataBase) => dispatch(fetchLocation(location, dataSet, dataBase))
+  fetchGovernanceIndicators: (location, dataSet, dataBase) => dispatch(fetchGovernanceIndicators(location, dataSet, dataBase)),
+  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlledForm);

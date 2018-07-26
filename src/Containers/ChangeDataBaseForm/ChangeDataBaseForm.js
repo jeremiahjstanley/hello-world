@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
-import { fetchLocation } from '../../thunks/fetchLocation';
+import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
 import { DataBaseSelectField } from '../DataBaseSelectField/DataBaseSelectField';
 import { DataSetSelectField } from '../DataSetSelectField/DataSetSelectField';
 
@@ -10,7 +10,7 @@ export class ChangeDataBaseForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const { location, dataSet, dataBase} = this.props;
-    this.props.fetchLocation(location, dataSet, dataBase);
+    this.props.fetchGovernanceIndicators(location, dataSet, dataBase);
     this.props.history.push('/stats');
   };
 
@@ -35,7 +35,7 @@ export const mapStateToProps = (state) => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  fetchLocation: (locations, dataBase, dataSet) => dispatch(fetchLocation(locations, dataBase, dataSet))
+  fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ChangeDataBaseForm));

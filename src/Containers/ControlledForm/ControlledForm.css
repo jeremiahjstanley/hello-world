@@ -34,7 +34,7 @@ button {
 }
 
 button:disabled {
-  opacity: .2
+  opacity: .05
 }
 
 .loading-text {

@@ -1,10 +1,14 @@
 .graph-links {
-	display: flex;
-	justify-content: space-evenly;
+
+
 }
 
 .graph-links a {
-	font-size: .75rem;
+	display: block;
+	padding: .5rem 0;
+	font-size: 1rem;
+	background-color: #000000;
+	color: #FFFFFF;
 }
 
 .change-form {

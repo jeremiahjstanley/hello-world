@@ -5,17 +5,23 @@ import './StatisticsContainer.css'
 
 
 export const  StatisticsContainer = ({dataBase}) => {
-  return (
-    <div>
-      <GovernanceIndicatorsStatistics/>
-    </div>
-  )
+	if (dataBase === 'WWGI') {
+	  return (
+	    <div>
+	      <GovernanceIndicatorsStatistics/>
+	    </div>
+	  )
+	} else
+		return (
+		    <div>
+		      <h1>Development Indicator Stats</h1>
+		    </div>
+		)
 }
 
 export const mapStateToProps = (state) => ({
-  dataBase: state.dataBase,
+  dataBase: state.dataBase.database_code,
 });
 
-// create switch statement for WWDI figures
 
 export default connect(mapStateToProps)(StatisticsContainer);

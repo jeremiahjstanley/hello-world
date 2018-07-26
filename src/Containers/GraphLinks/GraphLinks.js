@@ -9,7 +9,7 @@ export const GraphLinks = ({location, dataBase, dataSet, locationData}) => {
   return (
     <div className='graph-links'>
       <Link to='/stats/compare'>
-        See how {location.name} stacks up against...
+        See how {location.map(location => location.name).join(',')} stacks up against...
       </Link>
       <Link to='/stats/change_data_base'>
         Okay, that's {dataBase.name}, but what about?

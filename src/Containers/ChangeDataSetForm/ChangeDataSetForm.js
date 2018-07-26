@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
-import { fetchLocation } from '../../thunks/fetchLocation';
+import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
 import { DataSetSelectField } from '../DataSetSelectField/DataSetSelectField';
 
-export class ChangeDataBaseForm extends Component {
+export class ChangeDataSetForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
     const { location, dataSet, dataBase} = this.props;
-    this.props.fetchLocation(location, dataSet, dataBase);
+    this.props.fetchGovernanceIndicators(location, dataSet.dataset_code, dataBase.database_code);
     this.props.history.push('/stats');
   };
 
@@ -28,12 +28,12 @@ export class ChangeDataBaseForm extends Component {
 
 export const mapStateToProps = (state) => ({
   location: state.location,
-  dataBase: state.dataBase.database_code,
-  dataSet: state.dataSet.dataset_code,
+  dataBase: state.dataBase,
+  dataSet: state.dataSet
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  fetchLocation: (locations, dataBase, dataSet) => dispatch(fetchLocation(locations, dataBase, dataSet))
+  fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet))
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ChangeDataBaseForm));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ChangeDataSetForm));
