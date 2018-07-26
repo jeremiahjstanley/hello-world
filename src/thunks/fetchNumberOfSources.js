@@ -12,6 +12,6 @@ export const fetchNumberOfSources = (isoAlpha3, dataSet, dataBase) => {
       return await response.json();
     } catch (error) {
       dispatch(hasErrored(true));
-    }
-  }
+    };
+  };
 };
