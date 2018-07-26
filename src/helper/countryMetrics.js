@@ -104,19 +104,6 @@ export const countries = [
     intermediate_region_code: '029',
   },
   {
-    name: 'Antarctica',
-    alpha_2: 'AQ',
-    alpha_3: 'ATA',
-    country_code: '010',
-    iso_3166_2: 'ISO 3166-2: AQ',
-    region: '',
-    sub_region: '',
-    intermediate_region: '',
-    region_code: '',
-    sub_region_code: '',
-    intermediate_region_code: ''
-  },
-  {
     name: 'Antigua and Barbuda',
     alpha_2: 'AG',
     alpha_3: 'ATG',
