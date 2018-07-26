@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
+import ExplanationText from '../ExplanationText/ExplanationText';
 import AddComparisonForm from '../AddComparisonForm/AddComparisonForm';
 import GraphLinks from '../GraphLinks/GraphLinks';
 import ControlledForm from '../ControlledForm/ControlledForm';
@@ -12,11 +13,14 @@ import './App.css';
 export class App extends Component {
 
   render() {
+
     return (
+      
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Hello, World</h1>
+        <h1 className="App-title">Hello, World</h1>
         </header>
+        <Route path='/why' component={ExplanationText}/>
         <Route exact path='/' component={ControlledForm}/>
         { this.props.hasErrored ? <p>Sorry! There was an error loading your result.</p> : ''}
         <Route exact path='/stats' component={GraphLinks}/>
@@ -25,13 +29,14 @@ export class App extends Component {
         <Route path='/stats/change_data_set' component={ChangeDataSetForm}/>
         <Route path='/stats' component={StatisticsContainer}/>
       </div>
+
     );
-  }
-}
+  };
+};
 
 const mapStateToProps = (state) => ({
   hasErrored: state.hasErrored,
-})
+});
 
 export default withRouter(connect(mapStateToProps)(App));
 

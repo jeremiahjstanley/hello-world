@@ -12,7 +12,8 @@ export class AddComparisonForm extends Component {
 
     this.state = {
     };
-  }
+
+  };
 
   handleChange = (event) => {
     const input = event.target.value;
@@ -34,7 +35,9 @@ export class AddComparisonForm extends Component {
   };
 
   render() {
+
     return (
+
       <div className='change-form-container'>
         <Link to='/stats' className='back-button'>◀ back</Link>
         <form onSubmit={this.handleSubmit} className='change-form'>
@@ -49,20 +52,21 @@ export class AddComparisonForm extends Component {
           >Add</button>
        </form>
      </div>
-    )
+
+    );
   };
 };
 
 export const mapStateToProps = (state) => ({
-  location: state.location,
   dataBase: state.dataBase.database_code,
   dataSet: state.dataSet.dataset_code,
+  location: state.location
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  selectLocation: (location) => dispatch(setLocation(location)),
+  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet)),
   fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet)),
-  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet))
+  selectLocation: (location) => dispatch(setLocation(location))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AddComparisonForm));

@@ -13,5 +13,5 @@ export const fetchEstimates = (isoAlpha3, dataSet, dataBase) => {
     } catch (error) {
       dispatch(hasErrored(true));
     }
-  }
+  };
 };

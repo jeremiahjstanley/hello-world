@@ -4,13 +4,14 @@ import Loader from '../Loader/Loader'
 import { VictoryLine, VictoryContainer, VictoryBar, VictoryChart, VictoryTooltip, VictoryTheme, VictoryAxis } from 'victory';
 
 export class GovernanceIndicatorsStatistics extends Component {
+
   constructor() {
     super()
 
     this.state = {
       locationData: []
     };
-  }
+  };
 
   static getDerivedStateFromProps(props, state) {
     if (props.locationData) {
@@ -19,7 +20,7 @@ export class GovernanceIndicatorsStatistics extends Component {
       };
     }
     return state 
-  }
+  };
   
   render () {
 
@@ -118,7 +119,7 @@ export class GovernanceIndicatorsStatistics extends Component {
                 style={{
                   axisLabel: { padding: 40 }
                 }}
-            />
+          />
             { percentileRankChart }
           </VictoryChart>
 
@@ -139,7 +140,7 @@ export class GovernanceIndicatorsStatistics extends Component {
                 style={{
                   axisLabel: { padding: 40 }
                 }}
-            />
+          />
             { numberOfSourcesChart }
           </VictoryChart>
 
@@ -160,7 +161,7 @@ export class GovernanceIndicatorsStatistics extends Component {
                 style={{
                   axisLabel: { padding: 40 }
                 }}
-            />
+          />
             { standardErrorChart }
           </VictoryChart>
 
@@ -180,7 +181,7 @@ export class GovernanceIndicatorsStatistics extends Component {
                 style={{
                   axisLabel: { padding: 40 }
                 }}
-            />
+           />
             { estimatesChart }
           </VictoryChart>
 
@@ -190,17 +191,19 @@ export class GovernanceIndicatorsStatistics extends Component {
   } else
 
       return (
+
         <div>
           <Loader/>
         </div>
+        
       );
   };
 };
 
 export const mapStateToProps = (state) => ({
-  location: state.location,
   dataBase: state.dataBase,
   dataSet: state.dataSet,
+  location: state.location,
   locationData: state.locationData
 });
 

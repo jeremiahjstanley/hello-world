@@ -1,14 +1,16 @@
-.graph-links {
-
-
+.graph-link {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem 1.5rem;
+    vertical-align: top;
+    width: 25%;
 }
 
-.graph-links a {
-	display: block;
-	padding: .5rem 0;
+.graph-link a {
+	color: #000000;
 	font-size: 1rem;
-	background-color: #000000;
-	color: #FFFFFF;
+	text-align: right;
+	text-decoration: underline;
 }
 
 .change-form {
@@ -22,4 +24,17 @@
 
 .back-button {
 	margin-right: 3rem;
+}
+
+.start-over {
+	background-color: #000000;
+	padding: .5rem 1rem;
+	width: auto;
+}
+
+.start-over a {
+	color: #FFFFFF;
+	font-size: 1rem;
+	text-decoration: none;
+	vertical-align: -webkit-baseline-middle;
 }
