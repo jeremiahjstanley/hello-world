@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setDataBase, changeData } from '../../actions';
+import { setDataBase } from '../../actions';
 import { dataMetrics } from '../../helper/dataMetrics';
 
 export class DataBaseSelectField extends Component {
@@ -29,7 +29,6 @@ export class DataBaseSelectField extends Component {
 };
 
 export const mapDispatchToProps = (dispatch) => ({
-  changeDataBase: (bool) => dispatch(changeData(bool)),
   selectDataBase: (dataBase) => dispatch(setDataBase(dataBase))
 });
 
