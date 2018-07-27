@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { VictoryLine, VictoryContainer, VictoryVoronoiContainer, VictoryChart, VictoryTooltip, VictoryTheme, VictoryAxis } from 'victory';
+import { colors } from '../../helper/colors';
 import Loader from '../Loader/Loader'
-import { VictoryLine, VictoryContainer, VictoryBar, VictoryChart, VictoryTooltip, VictoryTheme, VictoryAxis } from 'victory';
+
 
 export class DevelopmentIndicatorStatistics extends Component {
   
@@ -27,17 +29,22 @@ export class DevelopmentIndicatorStatistics extends Component {
     if (this.state.locationData.length) {
 
       const developmentChart = this.state.locationData.map((location, index) => {
-        console.log('Location', location)
+   
         return ( 
             <VictoryLine
               containerComponent={<VictoryContainer responsive={true}/>}
-              labelComponent={<VictoryTooltip/>}
+              key={index}
+              labelComponent={
+                <VictoryTooltip
+                  cornerRadius={0}
+                  pointerLength={20}
+                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
+                />
+              }
               style={{
-                data: { stroke: "#c43a31" },
-                parent: { border: "1px solid #ccc"},
-                fontSize: 8,
-                axisLabel: {fontSize: 20, padding: 30, angle: 90},
-                tickLabels: {fontSize: 15, padding: 5, angle: 90}
+                data: { stroke: colors[index] },
+                parent: { border: '1px solid #ccc'},
               }}
               data={location}
             />
@@ -47,28 +54,34 @@ export class DevelopmentIndicatorStatistics extends Component {
 
       return (
 
-        <div className="statistics-container">
+        <div className='statistics-container'>
 
-          <h1>{this.props.dataBase.name} - {this.props.dataSet.name}</h1>
+          <h1>{this.props.dataBase.name}</h1>
+          <h2>{this.props.dataSet.name}</h2>
 
           <VictoryChart
-            animate={{ duration: 2000, easing: "bounce" }} 
+            animate={{ duration: 2000, easing: 'bounce' }} 
             width={600}
-            theme={VictoryTheme.material}
+            theme={VictoryTheme.grayscale}
+            containerComponent={<VictoryVoronoiContainer />}
           >
             <VictoryAxis
-              label={`${this.props.dataSet.name} - ${this.props.location.map(location => location.name).join(',')}`}
+              label={`${this.props.dataSet.name} - ${this.props.location.map(location => location.name).join(', ')}`}
               style={{
-                  axisLabel: { padding: 30 }
+                axisLabel: { fontSize: 10, fontFamily: 'Avenir Next', padding: 30 },
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10, angle: 90}
               }}
               />
+
               <VictoryAxis dependentAxis
-                label="percent"
                 style={{
-                  axisLabel: { padding: 40 }
+                  axisLabel: {fontSize: 10, fontFamily: 'Avenir Next', padding: 40, angle: 90},
+                  tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10}
                 }}
             />
+
             { developmentChart }
+
           </VictoryChart>
 
         </div>
@@ -77,6 +90,7 @@ export class DevelopmentIndicatorStatistics extends Component {
   } else
 
       return (
+        
         <div>
           <Loader/>
         </div>
