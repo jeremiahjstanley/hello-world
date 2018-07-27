@@ -13,15 +13,15 @@ export class DataSetSelectField extends Component {
 
   };
 
+
   selectMetric = (event) => {
     const dataSet = this.state.dataBase.datasets.find(dataset => event.target.value === dataset.name);
     this.props.selectDataSet({...dataSet});
   };
 
   static getDerivedStateFromProps(props, state) {
-    console.log(props)
+
     if (props.dataBase) {
-      console.log(props)
       return {
         dataBase: dataMetrics.find(metric => props.dataBase === metric.name),
       };

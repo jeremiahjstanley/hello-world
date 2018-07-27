@@ -34,6 +34,16 @@ export class AddComparisonForm extends Component {
     }
   };
 
+  countryTypeAhead = () => {
+    const suggestions = countries.filter(country => {
+      const regex = new RegExp(this.state.input, 'gi');
+      return country.name.match(regex) || country.alpha_3.match(regex);
+    });
+    return suggestions.splice(0, 4).map((country, index) => {
+        return <option key={index}>{country.name}</option>
+    });
+  };
+
   render() {
 
     return (
@@ -45,7 +55,11 @@ export class AddComparisonForm extends Component {
             type='text'
             placeholder='enter a country'
             onChange={this.handleChange}
-          /> 
+            list="countries"
+          />
+          <datalist id="countries">
+            { this.countryTypeAhead() }
+          </datalist>
           <button 
             disabled={!this.state.additionalLocation}
             className='change-form-button'

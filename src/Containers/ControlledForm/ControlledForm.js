@@ -53,8 +53,8 @@ export class ControlledForm extends Component {
       const regex = new RegExp(this.state.input, 'gi');
       return country.name.match(regex) || country.alpha_3.match(regex);
     });
-    return suggestions.splice(0, 4).map(country => {
-        return <option>{country.name}</option>
+    return suggestions.splice(0, 4).map((country, index) => {
+        return <option key={index}>{country.name}</option>
     });
   };
 

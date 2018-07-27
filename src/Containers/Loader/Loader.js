@@ -7,7 +7,7 @@ export const Loader = () => {
   return (
 
     <div className='loader'>
-      <img src={helloworld} className='load-icon'/>
+      <img src={helloworld} className='load-icon' alt='your results are loading'/>
       <p className='loading-feedback'>
         loading your result
       </p>
