@@ -8,12 +8,12 @@ export const changeData = (status) => ({
   changeData: status
 });
 
-export const setDataBase= (dataBase) => ({
+export const setDataBase = (dataBase) => ({
   type: 'SET_DATABASE',
   dataBase
 });
 
-export const setDataSet= (dataSet) => ({
+export const setDataSet = (dataSet) => ({
   type: 'SET_DATASET',
   dataSet
 });
