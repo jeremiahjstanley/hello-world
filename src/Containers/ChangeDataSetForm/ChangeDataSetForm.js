@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
-import { DataSetSelectField } from '../DataSetSelectField/DataSetSelectField';
+import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 
 export class ChangeDataSetForm extends Component {
 
