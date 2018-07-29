@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
-import { DataBaseSelectField } from '../DataBaseSelectField/DataBaseSelectField';
-import { DataSetSelectField } from '../DataSetSelectField/DataSetSelectField';
+import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
+import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 
 export class ChangeDataBaseForm extends Component {
 
