@@ -25,34 +25,17 @@
 .App-title {
   
   background: linear-gradient(270deg, #00f1ff, #e700ff, #0081ff, #ff0063);
-  background-size: 200% auto;
-  
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-	-webkit-animation: hello 1s linear infinite;
-	-moz-animation: hello 1s linear infinite;
-	animation: hello 1s linear infinite;
-
-	@-webkit-keyframes hello {
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
-	}
-	@-moz-keyframes hello {
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
-	}
-	@keyframes hello { 
-	    0%{background-position:0% 50%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 50%}
-	}
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
 }
 
-background-size: 800% 800%;
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
 
