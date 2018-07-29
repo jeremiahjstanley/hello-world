@@ -1,5 +1,5 @@
 export const dataCleaner = (graphData) => {
-	if (!graphData.dataset.data.length) {
+	if (!graphData) {
 		return
 	}
     const data = graphData.dataset.data.map(dataPoint => {
