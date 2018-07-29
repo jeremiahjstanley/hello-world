@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setDataSet, changeData } from '../../actions';
+import { setDataSet } from '../../actions';
 import { dataMetrics } from '../../helper/dataMetrics';
 
 export class DataSetSelectField extends Component {
@@ -61,7 +61,6 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  changeDataSet: (bool) => dispatch(changeData(bool)),
   selectDataSet: (dataSet) => dispatch(setDataSet(dataSet))
 })
 
