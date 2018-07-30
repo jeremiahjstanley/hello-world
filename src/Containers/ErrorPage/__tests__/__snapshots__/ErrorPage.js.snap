@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          We've got bad news
+</h1>,
+        <h2>
+          ...and we're really sorry
+</h2>,
+        <p
+          className="explanation-paragraph"
+>
+          This project was made possible by public data from the World Bank, and unfortunately that data comes with some challenges and some holes. So, please try and make another selection, we hope this wont discourage you from using Hello World.
+</p>,
+        <div
+          className="graph-link start-over"
+>
+          <Link
+                    replace={false}
+                    to="/"
+          >
+                    Start Over?
+          </Link>
+</div>,
+      ],
+      "className": "error-text",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "We've got bad news",
+        },
+        "ref": null,
+        "rendered": "We've got bad news",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "...and we're really sorry",
+        },
+        "ref": null,
+        "rendered": "...and we're really sorry",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "This project was made possible by public data from the World Bank, and unfortunately that data comes with some challenges and some holes. So, please try and make another selection, we hope this wont discourage you from using Hello World.",
+          "className": "explanation-paragraph",
+        },
+        "ref": null,
+        "rendered": "This project was made possible by public data from the World Bank, and unfortunately that data comes with some challenges and some holes. So, please try and make another selection, we hope this wont discourage you from using Hello World.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/"
+>
+            Start Over?
+</Link>,
+          "className": "graph-link start-over",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Start Over?",
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Start Over?",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            We've got bad news
+</h1>,
+          <h2>
+            ...and we're really sorry
+</h2>,
+          <p
+            className="explanation-paragraph"
+>
+            This project was made possible by public data from the World Bank, and unfortunately that data comes with some challenges and some holes. So, please try and make another selection, we hope this wont discourage you from using Hello World.
+</p>,
+          <div
+            className="graph-link start-over"
+>
+            <Link
+                        replace={false}
+                        to="/"
+            >
+                        Start Over?
+            </Link>
+</div>,
+        ],
+        "className": "error-text",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "We've got bad news",
+          },
+          "ref": null,
+          "rendered": "We've got bad news",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "...and we're really sorry",
+          },
+          "ref": null,
+          "rendered": "...and we're really sorry",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "This project was made possible by public data from the World Bank, and unfortunately that data comes with some challenges and some holes. So, please try and make another selection, we hope this wont discourage you from using Hello World.",
+            "className": "explanation-paragraph",
+          },
+          "ref": null,
+          "rendered": "This project was made possible by public data from the World Bank, and unfortunately that data comes with some challenges and some holes. So, please try and make another selection, we hope this wont discourage you from using Hello World.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/"
+>
+              Start Over?
+</Link>,
+            "className": "graph-link start-over",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Start Over?",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Start Over?",
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

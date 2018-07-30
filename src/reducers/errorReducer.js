@@ -5,4 +5,4 @@ export const hasErrored = (state = false, action) => {
     default:
       return state;
   }
-}
+};

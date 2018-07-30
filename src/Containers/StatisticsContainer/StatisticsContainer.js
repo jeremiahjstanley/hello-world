@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import GovernanceIndicatorsStatistics from '../GovernanceIndicatorsStatistics/GovernanceIndicatorsStatistics';
 import DevelopmentIndicatorStatistics from '../DevelopmentIndicatorStatistics/DevelopmentIndicatorStatistics';
 import './StatisticsContainer.css';
@@ -36,5 +37,8 @@ export const mapStateToProps = (state) => ({
   dataBase: state.dataBase.database_code,
 });
 
+StatisticsContainer.propTypes = {
+  dataBase: PropTypes.string
+};
 
 export default withRouter(connect(mapStateToProps)(StatisticsContainer));

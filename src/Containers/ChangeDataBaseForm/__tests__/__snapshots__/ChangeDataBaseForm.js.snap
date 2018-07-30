@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChangeDataBaseForm should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ChangeDataBaseForm
+    dataBase="WWDI"
+    dataSet="SM_POP_REFG"
+    fetchDevelopmentIndicators={[Function]}
+    fetchGovernanceIndicators={[Function]}
+    history={Array []}
+    location={
+        Array [
+            Object {
+              "alpha_2": "BF",
+              "alpha_3": "BFA",
+              "country_code": "854",
+              "intermediate_region": "Western Africa",
+              "intermediate_region_code": "011",
+              "iso_3166_2": "ISO 3166-2: BF",
+              "name": "Burkina Faso",
+              "region": "Africa",
+              "region_code": "002",
+              "sub_region": "Sub-Saharan Africa",
+              "sub_region_code": "202",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Link
+          className="back-button"
+          replace={false}
+          to="/stats"
+>
+          ◀ 
+          <span>
+                    back
+          </span>
+</Link>,
+        <form
+          className="change-form"
+          onSubmit={[Function]}
+>
+          <Connect(DataBaseSelectField) />
+          <Connect(DataSetSelectField) />
+          <button
+                    className="change-form-button"
+          >
+                    Change
+          </button>
+</form>,
+      ],
+      "className": "change-form-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            "◀ ",
+            <span>
+              back
+</span>,
+          ],
+          "className": "back-button",
+          "replace": false,
+          "to": "/stats",
+        },
+        "ref": null,
+        "rendered": Array [
+          "◀ ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "back",
+            },
+            "ref": null,
+            "rendered": "back",
+            "type": "span",
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Connect(DataBaseSelectField) />,
+            <Connect(DataSetSelectField) />,
+            <button
+              className="change-form-button"
+>
+              Change
+</button>,
+          ],
+          "className": "change-form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Change",
+              "className": "change-form-button",
+            },
+            "ref": null,
+            "rendered": "Change",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Link
+            className="back-button"
+            replace={false}
+            to="/stats"
+>
+            ◀ 
+            <span>
+                        back
+            </span>
+</Link>,
+          <form
+            className="change-form"
+            onSubmit={[Function]}
+>
+            <Connect(DataBaseSelectField) />
+            <Connect(DataSetSelectField) />
+            <button
+                        className="change-form-button"
+            >
+                        Change
+            </button>
+</form>,
+        ],
+        "className": "change-form-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "◀ ",
+              <span>
+                back
+</span>,
+            ],
+            "className": "back-button",
+            "replace": false,
+            "to": "/stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            "◀ ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "back",
+              },
+              "ref": null,
+              "rendered": "back",
+              "type": "span",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Connect(DataBaseSelectField) />,
+              <Connect(DataSetSelectField) />,
+              <button
+                className="change-form-button"
+>
+                Change
+</button>,
+            ],
+            "className": "change-form",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Change",
+                "className": "change-form-button",
+              },
+              "ref": null,
+              "rendered": "Change",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

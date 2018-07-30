@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router-dom'; 
+import { Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './GraphLinks.css'
 
 
-export const GraphLinks = ({location, dataBase, dataSet, locationData}) => {
+export const GraphLinks = ({location, dataBase, dataSet}) => {
 
   return (
 
@@ -12,7 +13,7 @@ export const GraphLinks = ({location, dataBase, dataSet, locationData}) => {
 
       <div className='graph-link'>
         <Link to='/stats/compare'>
-          See how {location.map(location => location.name).join(',')} stacks up against...
+          See how {location.map(location => location.name).join(', ')} stacks up against...
         </Link>
       </div>
 
@@ -38,5 +39,11 @@ export const mapStateToProps = (state) => ({
   dataSet: state.dataSet,
   location: state.location
 });
+
+GraphLinks.propTypes = {
+  dataBase: PropTypes.object.isRequired,
+  dataSet: PropTypes.object.isRequired,
+  location: PropTypes.array.isRequired,
+};
 
 export default withRouter(connect(mapStateToProps)(GraphLinks));

@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataBaseSelectField should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DataBaseSelectField
+    selectDataBase={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <option>
+          Worldwide Governance Indicators
+</option>,
+        <option>
+          Worldwide Poverty Statistics
+</option>,
+        <option>
+          Worldwide Gender Statistics
+</option>,
+        <option>
+          Worldwide Education Statistics
+</option>,
+        <option>
+          Worldwide Health Nutrition and Population Statistics
+</option>,
+        <option>
+          Worldwide Development Indicators
+</option>,
+      ],
+      "onChange": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Worldwide Governance Indicators",
+        },
+        "ref": null,
+        "rendered": "Worldwide Governance Indicators",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Worldwide Poverty Statistics",
+        },
+        "ref": null,
+        "rendered": "Worldwide Poverty Statistics",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Worldwide Gender Statistics",
+        },
+        "ref": null,
+        "rendered": "Worldwide Gender Statistics",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Worldwide Education Statistics",
+        },
+        "ref": null,
+        "rendered": "Worldwide Education Statistics",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Worldwide Health Nutrition and Population Statistics",
+        },
+        "ref": null,
+        "rendered": "Worldwide Health Nutrition and Population Statistics",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Worldwide Development Indicators",
+        },
+        "ref": null,
+        "rendered": "Worldwide Development Indicators",
+        "type": "option",
+      },
+    ],
+    "type": "select",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <option>
+            Worldwide Governance Indicators
+</option>,
+          <option>
+            Worldwide Poverty Statistics
+</option>,
+          <option>
+            Worldwide Gender Statistics
+</option>,
+          <option>
+            Worldwide Education Statistics
+</option>,
+          <option>
+            Worldwide Health Nutrition and Population Statistics
+</option>,
+          <option>
+            Worldwide Development Indicators
+</option>,
+        ],
+        "onChange": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Worldwide Governance Indicators",
+          },
+          "ref": null,
+          "rendered": "Worldwide Governance Indicators",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Worldwide Poverty Statistics",
+          },
+          "ref": null,
+          "rendered": "Worldwide Poverty Statistics",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Worldwide Gender Statistics",
+          },
+          "ref": null,
+          "rendered": "Worldwide Gender Statistics",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Worldwide Education Statistics",
+          },
+          "ref": null,
+          "rendered": "Worldwide Education Statistics",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Worldwide Health Nutrition and Population Statistics",
+          },
+          "ref": null,
+          "rendered": "Worldwide Health Nutrition and Population Statistics",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Worldwide Development Indicators",
+          },
+          "ref": null,
+          "rendered": "Worldwide Development Indicators",
+          "type": "option",
+        },
+      ],
+      "type": "select",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { countries } from '../../helper/countryMetrics';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
@@ -64,7 +65,7 @@ export class ControlledForm extends Component {
 
       <form onSubmit={this.handleSubmit}>
         <div>
-          <Link to='/why' className='explanation-button'>▼</Link>
+          <Link to='/why' className='explanation-button'>▼ <span>why?</span></Link>
           <p>I'm curious about...</p>
           <input
               type='text'
@@ -105,5 +106,15 @@ export const mapDispatchToProps = (dispatch) => ({
   selectDataSet: (dataSet) => dispatch(setDataSet(dataSet)),
   selectLocation: (location) => dispatch(setLocation(location))
 });
+
+ControlledForm.propTypes = {
+  dataBase: PropTypes.string,
+  dataSet: PropTypes.string,
+  fetchDevelopmentIndicators: PropTypes.func.isRequired,
+  fetchGovernanceIndicators: PropTypes.func.isRequired,
+  selectDataBase: PropTypes.func.isRequired,
+  selectDataSet: PropTypes.func.isRequired,
+  selectLocation: PropTypes.func.isRequired
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlledForm);

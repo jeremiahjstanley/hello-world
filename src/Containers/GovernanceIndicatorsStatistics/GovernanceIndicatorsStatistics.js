@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { VictoryLine, VictoryBar, VictoryContainer, VictoryVoronoiContainer, VictoryGroup, VictoryScatter, VictoryChart, VictoryTooltip, VictoryTheme, VictoryAxis } from 'victory';
+import { colors } from '../../helper/colors';
 import Loader from '../Loader/Loader'
-import { VictoryLine, VictoryContainer, VictoryBar, VictoryChart, VictoryTooltip, VictoryTheme, VictoryAxis } from 'victory';
 
 export class GovernanceIndicatorsStatistics extends Component {
 
@@ -19,7 +21,7 @@ export class GovernanceIndicatorsStatistics extends Component {
         locationData: props.locationData
       };
     }
-    return state 
+    return state;
   };
   
   render () {
@@ -27,71 +29,111 @@ export class GovernanceIndicatorsStatistics extends Component {
     if (this.state.locationData.length) {
 
       const percentileRankChart = this.state.locationData.map((location, index) => {
+
         return ( 
+
+          <VictoryGroup
+            key={index}
+            color={colors[index]}
+            labelComponent={
+              <VictoryTooltip
+                cornerRadius={0}
+                pointerLength={20}
+                style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                flyoutStyle={{ stroke: 'black', fill: 'white'}}
+              />
+            }
+            data={location.cleanPercentileRank}
+          >
             <VictoryLine
               containerComponent={<VictoryContainer responsive={true}/>}
-              labelComponent={<VictoryTooltip/>}
-              style={{
-                data: { stroke: "#c43a31" },
-                parent: { border: "1px solid #ccc"},
-                fontSize: 8,
-                axisLabel: {fontSize: 20, padding: 30, angle: 90},
-                tickLabels: {fontSize: 15, padding: 5, angle: 90}
-              }}
-              data={location.cleanPercentileRank}
             />
+            <VictoryScatter
+              size={1}
+            />
+          </VictoryGroup>
+
           );
         });
 
       const numberOfSourcesChart = this.state.locationData.map((location, index) => {
-        return ( 
+
+        return (
+
             <VictoryBar
               containerComponent={<VictoryContainer responsive={true}/>}
-              labelComponent={<VictoryTooltip/>}
+              key={index}
+              labelComponent={
+                <VictoryTooltip
+                  cornerRadius={0}
+                  pointerLength={20}
+                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
+                />
+              }
               style={{
-                data: { stroke: "#c43a31" },
-                parent: { border: "1px solid #ccc"},
-                fontSize: 8,
-                axisLabel: {fontSize: 20, padding: 30, angle: 90},
-                tickLabels: {fontSize: 15, padding: 5, angle: 90}
+                data: { stroke: colors[index] },
+                parent: { border: '1px solid #ccc'},
               }}
               data={location.cleanNumberOfSources}
             />
+
         );
       });
 
       const standardErrorChart = this.state.locationData.map((location, index) => {
+
         return ( 
+
+          <VictoryGroup
+            key={index}
+            color={colors[index]}
+            labelComponent={
+              <VictoryTooltip
+                cornerRadius={0}
+                pointerLength={20}
+                style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                flyoutStyle={{ stroke: 'black', fill: 'white'}}
+              />
+            }
+            data={location.cleanStandardError}
+          >
             <VictoryLine
               containerComponent={<VictoryContainer responsive={true}/>}
-              labelComponent={<VictoryTooltip/>}
-              style={{
-                data: { stroke: "#c43a31" },
-                parent: { border: "1px solid #ccc"},
-                fontSize: 8,
-                axisLabel: {fontSize: 20, padding: 30, angle: 90},
-                tickLabels: {fontSize: 15, padding: 5, angle: 90}
-              }}
-              data={location.cleanStandardError}
             />
+            <VictoryScatter
+              size={1}
+            />
+          </VictoryGroup>
+
         );
       });
 
       const estimatesChart = this.state.locationData.map((location, index) => {
-        return ( 
+
+        return (
+
+          <VictoryGroup
+            key={index}
+            color={colors[index]}
+            labelComponent={
+              <VictoryTooltip
+                cornerRadius={0}
+                pointerLength={20}
+                style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                flyoutStyle={{ stroke: 'black', fill: 'white'}}
+              />
+            }
+            data={location.cleanEstimates}
+          >
             <VictoryLine
               containerComponent={<VictoryContainer responsive={true}/>}
-              labelComponent={<VictoryTooltip/>}
-              style={{
-
-                data: { stroke: "#c43a31" },
-                parent: { border: "1px solid #ccc"},
-                fontSize: 8,
-                axisLabel: {fontSize: 20, padding: 30, angle: 90},
-                tickLabels: {fontSize: 15, padding: 5, angle: 90}
-              }}
-              data={location.cleanEstimates}
             />
+            <VictoryScatter
+              size={1}
+            />
+          </VictoryGroup>
+
         );
       });
 
@@ -99,90 +141,111 @@ export class GovernanceIndicatorsStatistics extends Component {
 
         <div className="statistics-container">
 
-          <h1>{this.props.dataBase.name} - {this.props.dataSet.name}</h1>
+          <h1>{this.props.dataBase.name}</h1>
+          <h2>{this.props.dataSet.name}</h2>
 
           <VictoryChart
-            animate={{ duration: 2000, easing: "bounce" }} 
-            domain={{ y: [0, 100]}}
-            height={300} 
+            animate={{ duration: 2000, easing: 'bounce' }} 
             width={600}
-            theme={VictoryTheme.material}
+            theme={VictoryTheme.grayscale}
+            containerComponent={<VictoryVoronoiContainer />}
           >
+
             <VictoryAxis
-              label={`percentile rank - ${this.props.location.map(location => location.name).join(',')}`}
+              label={`Percentile Rank - ${this.props.location.map(location => location.name).join(', ')}`}
               style={{
-                  axisLabel: { padding: 30 }
+                axisLabel: { fontSize: 10, fontFamily: 'Avenir Next', padding: 30 },
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10, angle: 90}
               }}
-              />
-              <VictoryAxis dependentAxis
-                label="percent"
-                style={{
-                  axisLabel: { padding: 40 }
-                }}
-          />
+            />
+
+            <VictoryAxis dependentAxis
+              style={{
+                axisLabel: {fontSize: 10, fontFamily: 'Avenir Next', padding: 40, angle: 90},
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10}
+              }}
+            />
+
             { percentileRankChart }
+
           </VictoryChart>
 
           <VictoryChart
-            animate={{ duration: 2000, easing: "bounce" }}
-            height={300} 
-            width={500}
-            theme={VictoryTheme.material}
+            animate={{ duration: 2000, easing: 'bounce' }} 
+            width={600}
+            theme={VictoryTheme.grayscale}
+            containerComponent={<VictoryVoronoiContainer />}
           >
+
             <VictoryAxis
-              label={`number of sources - ${this.props.location.map(location => location.name).join(',')}`}
+              label={`Number of Sources - ${this.props.location.map(location => location.name).join(', ')}`}
               style={{
-                  axisLabel: { padding: 30 }
+                axisLabel: { fontSize: 10, fontFamily: 'Avenir Next', padding: 30 },
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10, angle: 90}
               }}
-              />
-              <VictoryAxis dependentAxis
-                label="number of sources"
-                style={{
-                  axisLabel: { padding: 40 }
-                }}
-          />
+            />
+
+            <VictoryAxis dependentAxis
+              style={{
+                axisLabel: {fontSize: 10, fontFamily: 'Avenir Next', padding: 40, angle: 90},
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10}
+              }}
+            />
+
             { numberOfSourcesChart }
+
           </VictoryChart>
 
           <VictoryChart
-            animate={{ duration: 2000, easing: "bounce" }}
-            height={300} 
+            animate={{ duration: 2000, easing: 'bounce' }} 
             width={600}
-            theme={VictoryTheme.material}
+            theme={VictoryTheme.grayscale}
+            containerComponent={<VictoryVoronoiContainer />}
           >
+
             <VictoryAxis
-              label={`standard error - ${this.props.location.map(location => location.name).join(',')}`}
+              label={`Standard Error - ${this.props.location.map(location => location.name).join(', ')}`}
               style={{
-                  axisLabel: { padding: 30 }
+                axisLabel: { fontSize: 10, fontFamily: 'Avenir Next', padding: 30 },
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10, angle: 90}
               }}
-              />
-              <VictoryAxis dependentAxis
-                label="standard errror"
-                style={{
-                  axisLabel: { padding: 40 }
-                }}
-          />
+            />
+
+            <VictoryAxis dependentAxis
+              style={{
+                axisLabel: {fontSize: 10, fontFamily: 'Avenir Next', padding: 40, angle: 90},
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10}
+              }}
+            />
+
             { standardErrorChart }
+
           </VictoryChart>
 
-          <VictoryChart 
-            height={300} 
+          <VictoryChart
+            animate={{ duration: 2000, easing: 'bounce' }} 
             width={600}
-            theme={VictoryTheme.material}
+            theme={VictoryTheme.grayscale}
+            containerComponent={<VictoryVoronoiContainer />}
           >
+
             <VictoryAxis
-              label={`estimate accuracy - ${this.props.location.map(location => location.name).join(',')}`}
+              label={`Estimates Confidence - ${this.props.location.map(location => location.name).join(', ')}`}
               style={{
-                  axisLabel: { padding: 30 }
+                axisLabel: { fontSize: 10, fontFamily: 'Avenir Next', padding: 30 },
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10, angle: 90}
               }}
-              />
-              <VictoryAxis dependentAxis
-                label="estimate accuracy"
-                style={{
-                  axisLabel: { padding: 40 }
-                }}
-           />
+            />
+
+            <VictoryAxis dependentAxis
+              style={{
+                axisLabel: {fontSize: 10, fontFamily: 'Avenir Next', padding: 40, angle: 90},
+                tickLabels: {fontSize: 6, fontFamily: 'Avenir Next', padding: 10}
+              }}
+            />
+
             { estimatesChart }
+
           </VictoryChart>
 
         </div>
@@ -206,5 +269,12 @@ export const mapStateToProps = (state) => ({
   location: state.location,
   locationData: state.locationData
 });
+
+GovernanceIndicatorsStatistics.propTypes = {
+  dataBase: PropTypes.object.isRequired,
+  dataSet: PropTypes.object.isRequired,
+  location: PropTypes.array.isRequired,
+  locationData: PropTypes.array.isRequired
+};
 
 export default connect(mapStateToProps)(GovernanceIndicatorsStatistics);

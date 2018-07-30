@@ -3,19 +3,14 @@ export const setLocation = (location) => ({
   location
 });
 
-export const changeData = (status) => ({
-  type: 'CHANGE_DATA',
-  changeData: status
+export const setDataSet = (dataSet) => ({
+  type: 'SET_DATASET',
+  dataSet
 });
 
 export const setDataBase = (dataBase) => ({
   type: 'SET_DATABASE',
   dataBase
-});
-
-export const setDataSet = (dataSet) => ({
-  type: 'SET_DATASET',
-  dataSet
 });
 
 export const fetchLocationDataSuccess = (locationData) => ({

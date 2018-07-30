@@ -5,4 +5,4 @@ export const location = (state = [], action) => {
     default: 
       return state;
   }
-}
+};
