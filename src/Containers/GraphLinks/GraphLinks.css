@@ -39,3 +39,18 @@
 	text-decoration: none;
 	vertical-align: -webkit-baseline-middle;
 }
+
+@media screen and (max-width: 800px) {
+
+	.graph-link {
+	    margin: 0.25rem;
+	    width: 30%
+	}
+
+	.graph-link a {
+		font-size: .75rem;
+		text-align: right;
+	}
+
+
+}
