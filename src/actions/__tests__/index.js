@@ -66,7 +66,9 @@ describe('Actions', () => {
   });
 
   describe('setLocation', () => {
+
     it('should create a location array', () => {
+
       let expected = {
                       type: 'SET_LOCATION',
                       location: mockLocation
@@ -74,11 +76,13 @@ describe('Actions', () => {
       let actual = actions.setLocation(mockLocation);
 
       expect(expected).toEqual(actual);
+
     });
 
   });
 
   describe('setDataBase', () => {
+
     it('should create a database object', () => {
       let expected = {
                       type: 'SET_DATABASE',
@@ -87,12 +91,15 @@ describe('Actions', () => {
       let actual = actions.setDataBase(mockDataBase);
 
       expect(expected).toEqual(actual);
+
     });
 
   });
 
   describe('setDataSet', () => {
+
     it('should create a dataset object', () => {
+
       let expected = {
                       type: 'SET_DATASET',
                       dataSet: mockDataSet
@@ -100,12 +107,15 @@ describe('Actions', () => {
       let actual = actions.setDataSet(mockDataSet);
 
       expect(expected).toEqual(actual);
+
     });
 
   });
 
   describe('fetchLocationDataSuccess', () => {
+
     it('Should create a location data object', () => {
+      
       let expected = {
                       type: 'FETCH_LOCATION_DATA_SUCCESS',
                       locationData: mockLocationData
@@ -114,11 +124,13 @@ describe('Actions', () => {
       let actual = actions.fetchLocationDataSuccess(mockLocationData);
 
       expect(expected).toEqual(actual);
+
     });
 
   });
 
   describe('hasErrored', () => {
+
     it('should create an error object', () => {
       let expected = {
                       type: 'HAS_ERRORED',
@@ -127,6 +139,7 @@ describe('Actions', () => {
       let actual = actions.hasErrored(true);
 
       expect(expected).toEqual(actual);
+      
     });
 
   });
