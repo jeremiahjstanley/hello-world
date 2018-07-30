@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { setDataSet } from '../../actions';
 import { dataMetrics } from '../../helper/dataMetrics';
 
@@ -54,15 +55,20 @@ export class DataSetSelectField extends Component {
 
     );
   };
-}
+};
 
 export const mapStateToProps = (state) => ({
   dataBase: state.dataBase.name
-})
+});
 
 export const mapDispatchToProps = (dispatch) => ({
   selectDataSet: (dataSet) => dispatch(setDataSet(dataSet))
-})
+});
+
+DataSetSelectField.propTypes = {
+  dataBase: PropTypes.string,
+  selectDataSet: PropTypes.func.isRequired
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(DataSetSelectField);
 
