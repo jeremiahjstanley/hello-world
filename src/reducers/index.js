@@ -11,4 +11,4 @@ export const rootReducer = combineReducers({
   dataSet,
   locationData,
   hasErrored,
-})
+});
