@@ -1,0 +1,692 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlledForm should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ControlledForm
+    dataBase="WWDI"
+    dataSet="SM_POP_REFG"
+    fetchDevelopmentIndicators={[Function]}
+    fetchGovernanceIndicators={[Function]}
+    history={Array []}
+    selectDataBase={[Function]}
+    selectDataSet={[Function]}
+    selectLocation={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <Link
+                    className="explanation-button"
+                    replace={false}
+                    to="/why"
+          >
+                    ▼ 
+                    <span>
+                              why?
+                    </span>
+          </Link>
+          <p>
+                    I'm curious about...
+          </p>
+          <input
+                    list="countries"
+                    onChange={[Function]}
+                    placeholder="Enter a Country"
+                    type="text"
+          />
+          <datalist
+                    id="countries"
+          >
+                    <option>
+                              Afghanistan
+                    </option>
+                    <option>
+                               Åland Islands
+                    </option>
+                    <option>
+                              Albania
+                    </option>
+                    <option>
+                              Algeria
+                    </option>
+          </datalist>
+</div>,
+        <div>
+          <p>
+                    and their...
+          </p>
+          <Connect(DataBaseSelectField) />
+</div>,
+        <div>
+          <p>
+                    but specifically, 
+          </p>
+          <Connect(DataSetSelectField) />
+</div>,
+        <button
+          disabled={true}
+>
+          Search
+</button>,
+      ],
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="explanation-button"
+              replace={false}
+              to="/why"
+>
+              ▼ 
+              <span>
+                            why?
+              </span>
+</Link>,
+            <p>
+              I'm curious about...
+</p>,
+            <input
+              list="countries"
+              onChange={[Function]}
+              placeholder="Enter a Country"
+              type="text"
+/>,
+            <datalist
+              id="countries"
+>
+              <option>
+                            Afghanistan
+              </option>
+              <option>
+                             Åland Islands
+              </option>
+              <option>
+                            Albania
+              </option>
+              <option>
+                            Algeria
+              </option>
+</datalist>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "▼ ",
+                <span>
+                  why?
+</span>,
+              ],
+              "className": "explanation-button",
+              "replace": false,
+              "to": "/why",
+            },
+            "ref": null,
+            "rendered": Array [
+              "▼ ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "why?",
+                },
+                "ref": null,
+                "rendered": "why?",
+                "type": "span",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "I'm curious about...",
+            },
+            "ref": null,
+            "rendered": "I'm curious about...",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "list": "countries",
+              "onChange": [Function],
+              "placeholder": "Enter a Country",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option>
+                  Afghanistan
+</option>,
+                <option>
+                   Åland Islands
+</option>,
+                <option>
+                  Albania
+</option>,
+                <option>
+                  Algeria
+</option>,
+              ],
+              "id": "countries",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Afghanistan",
+                },
+                "ref": null,
+                "rendered": "Afghanistan",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": " Åland Islands",
+                },
+                "ref": null,
+                "rendered": " Åland Islands",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Albania",
+                },
+                "ref": null,
+                "rendered": "Albania",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "3",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Algeria",
+                },
+                "ref": null,
+                "rendered": "Algeria",
+                "type": "option",
+              },
+            ],
+            "type": "datalist",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              and their...
+</p>,
+            <Connect(DataBaseSelectField) />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "and their...",
+            },
+            "ref": null,
+            "rendered": "and their...",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              but specifically, 
+</p>,
+            <Connect(DataSetSelectField) />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "but specifically, ",
+            },
+            "ref": null,
+            "rendered": "but specifically, ",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Search",
+          "disabled": true,
+        },
+        "ref": null,
+        "rendered": "Search",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <Link
+                        className="explanation-button"
+                        replace={false}
+                        to="/why"
+            >
+                        ▼ 
+                        <span>
+                                    why?
+                        </span>
+            </Link>
+            <p>
+                        I'm curious about...
+            </p>
+            <input
+                        list="countries"
+                        onChange={[Function]}
+                        placeholder="Enter a Country"
+                        type="text"
+            />
+            <datalist
+                        id="countries"
+            >
+                        <option>
+                                    Afghanistan
+                        </option>
+                        <option>
+                                     Åland Islands
+                        </option>
+                        <option>
+                                    Albania
+                        </option>
+                        <option>
+                                    Algeria
+                        </option>
+            </datalist>
+</div>,
+          <div>
+            <p>
+                        and their...
+            </p>
+            <Connect(DataBaseSelectField) />
+</div>,
+          <div>
+            <p>
+                        but specifically, 
+            </p>
+            <Connect(DataSetSelectField) />
+</div>,
+          <button
+            disabled={true}
+>
+            Search
+</button>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="explanation-button"
+                replace={false}
+                to="/why"
+>
+                ▼ 
+                <span>
+                                why?
+                </span>
+</Link>,
+              <p>
+                I'm curious about...
+</p>,
+              <input
+                list="countries"
+                onChange={[Function]}
+                placeholder="Enter a Country"
+                type="text"
+/>,
+              <datalist
+                id="countries"
+>
+                <option>
+                                Afghanistan
+                </option>
+                <option>
+                                 Åland Islands
+                </option>
+                <option>
+                                Albania
+                </option>
+                <option>
+                                Algeria
+                </option>
+</datalist>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "▼ ",
+                  <span>
+                    why?
+</span>,
+                ],
+                "className": "explanation-button",
+                "replace": false,
+                "to": "/why",
+              },
+              "ref": null,
+              "rendered": Array [
+                "▼ ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "why?",
+                  },
+                  "ref": null,
+                  "rendered": "why?",
+                  "type": "span",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "I'm curious about...",
+              },
+              "ref": null,
+              "rendered": "I'm curious about...",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "list": "countries",
+                "onChange": [Function],
+                "placeholder": "Enter a Country",
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option>
+                    Afghanistan
+</option>,
+                  <option>
+                     Åland Islands
+</option>,
+                  <option>
+                    Albania
+</option>,
+                  <option>
+                    Algeria
+</option>,
+                ],
+                "id": "countries",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Afghanistan",
+                  },
+                  "ref": null,
+                  "rendered": "Afghanistan",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " Åland Islands",
+                  },
+                  "ref": null,
+                  "rendered": " Åland Islands",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Albania",
+                  },
+                  "ref": null,
+                  "rendered": "Albania",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "3",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Algeria",
+                  },
+                  "ref": null,
+                  "rendered": "Algeria",
+                  "type": "option",
+                },
+              ],
+              "type": "datalist",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                and their...
+</p>,
+              <Connect(DataBaseSelectField) />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "and their...",
+              },
+              "ref": null,
+              "rendered": "and their...",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                but specifically, 
+</p>,
+              <Connect(DataSetSelectField) />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "but specifically, ",
+              },
+              "ref": null,
+              "rendered": "but specifically, ",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search",
+            "disabled": true,
+          },
+          "ref": null,
+          "rendered": "Search",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
