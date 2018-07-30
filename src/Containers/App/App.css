@@ -19,7 +19,13 @@
 
 .explanation-paragraph {
 	text-align: justify;
-	width: 60%
+	width: 60%;
+  display: block;
+  margin: auto;
+}
+
+span {
+  border-bottom: .5px solid #000000;
 }
 
 .App-title {
@@ -39,3 +45,18 @@
   }
 }
 
+@media screen and (max-width: 965px) {
+
+  .App-title {
+    font-size: 8em;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .App-title {
+    font-size: 5em;
+  }
+
+}
