@@ -1,16 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StatisticsContainer StatisticsContainer unit tests should match the snapshot 1`] = `
+exports[`StatisticsContainer StatisticsContainer unit tests should match the snapshot when the database code is WWGI 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
-    dataBase={
-        Object {
-            "database_code": "WWGI",
-            "name": "Worldwide Governance Indicators",
-          }
-    }
+    dataBase="WWGI"
     dataSet={
         Object {
             "dataset_code": "VA",
@@ -57,36 +52,21 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Worldwide Governance Indicators
-           - 
-          Voice and Accountability
-</h1>,
         <Connect(GovernanceIndicatorsStatistics) />,
-        <withRouter(Connect(Component)) />,
+        <div
+          className="graph-link start-over"
+>
+          <Link
+                    replace={false}
+                    to="/"
+          >
+                    Start Over?
+          </Link>
+</div>,
       ],
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Worldwide Governance Indicators",
-            " - ",
-            "Voice and Accountability",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Worldwide Governance Indicators",
-          " - ",
-          "Voice and Accountability",
-        ],
-        "type": "h1",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -99,11 +79,31 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/"
+>
+            Start Over?
+</Link>,
+          "className": "graph-link start-over",
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Start Over?",
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Start Over?",
+          "type": [Function],
+        },
+        "type": "div",
       },
     ],
     "type": "div",
@@ -115,36 +115,21 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Worldwide Governance Indicators
-             - 
-            Voice and Accountability
-</h1>,
           <Connect(GovernanceIndicatorsStatistics) />,
-          <withRouter(Connect(Component)) />,
+          <div
+            className="graph-link start-over"
+>
+            <Link
+                        replace={false}
+                        to="/"
+            >
+                        Start Over?
+            </Link>
+</div>,
         ],
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Worldwide Governance Indicators",
-              " - ",
-              "Voice and Accountability",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Worldwide Governance Indicators",
-            " - ",
-            "Voice and Accountability",
-          ],
-          "type": "h1",
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -157,11 +142,213 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/"
+>
+              Start Over?
+</Link>,
+            "className": "graph-link start-over",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Start Over?",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Start Over?",
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`StatisticsContainer StatisticsContainer unit tests should match the snapshot when the database code is not WWGI 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    dataBase="WWDI"
+    dataSet={
+        Object {
+            "dataset_code": "VA",
+            "name": "Voice and Accountability",
+          }
+    }
+    location={
+        Object {
+            "alpha_2": "BE",
+            "alpha_3": "BEL",
+            "country_code": "056",
+            "intermediate_region": "",
+            "intermediate_region_code": "",
+            "iso_3166_2": "ISO 3166-2: BE",
+            "name": "Belgium",
+            "region": "Europe",
+            "region_code": "150",
+            "sub_region": "Western Europe",
+            "sub_region_code": "155",
+          }
+    }
+    locationData={
+        Array [
+            Object {
+              "Estimate": 1.3778049945831,
+              "Number of Sources": 11,
+              "Percentile Rank": 96.059112548828,
+              "Standard Error": 0.13451327383518,
+              "name": "2016-12-31",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Connect(DevelopmentIndicatorStatistics) />,
+        <div
+          className="graph-link start-over"
+>
+          <Link
+                    replace={false}
+                    to="/"
+          >
+                    Start Over?
+          </Link>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/"
+>
+            Start Over?
+</Link>,
+          "className": "graph-link start-over",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Start Over?",
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Start Over?",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(DevelopmentIndicatorStatistics) />,
+          <div
+            className="graph-link start-over"
+>
+            <Link
+                        replace={false}
+                        to="/"
+            >
+                        Start Over?
+            </Link>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
           "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/"
+>
+              Start Over?
+</Link>,
+            "className": "graph-link start-over",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Start Over?",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Start Over?",
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
       "type": "div",
