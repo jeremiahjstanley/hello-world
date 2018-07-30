@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataSetSelectField should match the snapshot when the state has a dataBase property 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DataSetSelectField
+    dataBase="Worldwide Governance Indicators"
+    selectDataSet={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <option>
+          Voice and Accountability
+</option>,
+        <option>
+          Political Stability and Absence of Violence
+</option>,
+        <option>
+          Government Effectiveness
+</option>,
+        <option>
+          Regulatory Quality
+</option>,
+        <option>
+          Rule of Law
+</option>,
+        <option>
+          Control of Corruption
+</option>,
+      ],
+      "onChange": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Voice and Accountability",
+        },
+        "ref": null,
+        "rendered": "Voice and Accountability",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Political Stability and Absence of Violence",
+        },
+        "ref": null,
+        "rendered": "Political Stability and Absence of Violence",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Government Effectiveness",
+        },
+        "ref": null,
+        "rendered": "Government Effectiveness",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Regulatory Quality",
+        },
+        "ref": null,
+        "rendered": "Regulatory Quality",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Rule of Law",
+        },
+        "ref": null,
+        "rendered": "Rule of Law",
+        "type": "option",
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Control of Corruption",
+        },
+        "ref": null,
+        "rendered": "Control of Corruption",
+        "type": "option",
+      },
+    ],
+    "type": "select",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <option>
+            Voice and Accountability
+</option>,
+          <option>
+            Political Stability and Absence of Violence
+</option>,
+          <option>
+            Government Effectiveness
+</option>,
+          <option>
+            Regulatory Quality
+</option>,
+          <option>
+            Rule of Law
+</option>,
+          <option>
+            Control of Corruption
+</option>,
+        ],
+        "onChange": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Voice and Accountability",
+          },
+          "ref": null,
+          "rendered": "Voice and Accountability",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Political Stability and Absence of Violence",
+          },
+          "ref": null,
+          "rendered": "Political Stability and Absence of Violence",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Government Effectiveness",
+          },
+          "ref": null,
+          "rendered": "Government Effectiveness",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Regulatory Quality",
+          },
+          "ref": null,
+          "rendered": "Regulatory Quality",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Rule of Law",
+          },
+          "ref": null,
+          "rendered": "Rule of Law",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Control of Corruption",
+          },
+          "ref": null,
+          "rendered": "Control of Corruption",
+          "type": "option",
+        },
+      ],
+      "type": "select",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`DataSetSelectField should match the snapshot when the state has does not have a dataBase property 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DataSetSelectField
+    dataBase={undefined}
+    selectDataSet={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Loading...",
+      "className": "loading-text",
+    },
+    "ref": null,
+    "rendered": "Loading...",
+    "type": "p",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Loading...",
+        "className": "loading-text",
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": "p",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
