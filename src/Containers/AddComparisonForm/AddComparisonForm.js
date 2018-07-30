@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { setLocation } from '../../actions';
 import { countries } from '../../helper/countryMetrics';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
@@ -18,7 +19,7 @@ export class AddComparisonForm extends Component {
   handleChange = (event) => {
     const input = event.target.value;
     const additionalLocation = countries.find(country => input === country.name);
-    this.setState({additionalLocation});
+    this.setState({additionalLocation, input});
   };
 
   handleSubmit = (event) => {
@@ -49,7 +50,7 @@ export class AddComparisonForm extends Component {
     return (
 
       <div className='change-form-container'>
-        <Link to='/stats' className='back-button'>◀ back</Link>
+        <Link to='/stats' className='back-button'>◀ <span>back</span></Link>
         <form onSubmit={this.handleSubmit} className='change-form'>
           <input
             type='text'
@@ -82,5 +83,14 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet)),
   selectLocation: (location) => dispatch(setLocation(location))
 });
+
+AddComparisonForm.propTypes = {
+  dataBase: PropTypes.string.isRequired,
+  dataSet: PropTypes.string.isRequired,
+  location: PropTypes.array.isRequired,
+  fetchDevelopmentIndicators: PropTypes.func.isRequired,
+  fetchGovernanceIndicators: PropTypes.func.isRequired,
+  selectLocation: PropTypes.func.isRequired
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AddComparisonForm));
