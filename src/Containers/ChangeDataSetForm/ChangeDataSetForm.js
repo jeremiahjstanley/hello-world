@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
 import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
@@ -21,7 +22,7 @@ export class ChangeDataSetForm extends Component {
     return (
 
       <div className='change-form-container'>
-        <Link to='/stats' className='back-button'>◀ back</Link>
+        <Link to='/stats' className='back-button'>◀ <span>back</span></Link>
         <form onSubmit={this.handleSubmit} className='change-form'>
           <DataSetSelectField/>
           <button className='change-form-button'>Change</button>
@@ -42,5 +43,13 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet)),
   fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet))
 });
+
+ChangeDataSetForm.propTypes = {
+  dataBase: PropTypes.string.isRequired,
+  dataSet: PropTypes.string.isRequired,
+  location: PropTypes.array.isRequired,
+  fetchDevelopmentIndicators: PropTypes.func.isRequired,
+  fetchGovernanceIndicators: PropTypes.func.isRequired
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ChangeDataSetForm));
