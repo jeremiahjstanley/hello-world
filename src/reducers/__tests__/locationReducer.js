@@ -2,14 +2,18 @@ import { location } from '../locationReducer';
 import * as actions from '../../actions';
 
 describe('locationReducer', () => {
+
   it('should return the initial state', () => {
+
     const expected = [];
 
     const actual = location(undefined, []);
 
     expect(actual).toEqual(expected);
-  })
+
+  });
   it('should return the state with a location array', () => {
+
     const expected = [{
         name: 'Belgium',
         alpha_2: 'BE',
@@ -22,12 +26,14 @@ describe('locationReducer', () => {
         region_code: '150',
         sub_region_code: '155',
         intermediate_region_code: ''
-      }]
+      }];
 
-    const actual = location(undefined, actions.setLocation(...expected));
+    const actual = location(undefined, actions.setLocation(expected));
     
     expect(actual).toEqual(expected); 
-  })
-})
+
+  });
+
+});
 
 
