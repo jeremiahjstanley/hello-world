@@ -9,6 +9,7 @@ describe('GovernanceIndicatorsStatistics', () => {
   let mockDataBase;
   let mockDataSet;
   let mockLocation;
+  let givenProps;
   let mockLocationData;
 
   beforeEach(() => {
@@ -36,15 +37,12 @@ describe('GovernanceIndicatorsStatistics', () => {
       intermediate_region_code:'011'
     }];
 
-    mockLocationData = [];
-    // error is here.
-
     wrapper = shallow(
     	<GovernanceIndicatorsStatistics
         dataBase={mockDataBase}
         dataSet={mockDataSet}
         location={mockLocation}
-        locationData={mockLocationData}
+        locationData={[]}
     	/>
   	 );
 
@@ -68,6 +66,46 @@ describe('GovernanceIndicatorsStatistics', () => {
      );
 
     expect(wrapper).toMatchSnapshot();
+
+  });
+
+    it('should derive local state from props using getDerivedStateFromProps, returning a locationData property when the locationData prop is present', () => {
+
+    wrapper = shallow(
+      <GovernanceIndicatorsStatistics        
+        dataBase={mockDataBase}
+        dataSet={mockDataSet} 
+        location={mockLocation}
+        locationData={[]}
+      />
+     );
+
+    const givenProps = {
+      locationData: [{
+        cleanPercentileRank: [{},{},{}],
+        cleanNumberOfSources: [{},{},{}],
+        cleanStandardError: [{},{},{}],
+        cleanEstimates: [{},{},{}]
+      }]
+    };
+    
+    wrapper.setProps(givenProps);
+
+    const result = wrapper.state();
+
+    expect(result).toEqual(givenProps);
+
+  });
+
+  it('should derive local state from props using getDerivedStateFromProps, returing an empty state object when locationData prop is not present', () => {
+
+    wrapper = shallow(<GovernanceIndicatorsStatistics />);
+    
+    wrapper.setProps(undefined);
+
+    const result = wrapper.state();
+
+    expect(result).toEqual({locationData: []});
 
   });
 
