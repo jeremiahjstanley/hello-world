@@ -26,7 +26,7 @@ export class GovernanceIndicatorsStatistics extends Component {
   
   render () {
 
-    if (this.state.locationData.length) {
+    if (this.state.locationData.length && this.state.locationData[0].cleanPercentileRank) {
 
       const percentileRankChart = this.state.locationData.map((location, index) => {
 
