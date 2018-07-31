@@ -57,7 +57,8 @@ span {
 @media screen and (max-width: 450px) {
 
   .App-title {
-    font-size: 5em;
+    font-size: 6em;
+    margin: 1rem auto 0;
   }
 
 }

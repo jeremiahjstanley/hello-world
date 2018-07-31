@@ -49,11 +49,11 @@ export const mapDispatchToProps = (dispatch) => ({
 });
 
 ChangeDataBaseForm.propTypes = {
-  dataBase: PropTypes.string.isRequired,
-  dataSet: PropTypes.string.isRequired,
-  location: PropTypes.array.isRequired,
-  fetchDevelopmentIndicators: PropTypes.func.isRequired,
-  fetchGovernanceIndicators: PropTypes.func.isRequired
+  dataBase: PropTypes.string,
+  dataSet: PropTypes.string,
+  location: PropTypes.array,
+  fetchDevelopmentIndicators: PropTypes.func,
+  fetchGovernanceIndicators: PropTypes.func
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ChangeDataBaseForm));
