@@ -112,18 +112,6 @@ export class DevelopmentIndicatorStatistics extends Component {
         </div>
       );
 
-  } else if (this.state.locationData.length) {
-
-      return (
-        
-        <div>
-          <p className='loading-feedback'>
-            hit change to see your new metric
-          </p>
-        </div>
-
-      );
-
   } else
 
       return (
