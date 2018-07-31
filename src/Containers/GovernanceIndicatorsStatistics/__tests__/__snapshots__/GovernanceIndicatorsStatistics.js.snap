@@ -185,3 +185,114 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`GovernanceIndicatorsStatistics should match the snapshot when the locationData array has length, but no percentile property 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GovernanceIndicatorsStatistics
+    dataBase={
+        Object {
+            "database_code": "WWGI",
+            "name": "Worldwide Governance Indicators",
+          }
+    }
+    dataSet={
+        Object {
+            "dataset_code": "VA",
+            "name": "Voice and Accountability",
+          }
+    }
+    location={
+        Array [
+            Object {
+              "alpha_2": "BF",
+              "alpha_3": "BFA",
+              "country_code": "854",
+              "intermediate_region": "Western Africa",
+              "intermediate_region_code": "011",
+              "iso_3166_2": "ISO 3166-2: BF",
+              "name": "Burkina Faso",
+              "region": "Africa",
+              "region_code": "002",
+              "sub_region": "Sub-Saharan Africa",
+              "sub_region_code": "202",
+            },
+          ]
+    }
+    locationData={
+        Array [
+            Object {},
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <p
+        className="loading-feedback"
+>
+        hit change to see your new metric
+</p>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "hit change to see your new metric",
+        "className": "loading-feedback",
+      },
+      "ref": null,
+      "rendered": "hit change to see your new metric",
+      "type": "p",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <p
+          className="loading-feedback"
+>
+          hit change to see your new metric
+</p>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "hit change to see your new metric",
+          "className": "loading-feedback",
+        },
+        "ref": null,
+        "rendered": "hit change to see your new metric",
+        "type": "p",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
