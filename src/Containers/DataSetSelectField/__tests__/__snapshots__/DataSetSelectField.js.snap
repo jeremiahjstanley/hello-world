@@ -22,28 +22,44 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <option>
-          Voice and Accountability
+           -- 
 </option>,
-        <option>
-          Political Stability and Absence of Violence
+        Array [
+          <option>
+            Voice and Accountability
 </option>,
-        <option>
-          Government Effectiveness
+          <option>
+            Political Stability and Absence of Violence
 </option>,
-        <option>
-          Regulatory Quality
+          <option>
+            Government Effectiveness
 </option>,
-        <option>
-          Rule of Law
+          <option>
+            Regulatory Quality
 </option>,
-        <option>
-          Control of Corruption
+          <option>
+            Rule of Law
 </option>,
+          <option>
+            Control of Corruption
+</option>,
+        ],
       ],
       "onChange": [Function],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " -- ",
+        },
+        "ref": null,
+        "rendered": " -- ",
+        "type": "option",
+      },
       Object {
         "instance": null,
         "key": "0",
@@ -121,28 +137,44 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <option>
-            Voice and Accountability
+             -- 
 </option>,
-          <option>
-            Political Stability and Absence of Violence
+          Array [
+            <option>
+              Voice and Accountability
 </option>,
-          <option>
-            Government Effectiveness
+            <option>
+              Political Stability and Absence of Violence
 </option>,
-          <option>
-            Regulatory Quality
+            <option>
+              Government Effectiveness
 </option>,
-          <option>
-            Rule of Law
+            <option>
+              Regulatory Quality
 </option>,
-          <option>
-            Control of Corruption
+            <option>
+              Rule of Law
 </option>,
+            <option>
+              Control of Corruption
+</option>,
+          ],
         ],
         "onChange": [Function],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " -- ",
+          },
+          "ref": null,
+          "rendered": " -- ",
+          "type": "option",
+        },
         Object {
           "instance": null,
           "key": "0",
