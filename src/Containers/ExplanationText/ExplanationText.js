@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export const  ExplanationText = () => {
 
 	return (
-
 	    <div>
 	    	<Link to='/' className='explanation-button'>▲</Link>
 	      <p className='explanation-paragraph'>
@@ -16,7 +15,10 @@ export const  ExplanationText = () => {
           demystify data and help you understand the lump of 
           space rock hurdling through the cosmos that you 
           currently call home.
-	      </p>
+	    </p>
+        <div className='graph-link start-over'>
+          <Link to='/'>Get Started?</Link>
+        </div>
 	    </div>
          
 	);
