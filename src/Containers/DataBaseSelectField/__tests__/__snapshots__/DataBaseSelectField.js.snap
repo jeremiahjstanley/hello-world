@@ -40,6 +40,7 @@ ShallowWrapper {
 </option>,
       ],
       "onChange": [Function],
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -139,6 +140,7 @@ ShallowWrapper {
 </option>,
         ],
         "onChange": [Function],
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
