@@ -35,7 +35,7 @@ export class GovernanceIndicatorsStatistics extends Component {
       );
     })
 
-    if (this.state.locationData.length) {
+    if (this.state.locationData.length && this.state.locationData[0].cleanPercentileRank) {
 
       const percentileRankChart = this.state.locationData.map((location, index) => {
 
@@ -268,6 +268,18 @@ export class GovernanceIndicatorsStatistics extends Component {
           </VictoryChart>
 
         </div>
+      );
+
+  } else if (this.state.locationData.length) {
+
+      return (
+        
+        <div>
+          <p className='loading-feedback'>
+            hit change to see your new metric
+          </p>
+        </div>
+
       );
 
   } else
