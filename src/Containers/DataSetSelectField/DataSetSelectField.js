@@ -43,6 +43,7 @@ export class DataSetSelectField extends Component {
       return (
 
         <select onChange={this.selectMetric}>
+          <option> -- </option>
           { options }
         </select>
       ); 
@@ -67,7 +68,7 @@ export const mapDispatchToProps = (dispatch) => ({
 
 DataSetSelectField.propTypes = {
   dataBase: PropTypes.string,
-  selectDataSet: PropTypes.func.isRequired
+  selectDataSet: PropTypes.func
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(DataSetSelectField);
