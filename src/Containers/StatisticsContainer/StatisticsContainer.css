@@ -1,10 +1,14 @@
-h1, h2, a {
+h1, h2, h3, a, li {
   font-family: Avenir Next;
   font-weight: 100;
 }
 
 h1 {
   font-size: 2em;
+}
+
+h3 {
+	margin: .5rem;
 }
 
 a {
@@ -17,4 +21,31 @@ a {
 .statistics-container {
 	width: 80%;
 	margin: auto;
+}
+
+.legend {
+	width: 80%;
+	margin: auto;
+	border: 1px solid #000000;
+}
+
+.legend-list-ul {
+	text-align: left;
+	margin: .25rem;
+	list-style-type: none;
+}
+
+.legend-list-li {
+	display: inline;
+	margin: 0 .5rem;
+}
+
+.legend-item {
+	margin: 0 .25rem;
+	border-bottom: none;
+}
+
+.legend-key {
+	margin-left: .25rem;
+	border-bottom: none;
 }
