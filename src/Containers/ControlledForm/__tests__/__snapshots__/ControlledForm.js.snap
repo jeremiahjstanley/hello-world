@@ -10,6 +10,7 @@ ShallowWrapper {
     fetchDevelopmentIndicators={[Function]}
     fetchGovernanceIndicators={[Function]}
     history={Array []}
+    makeSearch={[Function]}
     selectDataBase={[Function]}
     selectDataSet={[Function]}
     selectLocation={[Function]}

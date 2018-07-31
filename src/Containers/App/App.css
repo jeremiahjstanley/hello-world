@@ -15,7 +15,9 @@
 
 .explanation-button {
   display: block;
+  margin-bottom: 5rem;
 }
+
 
 .explanation-paragraph {
 	text-align: justify;

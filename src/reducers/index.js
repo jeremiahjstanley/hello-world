@@ -4,6 +4,7 @@ import { locationData } from './locationDataReducer';
 import { dataBase } from './dataBaseReducer';
 import { dataSet } from './dataSetReducer';
 import { hasErrored } from './errorReducer';
+import { madeSearch } from './madeSearchReducer';
 
 export const rootReducer = combineReducers({
   location,
@@ -11,4 +12,5 @@ export const rootReducer = combineReducers({
   dataSet,
   locationData,
   hasErrored,
+  madeSearch
 });

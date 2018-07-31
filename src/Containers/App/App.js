@@ -27,29 +27,13 @@ export class App extends Component {
         <Route exact path='/404' component={ErrorPage}/>
 
         { this.props.hasErrored ? <Redirect to='/404'/> : ''}
+        { this.props.madeSearch ? '' : <Redirect to='/'/>}
 
         <Route path='/stats/compare' component={AddComparisonForm}/>
         <Route path='/stats/change_data_base' component={ChangeDataBaseForm}/>
         <Route path='/stats/change_data_set' component={ChangeDataSetForm}/>
-
-        <Route path="/stats" render={() => (
-          this.props.locationData.length ? (
-            <GraphLinks/>
-            ) : (
-            <Redirect to='/'/>
-            )
-          )}
-        />
-
-        <Route path="/stats" render={() => (
-          this.props.locationData.length ? (
-            <StatisticsContainer/>
-            ) : (
-            <Redirect to='/'/>
-            )
-          )}
-        />
-
+        <Route path="/stats" component={GraphLinks}/>
+        <Route path="/stats" component={StatisticsContainer}/>
       </div>
 
     );
@@ -58,11 +42,12 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => ({
   hasErrored: state.hasErrored,
-  locationData: state.locationData
+  madeSearch: state.madeSearch
 });
 
 App.propTypes = {
   hasErrored: PropTypes.bool.isRequired,
+  madeSearch: PropTypes.bool.isRequired
 };
 
 export default withRouter(connect(mapStateToProps)(App));

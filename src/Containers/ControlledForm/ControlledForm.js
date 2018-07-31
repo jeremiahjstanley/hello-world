@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { countries } from '../../helper/countryMetrics';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
-import { setLocation, setDataBase, setDataSet } from '../../actions';
+import { setLocation, setDataBase, setDataSet, madeSearch } from '../../actions';
 import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
 import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 import './ControlledForm.css';
@@ -42,6 +42,7 @@ export class ControlledForm extends Component {
     event.preventDefault();
     const location = [this.state.location];
     const { dataSet, dataBase } = this.props;
+    this.props.makeSearch(true)
     this.props.selectLocation(location);
     ((dataBase === 'WWGI') ? 
       this.props.fetchGovernanceIndicators(location, dataSet, dataBase):
@@ -104,7 +105,8 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchGovernanceIndicators: (location, dataSet, dataBase) => dispatch(fetchGovernanceIndicators(location, dataSet, dataBase)),
   selectDataBase: (dataBase) => dispatch(setDataBase(dataBase)),
   selectDataSet: (dataSet) => dispatch(setDataSet(dataSet)),
-  selectLocation: (location) => dispatch(setLocation(location))
+  selectLocation: (location) => dispatch(setLocation(location)),
+  makeSearch: (status) => dispatch(madeSearch(status))
 });
 
 ControlledForm.propTypes = {
@@ -114,7 +116,7 @@ ControlledForm.propTypes = {
   fetchGovernanceIndicators: PropTypes.func.isRequired,
   selectDataBase: PropTypes.func.isRequired,
   selectDataSet: PropTypes.func.isRequired,
-  selectLocation: PropTypes.func.isRequired
+  selectLocation: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlledForm);

@@ -9,10 +9,11 @@ describe('App', () => {
 
   beforeEach(() => {
 
+
     wrapper = shallow(
       <App
         hasErrored={false}
-        locationData={[{},{}]}
+        madeSearch={true}
       />
     );
 
@@ -23,7 +24,6 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
 
   });
-
 
   it('renders an error page when the application has an error', () => {
 
@@ -37,12 +37,11 @@ describe('App', () => {
 
   });
 
-  it('redirects the user to the home page when there is no locationData', () => {
+  it('redirects the user to the home page when if they haven\'t made a search', () => {
 
     wrapper = shallow(
       <App
-        hasErrored={false}
-        locationData={[]}
+        madeSearch={false}
       />
     );
 
@@ -50,18 +49,19 @@ describe('App', () => {
 
   });
 
+
 	describe('mapStateToProps', () => {
 
 		it('should set an error state to the component\'s props', () => {
 
       const mockState = {
         hasErrored: true,
-        locationData: []
+        madeSearch: false
       };
 
       const expected = {
         hasErrored: true,
-        locationData: []
+        madeSearch: false
       }
       const mappedProps = mapStateToProps(mockState);
 

@@ -6,12 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
     hasErrored={false}
-    locationData={
-        Array [
-            Object {},
-            Object {},
-          ]
-    }
+    madeSearch={true}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -50,6 +45,7 @@ ShallowWrapper {
           path="/404"
 />,
         "",
+        "",
         <Route
           component={[Function]}
           path="/stats/compare"
@@ -63,12 +59,12 @@ ShallowWrapper {
           path="/stats/change_data_set"
 />,
         <Route
+          component={[Function]}
           path="/stats"
-          render={[Function]}
 />,
         <Route
+          component={[Function]}
           path="/stats"
-          render={[Function]}
 />,
       ],
       "className": "App",
@@ -141,6 +137,7 @@ ShallowWrapper {
         "type": [Function],
       },
       "",
+      "",
       Object {
         "instance": null,
         "key": undefined,
@@ -182,8 +179,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "path": "/stats",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -194,8 +191,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "path": "/stats",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -235,6 +232,7 @@ ShallowWrapper {
             path="/404"
 />,
           "",
+          "",
           <Route
             component={[Function]}
             path="/stats/compare"
@@ -248,12 +246,12 @@ ShallowWrapper {
             path="/stats/change_data_set"
 />,
           <Route
+            component={[Function]}
             path="/stats"
-            render={[Function]}
 />,
           <Route
+            component={[Function]}
             path="/stats"
-            render={[Function]}
 />,
         ],
         "className": "App",
@@ -326,6 +324,7 @@ ShallowWrapper {
           "type": [Function],
         },
         "",
+        "",
         Object {
           "instance": null,
           "key": undefined,
@@ -367,8 +366,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "path": "/stats",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -379,8 +378,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "path": "/stats",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -400,13 +399,12 @@ ShallowWrapper {
 }
 `;
 
-exports[`App redirects the user to the home page when there is no locationData 1`] = `
+exports[`App redirects the user to the home page when if they haven't made a search 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    hasErrored={false}
-    locationData={Array []}
+    madeSearch={false}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -445,6 +443,10 @@ ShallowWrapper {
           path="/404"
 />,
         "",
+        <Redirect
+          push={false}
+          to="/"
+/>,
         <Route
           component={[Function]}
           path="/stats/compare"
@@ -458,12 +460,12 @@ ShallowWrapper {
           path="/stats/change_data_set"
 />,
         <Route
+          component={[Function]}
           path="/stats"
-          render={[Function]}
 />,
         <Route
+          component={[Function]}
           path="/stats"
-          render={[Function]}
 />,
       ],
       "className": "App",
@@ -541,6 +543,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "push": false,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
           "component": [Function],
           "path": "/stats/compare",
         },
@@ -577,8 +591,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "path": "/stats",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -589,8 +603,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "path": "/stats",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -630,6 +644,10 @@ ShallowWrapper {
             path="/404"
 />,
           "",
+          <Redirect
+            push={false}
+            to="/"
+/>,
           <Route
             component={[Function]}
             path="/stats/compare"
@@ -643,12 +661,12 @@ ShallowWrapper {
             path="/stats/change_data_set"
 />,
           <Route
+            component={[Function]}
             path="/stats"
-            render={[Function]}
 />,
           <Route
+            component={[Function]}
             path="/stats"
-            render={[Function]}
 />,
         ],
         "className": "App",
@@ -726,6 +744,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "push": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "component": [Function],
             "path": "/stats/compare",
           },
@@ -762,8 +792,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "path": "/stats",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -774,8 +804,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "path": "/stats",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -842,6 +872,10 @@ ShallowWrapper {
           push={false}
           to="/404"
 />,
+        <Redirect
+          push={false}
+          to="/"
+/>,
         <Route
           component={[Function]}
           path="/stats/compare"
@@ -855,12 +889,12 @@ ShallowWrapper {
           path="/stats/change_data_set"
 />,
         <Route
+          component={[Function]}
           path="/stats"
-          render={[Function]}
 />,
         <Route
+          component={[Function]}
           path="/stats"
-          render={[Function]}
 />,
       ],
       "className": "App",
@@ -949,6 +983,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "push": false,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
           "component": [Function],
           "path": "/stats/compare",
         },
@@ -985,8 +1031,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "path": "/stats",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -997,8 +1043,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "component": [Function],
           "path": "/stats",
-          "render": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -1041,6 +1087,10 @@ ShallowWrapper {
             push={false}
             to="/404"
 />,
+          <Redirect
+            push={false}
+            to="/"
+/>,
           <Route
             component={[Function]}
             path="/stats/compare"
@@ -1054,12 +1104,12 @@ ShallowWrapper {
             path="/stats/change_data_set"
 />,
           <Route
+            component={[Function]}
             path="/stats"
-            render={[Function]}
 />,
           <Route
+            component={[Function]}
             path="/stats"
-            render={[Function]}
 />,
         ],
         "className": "App",
@@ -1148,6 +1198,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "push": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "component": [Function],
             "path": "/stats/compare",
           },
@@ -1184,8 +1246,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "path": "/stats",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -1196,8 +1258,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "component": [Function],
             "path": "/stats",
-            "render": [Function],
           },
           "ref": null,
           "rendered": null,
