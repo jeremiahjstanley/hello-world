@@ -144,10 +144,19 @@ describe('Actions', () => {
 
   });
 
+  describe('madeSearch', () => {
+
+    it('should create an madeSearch object', () => {
+      let expected = {
+                      type: 'MADE_SEARCH',
+                      madeSearch: true
+                    };
+      let actual = actions.madeSearch(true);
+
+      expect(expected).toEqual(actual);
+      
+    });
+
+  });
+
 });
-
-
-
-
-
-
