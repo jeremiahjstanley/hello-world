@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { ControlledForm, mapStateToProps, mapDispatchToProps } from '../ControlledForm';
-import { setLocation, setDataBase, setDataSet } from '../../../actions';
+import { setLocation, setDataBase, setDataSet, madeSearch } from '../../../actions';
 import { fetchGovernanceIndicators }from '../../../thunks/fetchGovernanceIndicators';
 import { fetchDevelopmentIndicators } from '../../../thunks/fetchDevelopmentIndicators';
 
@@ -22,6 +22,7 @@ describe('ControlledForm', () => {
   let mockSelectDataSet;
   let mockSelectDataBase;
   let mockSelectLocation;
+  let mockMakeSearch;
   let additionalLocation;
   let wrapper;
 
@@ -60,6 +61,8 @@ describe('ControlledForm', () => {
 
 	  mockSelectLocation = jest.fn();
 
+    mockMakeSearch = jest.fn()
+
     wrapper = shallow(
     	<ControlledForm 
     		dataBase={mockDataBase}
@@ -69,6 +72,7 @@ describe('ControlledForm', () => {
     		selectDataBase={mockSelectDataBase}
     		selectDataSet={mockSelectDataSet}
     		selectLocation={mockSelectLocation}
+        makeSearch={mockMakeSearch}
     		history={mockHistory}
     	/>
   	);
@@ -152,6 +156,7 @@ describe('ControlledForm', () => {
     		selectDataBase={mockSelectDataBase}
     		selectDataSet={mockSelectDataSet}
     		selectLocation={mockSelectLocation}
+        makeSearch={mockMakeSearch}
     		history={mockHistory}
     	/>
     );
@@ -309,6 +314,18 @@ describe('ControlledForm', () => {
 			expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
 
 		});
+
+    it('calls dispatch with the madeSearch action when called', () => {
+
+      const mappedProps = mapDispatchToProps(mockDispatch);
+
+      actionToDispatch = madeSearch(mockLocation);
+
+      mappedProps.makeSearch(mockLocation);
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+
+    });
 		
 	});
 
