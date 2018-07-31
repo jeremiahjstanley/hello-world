@@ -23,4 +23,9 @@ export const hasErrored = (status) => ({
   hasErrored: status
 });
 
+export const madeSearch = (status) => ({
+  type: 'MADE_SEARCH',
+  madeSearch: status
+});
+
 
