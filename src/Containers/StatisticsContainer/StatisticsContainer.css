@@ -12,27 +12,27 @@ h3 {
 }
 
 a {
+  color: #000000;
   font-size: 1.25em;
   font-weight: 300;
   text-decoration: none;
-  color: #000000;
 }
 
 .statistics-container {
-	width: 80%;
 	margin: auto;
+	width: 80%;
 }
 
 .legend {
-	width: 80%;
-	margin: auto;
 	border: 1px solid #000000;
+	margin: auto;
+	width: 80%;
 }
 
 .legend-list-ul {
-	text-align: left;
-	margin: .25rem;
 	list-style-type: none;
+	margin: .25rem;
+	text-align: left;
 }
 
 .legend-list-li {
@@ -41,11 +41,20 @@ a {
 }
 
 .legend-item {
-	margin: 0 .25rem;
 	border-bottom: none;
+	margin: 0 .25rem;
 }
 
 .legend-key {
-	margin-left: .25rem;
 	border-bottom: none;
+	margin-left: .25rem;
+}
+
+@media screen and (max-width: 800px) {
+
+	.statistics-container {
+		width: 100%;
+
+	}
+
 }
