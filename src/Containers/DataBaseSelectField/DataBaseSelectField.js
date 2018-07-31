@@ -21,7 +21,7 @@ export class DataBaseSelectField extends Component {
 
     return (
 
-      <select onClick={this.selectMetric}>
+      <select onClick={this.selectMetric} onChange={this.selectMetric}>
         { options }
       </select>
 
