@@ -58,4 +58,27 @@ button:disabled {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
 
+  form {
+    padding: 5%;
+  }
+  
+  p {
+    display: block;
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  form {
+    padding: 3%;
+  }
+
+  form p,input, select, button  {
+    font-size: .75rem;
+  }
+  
+}
