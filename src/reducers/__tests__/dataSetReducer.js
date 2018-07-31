@@ -22,5 +22,15 @@ describe('dataSetReducer', () => {
     expect(actual).toEqual(expected); 
 
   });
+
+  it('should return the state with an empty dataSet object', () => {
+
+    const expected = {};
+
+    const actual = dataSet(undefined, actions.clearDataSet(expected));
+    
+    expect(actual).toEqual(expected); 
+
+  });
   
-})
+});
