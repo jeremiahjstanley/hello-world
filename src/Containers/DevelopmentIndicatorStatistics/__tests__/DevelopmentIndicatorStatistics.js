@@ -112,7 +112,7 @@ describe('DevelopmentIndicatorStatistics', () => {
 
   });
 
-    it('should derive local state from props using getDerivedStateFromProps, returning a locationData property when the locationData prop is present', () => {
+  it('should derive local state from props using getDerivedStateFromProps, returning a locationData property when the locationData prop is present', () => {
 
     wrapper = shallow(
       <DevelopmentIndicatorStatistics
