@@ -55,13 +55,13 @@ ShallowWrapper {
                               Afghanistan
                     </option>
                     <option>
-                               Åland Islands
-                    </option>
-                    <option>
                               Albania
                     </option>
                     <option>
                               Algeria
+                    </option>
+                    <option>
+                              American Samoa
                     </option>
           </datalist>
 </div>,
@@ -119,13 +119,13 @@ ShallowWrapper {
                             Afghanistan
               </option>
               <option>
-                             Åland Islands
-              </option>
-              <option>
                             Albania
               </option>
               <option>
                             Algeria
+              </option>
+              <option>
+                            American Samoa
               </option>
 </datalist>,
           ],
@@ -199,13 +199,13 @@ ShallowWrapper {
                   Afghanistan
 </option>,
                 <option>
-                   Åland Islands
-</option>,
-                <option>
                   Albania
 </option>,
                 <option>
                   Algeria
+</option>,
+                <option>
+                  American Samoa
 </option>,
               ],
               "id": "countries",
@@ -228,17 +228,6 @@ ShallowWrapper {
                 "key": "1",
                 "nodeType": "host",
                 "props": Object {
-                  "children": " Åland Islands",
-                },
-                "ref": null,
-                "rendered": " Åland Islands",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": "2",
-                "nodeType": "host",
-                "props": Object {
                   "children": "Albania",
                 },
                 "ref": null,
@@ -247,13 +236,24 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "3",
+                "key": "2",
                 "nodeType": "host",
                 "props": Object {
                   "children": "Algeria",
                 },
                 "ref": null,
                 "rendered": "Algeria",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "3",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "American Samoa",
+                },
+                "ref": null,
+                "rendered": "American Samoa",
                 "type": "option",
               },
             ],
@@ -385,13 +385,13 @@ ShallowWrapper {
                                     Afghanistan
                         </option>
                         <option>
-                                     Åland Islands
-                        </option>
-                        <option>
                                     Albania
                         </option>
                         <option>
                                     Algeria
+                        </option>
+                        <option>
+                                    American Samoa
                         </option>
             </datalist>
 </div>,
@@ -449,13 +449,13 @@ ShallowWrapper {
                                 Afghanistan
                 </option>
                 <option>
-                                 Åland Islands
-                </option>
-                <option>
                                 Albania
                 </option>
                 <option>
                                 Algeria
+                </option>
+                <option>
+                                American Samoa
                 </option>
 </datalist>,
             ],
@@ -529,13 +529,13 @@ ShallowWrapper {
                     Afghanistan
 </option>,
                   <option>
-                     Åland Islands
-</option>,
-                  <option>
                     Albania
 </option>,
                   <option>
                     Algeria
+</option>,
+                  <option>
+                    American Samoa
 </option>,
                 ],
                 "id": "countries",
@@ -558,17 +558,6 @@ ShallowWrapper {
                   "key": "1",
                   "nodeType": "host",
                   "props": Object {
-                    "children": " Åland Islands",
-                  },
-                  "ref": null,
-                  "rendered": " Åland Islands",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": "2",
-                  "nodeType": "host",
-                  "props": Object {
                     "children": "Albania",
                   },
                   "ref": null,
@@ -577,13 +566,24 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "3",
+                  "key": "2",
                   "nodeType": "host",
                   "props": Object {
                     "children": "Algeria",
                   },
                   "ref": null,
                   "rendered": "Algeria",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "3",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "American Samoa",
+                  },
+                  "ref": null,
+                  "rendered": "American Samoa",
                   "type": "option",
                 },
               ],
