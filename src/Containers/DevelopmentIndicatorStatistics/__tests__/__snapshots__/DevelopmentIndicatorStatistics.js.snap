@@ -4044,7 +4044,7 @@ ShallowWrapper {
                     }
           />
           <VictoryGroup
-                    color="#e700ff"
+                    color="#0081ff"
                     containerComponent={
                               <VictoryContainer
                                         className="VictoryContainer"
@@ -4178,6 +4178,7 @@ ShallowWrapper {
                                       ]
                     }
                     groupComponent={<g />}
+                    interpolation="natural"
                     labelComponent={
                               <VictoryTooltip
                                         active={false}
@@ -5719,6 +5720,32 @@ ShallowWrapper {
                     />
           </VictoryGroup>
 </VictoryChart>,
+        <div
+          className="legend"
+>
+          <h3>
+                    Legend
+          </h3>
+          <ul
+                    className="legend-list-ul"
+          >
+                    <li
+                              className="legend-list-li"
+                    >
+                              Burkina Faso
+                              <span
+                                        className="legend-item"
+                                        style={
+                                                  Object {
+                                                            "color": "#0081ff",
+                                                          }
+                                        }
+                              >
+                                        ⬤
+                              </span>
+                    </li>
+          </ul>
+</div>,
       ],
       "className": "statistics-container",
     },
@@ -6850,7 +6877,7 @@ ShallowWrapper {
 />,
             Array [
               <VictoryGroup
-                color="#e700ff"
+                color="#0081ff"
                 containerComponent={
                                 <VictoryContainer
                                                 className="VictoryContainer"
@@ -6984,6 +7011,7 @@ ShallowWrapper {
                                               ]
                 }
                 groupComponent={<g />}
+                interpolation="natural"
                 labelComponent={
                                 <VictoryTooltip
                                                 active={false}
@@ -13292,7 +13320,7 @@ ShallowWrapper {
                   }
 />,
               ],
-              "color": "#e700ff",
+              "color": "#0081ff",
               "containerComponent": <VictoryContainer
                 className="VictoryContainer"
                 portalComponent={<Portal />}
@@ -13422,6 +13450,7 @@ ShallowWrapper {
                 },
               ],
               "groupComponent": <g />,
+              "interpolation": "natural",
               "labelComponent": <VictoryTooltip
                 active={false}
                 cornerRadius={0}
@@ -14962,6 +14991,123 @@ ShallowWrapper {
           },
         ],
         "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Legend
+</h3>,
+            <ul
+              className="legend-list-ul"
+>
+              <li
+                            className="legend-list-li"
+              >
+                            Burkina Faso
+                            <span
+                                          className="legend-item"
+                                          style={
+                                                        Object {
+                                                                      "color": "#0081ff",
+                                                                    }
+                                          }
+                            >
+                                          ⬤
+                            </span>
+              </li>
+</ul>,
+          ],
+          "className": "legend",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Legend",
+            },
+            "ref": null,
+            "rendered": "Legend",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="legend-list-li"
+>
+                  Burkina Faso
+                  <span
+                                    className="legend-item"
+                                    style={
+                                                      Object {
+                                                                        "color": "#0081ff",
+                                                                      }
+                                    }
+                  >
+                                    ⬤
+                  </span>
+</li>,
+              ],
+              "className": "legend-list-ul",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Burkina Faso",
+                    <span
+                      className="legend-item"
+                      style={
+                                            Object {
+                                                                  "color": "#0081ff",
+                                                                }
+                      }
+>
+                      ⬤
+</span>,
+                  ],
+                  "className": "legend-list-li",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Burkina Faso",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "⬤",
+                      "className": "legend-item",
+                      "style": Object {
+                        "color": "#0081ff",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": "⬤",
+                    "type": "span",
+                  },
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -18750,7 +18896,7 @@ ShallowWrapper {
                         }
             />
             <VictoryGroup
-                        color="#e700ff"
+                        color="#0081ff"
                         containerComponent={
                                     <VictoryContainer
                                                 className="VictoryContainer"
@@ -18884,6 +19030,7 @@ ShallowWrapper {
                                               ]
                         }
                         groupComponent={<g />}
+                        interpolation="natural"
                         labelComponent={
                                     <VictoryTooltip
                                                 active={false}
@@ -20425,6 +20572,32 @@ ShallowWrapper {
                         />
             </VictoryGroup>
 </VictoryChart>,
+          <div
+            className="legend"
+>
+            <h3>
+                        Legend
+            </h3>
+            <ul
+                        className="legend-list-ul"
+            >
+                        <li
+                                    className="legend-list-li"
+                        >
+                                    Burkina Faso
+                                    <span
+                                                className="legend-item"
+                                                style={
+                                                            Object {
+                                                                        "color": "#0081ff",
+                                                                      }
+                                                }
+                                    >
+                                                ⬤
+                                    </span>
+                        </li>
+            </ul>
+</div>,
         ],
         "className": "statistics-container",
       },
@@ -21556,7 +21729,7 @@ ShallowWrapper {
 />,
               Array [
                 <VictoryGroup
-                  color="#e700ff"
+                  color="#0081ff"
                   containerComponent={
                                     <VictoryContainer
                                                       className="VictoryContainer"
@@ -21690,6 +21863,7 @@ ShallowWrapper {
                                                     ]
                   }
                   groupComponent={<g />}
+                  interpolation="natural"
                   labelComponent={
                                     <VictoryTooltip
                                                       active={false}
@@ -27998,7 +28172,7 @@ ShallowWrapper {
                     }
 />,
                 ],
-                "color": "#e700ff",
+                "color": "#0081ff",
                 "containerComponent": <VictoryContainer
                   className="VictoryContainer"
                   portalComponent={<Portal />}
@@ -28128,6 +28302,7 @@ ShallowWrapper {
                   },
                 ],
                 "groupComponent": <g />,
+                "interpolation": "natural",
                 "labelComponent": <VictoryTooltip
                   active={false}
                   cornerRadius={0}
@@ -29668,6 +29843,123 @@ ShallowWrapper {
             },
           ],
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Legend
+</h3>,
+              <ul
+                className="legend-list-ul"
+>
+                <li
+                                className="legend-list-li"
+                >
+                                Burkina Faso
+                                <span
+                                                className="legend-item"
+                                                style={
+                                                                Object {
+                                                                                "color": "#0081ff",
+                                                                              }
+                                                }
+                                >
+                                                ⬤
+                                </span>
+                </li>
+</ul>,
+            ],
+            "className": "legend",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Legend",
+              },
+              "ref": null,
+              "rendered": "Legend",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="legend-list-li"
+>
+                    Burkina Faso
+                    <span
+                                        className="legend-item"
+                                        style={
+                                                            Object {
+                                                                                "color": "#0081ff",
+                                                                              }
+                                        }
+                    >
+                                        ⬤
+                    </span>
+</li>,
+                ],
+                "className": "legend-list-ul",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Burkina Faso",
+                      <span
+                        className="legend-item"
+                        style={
+                                                Object {
+                                                                        "color": "#0081ff",
+                                                                      }
+                        }
+>
+                        ⬤
+</span>,
+                    ],
+                    "className": "legend-list-li",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Burkina Faso",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "⬤",
+                        "className": "legend-item",
+                        "style": Object {
+                          "color": "#0081ff",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": "⬤",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
