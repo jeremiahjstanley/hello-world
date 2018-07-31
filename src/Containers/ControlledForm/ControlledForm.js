@@ -20,16 +20,11 @@ export class ControlledForm extends Component {
         name: 'Worldwide Governance Indicators', 
         database_code: 'WWGI'
       },
-      dataSet: {
-        name: 'Voice and Accountability', 
-        dataset_code: 'VA'
-      }
     };
   };
 
   componentDidMount() {
     this.props.selectDataBase(this.state.dataBase);
-    this.props.selectDataSet(this.state.dataSet);
   };
 
   handleChange = (event) => {
@@ -86,7 +81,7 @@ export class ControlledForm extends Component {
           <p>but specifically, </p>
           <DataSetSelectField />
         </div>
-        <button disabled={!this.state.location}>
+        <button disabled={!this.state.location || !this.props.dataSet}>
           Search
         </button>
      </form>

@@ -85,17 +85,13 @@ describe('ControlledForm', () => {
 
 	});
 
-  it('should have a default state with a dataBase and dataSet object', () => {
+  it('should have a default state with a dataBase object', () => {
 
     const expected = {
       dataBase: {
         name: 'Worldwide Governance Indicators', 
         database_code: 'WWGI'
       },
-      dataSet: {
-        name: 'Voice and Accountability', 
-        dataset_code: 'VA'
-      }
     };
 
     const results = wrapper.state();
@@ -109,14 +105,6 @@ describe('ControlledForm', () => {
     const expected = wrapper.state().dataBase;
 
     expect(mockSelectDataBase).toHaveBeenCalledWith(expected);
-
-  });
-
-  it('should call selectDataSet on page load', () => {
-
-    const expected = wrapper.state().dataSet;
-
-    expect(mockSelectDataSet).toHaveBeenCalledWith(expected);
 
   });
 

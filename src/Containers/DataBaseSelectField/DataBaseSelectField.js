@@ -21,7 +21,7 @@ export class DataBaseSelectField extends Component {
 
     return (
 
-      <select onChange={this.selectMetric}>
+      <select onClick={this.selectMetric}>
         { options }
       </select>
 
@@ -34,7 +34,7 @@ export const mapDispatchToProps = (dispatch) => ({
 });
 
 DataBaseSelectField.propTypes = {
-  selectDataBase: PropTypes.func.isRequired
+  selectDataBase: PropTypes.func
 };
 
 export default connect(null, mapDispatchToProps)(DataBaseSelectField);

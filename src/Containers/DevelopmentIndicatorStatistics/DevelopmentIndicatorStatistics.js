@@ -27,6 +27,15 @@ export class DevelopmentIndicatorStatistics extends Component {
   
   render () {
 
+    const legendItems = this.props.location.map((location, index ) => {
+      return (
+        <li className='legend-list-li' key={index}>
+          {location.name} 
+          <span className='legend-item' style={{color: colors[index]}}>⬤</span>
+        </li>
+      );
+    })
+
     if (this.state.locationData.length) {
 
       const developmentChart = this.state.locationData.map((location, index) => {
@@ -36,6 +45,7 @@ export class DevelopmentIndicatorStatistics extends Component {
           <VictoryGroup
             key={index}
             color={colors[index]}
+            interpolation="natural"
             labelComponent={
               <VictoryTooltip
                 cornerRadius={0}
@@ -65,13 +75,14 @@ export class DevelopmentIndicatorStatistics extends Component {
           <h1>{this.props.dataBase.name}</h1>
           <h2>{this.props.dataSet.name}</h2>
 
+
+
           <VictoryChart
             animate={{ duration: 2000, easing: 'bounce' }} 
             width={600}
             theme={VictoryTheme.grayscale}
             containerComponent={<VictoryVoronoiContainer />}
           >
-
             <VictoryAxis
               label={`${this.props.dataSet.name} - ${this.props.location.map(location => location.name).join(', ')}`}
               style={{
@@ -90,6 +101,13 @@ export class DevelopmentIndicatorStatistics extends Component {
             { developmentChart }
 
           </VictoryChart>
+
+          <div className='legend'> 
+            <h3>Legend</h3>
+            <ul className='legend-list-ul'>
+              { legendItems }
+            </ul>
+          </div>
 
         </div>
       );
@@ -114,10 +132,10 @@ export const mapStateToProps = (state) => ({
 });
 
 DevelopmentIndicatorStatistics.propTypes = {
-  dataBase: PropTypes.object.isRequired,
-  dataSet: PropTypes.object.isRequired,
-  location: PropTypes.array.isRequired,
-  locationData: PropTypes.array.isRequired
+  dataBase: PropTypes.object,
+  dataSet: PropTypes.object,
+  location: PropTypes.array,
+  locationData: PropTypes.array
 };
 
 export default connect(mapStateToProps)(DevelopmentIndicatorStatistics);

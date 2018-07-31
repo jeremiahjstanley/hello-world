@@ -46,8 +46,8 @@ export const mapStateToProps = (state) => ({
 });
 
 App.propTypes = {
-  hasErrored: PropTypes.bool.isRequired,
-  madeSearch: PropTypes.bool.isRequired
+  hasErrored: PropTypes.bool,
+  madeSearch: PropTypes.bool
 };
 
 export default withRouter(connect(mapStateToProps)(App));

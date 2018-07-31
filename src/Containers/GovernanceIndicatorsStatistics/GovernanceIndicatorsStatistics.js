@@ -26,6 +26,15 @@ export class GovernanceIndicatorsStatistics extends Component {
   
   render () {
 
+    const legendItems = this.props.location.map((location, index ) => {
+      return (
+        <li className='legend-list-li' key={index}>
+          {location.name} 
+          <span className='legend-item' style={{color: colors[index]}}>⬤</span>
+        </li>
+      );
+    })
+
     if (this.state.locationData.length) {
 
       const percentileRankChart = this.state.locationData.map((location, index) => {
@@ -35,6 +44,7 @@ export class GovernanceIndicatorsStatistics extends Component {
           <VictoryGroup
             key={index}
             color={colors[index]}
+            interpolation="natural"
             labelComponent={
               <VictoryTooltip
                 cornerRadius={0}
@@ -72,14 +82,14 @@ export class GovernanceIndicatorsStatistics extends Component {
                 />
               }
               style={{
-                data: { stroke: colors[index] },
+                data: { fill: colors[index] },
                 parent: { border: '1px solid #ccc'},
               }}
               data={location.cleanNumberOfSources}
             />
 
-        );
-      });
+          );
+        });
 
       const standardErrorChart = this.state.locationData.map((location, index) => {
 
@@ -88,6 +98,7 @@ export class GovernanceIndicatorsStatistics extends Component {
           <VictoryGroup
             key={index}
             color={colors[index]}
+            interpolation="natural"
             labelComponent={
               <VictoryTooltip
                 cornerRadius={0}
@@ -106,8 +117,8 @@ export class GovernanceIndicatorsStatistics extends Component {
             />
           </VictoryGroup>
 
-        );
-      });
+          );
+        });
 
       const estimatesChart = this.state.locationData.map((location, index) => {
 
@@ -116,6 +127,7 @@ export class GovernanceIndicatorsStatistics extends Component {
           <VictoryGroup
             key={index}
             color={colors[index]}
+            interpolation="natural"
             labelComponent={
               <VictoryTooltip
                 cornerRadius={0}
@@ -134,8 +146,8 @@ export class GovernanceIndicatorsStatistics extends Component {
             />
           </VictoryGroup>
 
-        );
-      });
+          );
+        });
 
       return (
 
@@ -169,6 +181,13 @@ export class GovernanceIndicatorsStatistics extends Component {
             { percentileRankChart }
 
           </VictoryChart>
+
+          <div className='legend'> 
+            <h3>Legend</h3>
+            <ul className='legend-list-ul'>
+              { legendItems }
+            </ul>
+          </div>
 
           <VictoryChart
             animate={{ duration: 2000, easing: 'bounce' }} 
@@ -271,10 +290,10 @@ export const mapStateToProps = (state) => ({
 });
 
 GovernanceIndicatorsStatistics.propTypes = {
-  dataBase: PropTypes.object.isRequired,
-  dataSet: PropTypes.object.isRequired,
-  location: PropTypes.array.isRequired,
-  locationData: PropTypes.array.isRequired
+  dataBase: PropTypes.object,
+  dataSet: PropTypes.object,
+  location: PropTypes.array,
+  locationData: PropTypes.array
 };
 
 export default connect(mapStateToProps)(GovernanceIndicatorsStatistics);

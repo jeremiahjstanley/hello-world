@@ -25,9 +25,11 @@ export class ChangeDataBaseForm extends Component {
       <div className='change-form-container'>
         <Link to='/stats' className='back-button'>◀ <span>back</span></Link>
         <form onSubmit={this.handleSubmit} className='change-form'>
+          <div className='change-database'>
           <DataBaseSelectField/>
           <DataSetSelectField/>
-          <button className='change-form-button'>Change</button>
+          </div>
+          <button className='change-form-button change-database-button'>Change</button>
        </form>
      </div>
 

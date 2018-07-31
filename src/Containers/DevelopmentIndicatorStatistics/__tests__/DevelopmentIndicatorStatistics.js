@@ -177,7 +177,11 @@ describe('DevelopmentIndicatorStatistics', () => {
 
   it('should derive local state from props using getDerivedStateFromProps, returing an empty state object when locationData prop is not present', () => {
 
-    wrapper = shallow(<DevelopmentIndicatorStatistics/>);
+    wrapper = shallow(
+      <DevelopmentIndicatorStatistics
+        location={mockLocation}
+      />
+    );
     
     wrapper.setProps(undefined);
 

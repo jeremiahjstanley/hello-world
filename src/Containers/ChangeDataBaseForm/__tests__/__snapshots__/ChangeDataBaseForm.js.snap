@@ -55,10 +55,14 @@ ShallowWrapper {
           className="change-form"
           onSubmit={[Function]}
 >
-          <Connect(DataBaseSelectField) />
-          <Connect(DataSetSelectField) />
+          <div
+                    className="change-database"
+          >
+                    <Connect(DataBaseSelectField) />
+                    <Connect(DataSetSelectField) />
+          </div>
           <button
-                    className="change-form-button"
+                    className="change-form-button change-database-button"
           >
                     Change
           </button>
@@ -106,10 +110,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Connect(DataBaseSelectField) />,
-            <Connect(DataSetSelectField) />,
+            <div
+              className="change-database"
+>
+              <Connect(DataBaseSelectField) />
+              <Connect(DataSetSelectField) />
+</div>,
             <button
-              className="change-form-button"
+              className="change-form-button change-database-button"
 >
               Change
 </button>,
@@ -122,20 +130,36 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Connect(DataBaseSelectField) />,
+                <Connect(DataSetSelectField) />,
+              ],
+              "className": "change-database",
+            },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -143,7 +167,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Change",
-              "className": "change-form-button",
+              "className": "change-form-button change-database-button",
             },
             "ref": null,
             "rendered": "Change",
@@ -176,10 +200,14 @@ ShallowWrapper {
             className="change-form"
             onSubmit={[Function]}
 >
-            <Connect(DataBaseSelectField) />
-            <Connect(DataSetSelectField) />
+            <div
+                        className="change-database"
+            >
+                        <Connect(DataBaseSelectField) />
+                        <Connect(DataSetSelectField) />
+            </div>
             <button
-                        className="change-form-button"
+                        className="change-form-button change-database-button"
             >
                         Change
             </button>
@@ -227,10 +255,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Connect(DataBaseSelectField) />,
-              <Connect(DataSetSelectField) />,
+              <div
+                className="change-database"
+>
+                <Connect(DataBaseSelectField) />
+                <Connect(DataSetSelectField) />
+</div>,
               <button
-                className="change-form-button"
+                className="change-form-button change-database-button"
 >
                 Change
 </button>,
@@ -243,20 +275,36 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Connect(DataBaseSelectField) />,
+                  <Connect(DataSetSelectField) />,
+                ],
+                "className": "change-database",
+              },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
@@ -264,7 +312,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Change",
-                "className": "change-form-button",
+                "className": "change-form-button change-database-button",
               },
               "ref": null,
               "rendered": "Change",

@@ -13,13 +13,28 @@
 	text-decoration: underline;
 }
 
+.change-form-container {
+	margin-bottom: 3rem;
+}
+
 .change-form {
 	display: inline-flex;
+	padding: 0;
 }
 
 .change-form-button {
 	margin: 0 0 0 3rem;
 	padding: 0 1rem;
+}
+
+.change-database {
+	display: block;
+	margin: 0 5rem 0 4rem;
+}
+
+.change-database-button {
+	margin: 0 0 1.5rem 0;
+	padding: 0;
 }
 
 .back-button {
@@ -30,7 +45,7 @@
 	background-color: #000000;
 	padding: .5rem 1rem;
 	width: auto;
-	margin-bottom: 5rem;
+	margin: 3rem 0;
 }
 
 .start-over a {
@@ -52,5 +67,8 @@
 		text-align: right;
 	}
 
+	.start-over {
+		margin: 3rem 0;
+	}
 
 }
