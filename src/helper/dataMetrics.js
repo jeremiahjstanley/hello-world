@@ -5382,5 +5382,5 @@ export const dataMetrics = [
         dataset_code: 'VC_IHR_PSRC_P5'
       }
     ]
-  },
-]
+  }
+];

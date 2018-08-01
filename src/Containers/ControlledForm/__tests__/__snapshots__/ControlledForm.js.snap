@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ControlledForm
+    clearDataSet={[Function]}
     dataBase="WWDI"
     dataSet="SM_POP_REFG"
     fetchDevelopmentIndicators={[Function]}
@@ -12,7 +13,6 @@ ShallowWrapper {
     history={Array []}
     makeSearch={[Function]}
     selectDataBase={[Function]}
-    selectDataSet={[Function]}
     selectLocation={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {

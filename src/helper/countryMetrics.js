@@ -75,7 +75,7 @@ export const countries = [
     intermediate_region: 'Middle Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '017',
+    intermediate_region_code: '017'
   },
   {
     name: 'Anguilla',
@@ -88,7 +88,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Antigua and Barbuda',
@@ -101,7 +101,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Argentina',
@@ -114,7 +114,7 @@ export const countries = [
     intermediate_region: 'South America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '005',
+    intermediate_region_code: '005'
   },
   {
     name: 'Armenia',
@@ -140,7 +140,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Australia',
@@ -192,7 +192,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Bahrain',
@@ -231,7 +231,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Belarus',
@@ -270,7 +270,7 @@ export const countries = [
     intermediate_region: 'Central America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '013',
+    intermediate_region_code: '013'
   },
   {
     name: 'Benin',
@@ -283,7 +283,7 @@ export const countries = [
     intermediate_region: 'Western Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '011',
+    intermediate_region_code: '011'
   },
   {
     name: 'Bermuda',
@@ -322,11 +322,11 @@ export const countries = [
     intermediate_region: 'South America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '005',
+    intermediate_region_code: '005'
   },
   {
     name: 'Bonaire Sint Eustatius and Saba',
-     alpha_2: 'BQ',
+    alpha_2: 'BQ',
     alpha_3: 'BES',
     country_code: '535',
     iso_3166_2: 'ISO 3166-2: BQ',
@@ -335,7 +335,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Bosnia and Herzegovina',
@@ -361,7 +361,7 @@ export const countries = [
     intermediate_region: 'Southern Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '018',
+    intermediate_region_code: '018'
   },
   {
     name: 'Bouvet Island',
@@ -374,7 +374,7 @@ export const countries = [
     intermediate_region: 'South America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '005',
+    intermediate_region_code: '005'
   },
   {
     name: 'Brazil',
@@ -387,7 +387,7 @@ export const countries = [
     intermediate_region: 'South America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '005',
+    intermediate_region_code: '005'
   },
   {
     name: 'British Indian Ocean Territory',
@@ -400,7 +400,7 @@ export const countries = [
     intermediate_region: 'Eastern Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '014',
+    intermediate_region_code: '014'
   },
   {
     name: 'Brunei Darussalam',
@@ -439,7 +439,7 @@ export const countries = [
     intermediate_region: 'Western Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '011',
+    intermediate_region_code: '011'
   },
   {
     name: 'Burundi',
@@ -452,7 +452,7 @@ export const countries = [
     intermediate_region: 'Eastern Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '014',
+    intermediate_region_code: '014'
   },
   {
     name: 'Cabo Verde',
@@ -465,7 +465,7 @@ export const countries = [
     intermediate_region: 'Western Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '011',
+    intermediate_region_code: '011'
   },
   {
     name: 'Cambodia',
@@ -491,7 +491,7 @@ export const countries = [
     intermediate_region: 'Middle Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '017',
+    intermediate_region_code: '017'
   },
   {
     name: 'Canada',
@@ -517,7 +517,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Central African Republic',
@@ -530,7 +530,7 @@ export const countries = [
     intermediate_region: 'Middle Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '017',
+    intermediate_region_code: '017'
   },
   {
     name: 'Chad',
@@ -543,7 +543,7 @@ export const countries = [
     intermediate_region: 'Middle Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '017',
+    intermediate_region_code: '017'
   },
   {
     name: 'Chile',
@@ -556,7 +556,7 @@ export const countries = [
     intermediate_region: 'South America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '005',
+    intermediate_region_code: '005'
   },
   {
     name: 'China',
@@ -608,7 +608,7 @@ export const countries = [
     intermediate_region: 'South America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '005',
+    intermediate_region_code: '005'
   },
   {
     name: 'Comoros',
@@ -621,7 +621,7 @@ export const countries = [
     intermediate_region: 'Eastern Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '014',
+    intermediate_region_code: '014'
   },
   {
     name: 'Congo',
@@ -634,7 +634,7 @@ export const countries = [
     intermediate_region: 'Middle Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '017',
+    intermediate_region_code: '017'
   },
   {
     name: 'Congo (Democratic Republic of the)',
@@ -647,7 +647,7 @@ export const countries = [
     intermediate_region: 'Middle Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '017',
+    intermediate_region_code: '017'
   },
   {
     name: 'Cook Islands',
@@ -673,7 +673,7 @@ export const countries = [
     intermediate_region: 'Central America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '013',
+    intermediate_region_code: '013'
   },
   {
     name: 'Côte d\'Ivoire',
@@ -686,7 +686,7 @@ export const countries = [
     intermediate_region: 'Western Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '011',
+    intermediate_region_code: '011'
   },
   {
     name: 'Croatia',
@@ -712,7 +712,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Curaçao',
@@ -725,7 +725,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Cyprus',
@@ -777,7 +777,7 @@ export const countries = [
     intermediate_region: 'Eastern Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '014',
+    intermediate_region_code: '014'
   },
   {
     name: 'Dominica',
@@ -842,7 +842,7 @@ export const countries = [
     intermediate_region: 'Central America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '013',
+    intermediate_region_code: '013'
   },
   {
     name: 'Equatorial Guinea',
@@ -855,7 +855,7 @@ export const countries = [
     intermediate_region: 'Middle Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '017',
+    intermediate_region_code: '017'
   },
   {
     name: 'Eritrea',
@@ -1024,7 +1024,7 @@ export const countries = [
     intermediate_region: 'Western Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '011',
+    intermediate_region_code: '011'
   },
   {
     name: 'Georgia',
@@ -1258,7 +1258,7 @@ export const countries = [
     intermediate_region: 'Central America',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '013',
+    intermediate_region_code: '013'
   },
   {
     name: 'Hong Kong',
@@ -1414,7 +1414,7 @@ export const countries = [
     intermediate_region: 'Caribbean',
     region_code: '019',
     sub_region_code: '419',
-    intermediate_region_code: '029',
+    intermediate_region_code: '029'
   },
   {
     name: 'Japan',
@@ -1440,7 +1440,7 @@ export const countries = [
     intermediate_region: 'Channel Islands',
     region_code: '150',
     sub_region_code: '154',
-    intermediate_region_code: '830',
+    intermediate_region_code: '830'
   },
   {
     name: 'Jordan',
@@ -1479,7 +1479,7 @@ export const countries = [
     intermediate_region: 'Eastern Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '014',
+    intermediate_region_code: '014'
   },
   {
     name: 'Kiribati',
@@ -1596,7 +1596,7 @@ export const countries = [
     intermediate_region: 'Southern Africa',
     region_code: '002',
     sub_region_code: '202',
-    intermediate_region_code: '018',
+    intermediate_region_code: '018'
   },
   {
     name: 'Liberia',
@@ -2389,7 +2389,7 @@ export const countries = [
   },
   {
     name: 'Saint Helena, Ascension and Tristan da Cunha',
-     alpha_2: 'SH',
+    alpha_2: 'SH',
     alpha_3: 'SHN',
     country_code: '654',
     iso_3166_2: 'ISO 3166-2: SH',
@@ -2804,8 +2804,8 @@ export const countries = [
     intermediate_region_code: ''
   },
   {
-    name: 'Taiwan, Province of China',
-     alpha_2: 'TW',
+    name: 'Taiwan',
+    alpha_2: 'TW',
     alpha_3: 'TWN',
     country_code: '158',
     iso_3166_2: 'ISO 3166-2: TW',
@@ -2831,7 +2831,7 @@ export const countries = [
   },
   {
     name: 'Tanzania, United Republic of',
-     alpha_2: 'TZ',
+    alpha_2: 'TZ',
     alpha_3: 'TZA',
     country_code: '834',
     iso_3166_2: 'ISO 3166-2: TZ',
@@ -3218,5 +3218,5 @@ export const countries = [
     region_code: '002',
     sub_region_code: '202',
     intermediate_region_code: '014'
-   }
-]
+  }
+];

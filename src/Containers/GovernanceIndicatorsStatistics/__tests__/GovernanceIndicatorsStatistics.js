@@ -69,6 +69,21 @@ describe('GovernanceIndicatorsStatistics', () => {
 
   });
 
+  it('should match the snapshot when the locationData array has length, but no percentile property', () => {
+
+    wrapper = shallow(
+      <GovernanceIndicatorsStatistics
+        dataBase={mockDataBase}
+        dataSet={mockDataSet}
+        location={mockLocation}
+        locationData={[{}]}
+      />
+     );
+
+    expect(wrapper).toMatchSnapshot();
+
+  });
+
     it('should derive local state from props using getDerivedStateFromProps, returning a locationData property when the locationData prop is present', () => {
 
     wrapper = shallow(

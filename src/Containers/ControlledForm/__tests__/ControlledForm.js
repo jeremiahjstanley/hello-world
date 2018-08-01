@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { ControlledForm, mapStateToProps, mapDispatchToProps } from '../ControlledForm';
-import { setLocation, setDataBase, setDataSet, madeSearch } from '../../../actions';
+import { setLocation, setDataBase, clearDataSet, madeSearch } from '../../../actions';
 import { fetchGovernanceIndicators }from '../../../thunks/fetchGovernanceIndicators';
 import { fetchDevelopmentIndicators } from '../../../thunks/fetchDevelopmentIndicators';
 
@@ -19,7 +19,7 @@ describe('ControlledForm', () => {
   let mockDataSet;
   let mockFetchDevelopmentIndicators;
   let mockFetchGovernanceIndicators;
-  let mockSelectDataSet;
+  let mockClearDataSet;
   let mockSelectDataBase;
   let mockSelectLocation;
   let mockMakeSearch;
@@ -57,7 +57,7 @@ describe('ControlledForm', () => {
 
 	  mockSelectDataBase = jest.fn();
 
-	  mockSelectDataSet = jest.fn();
+	  mockClearDataSet = jest.fn();
 
 	  mockSelectLocation = jest.fn();
 
@@ -70,7 +70,7 @@ describe('ControlledForm', () => {
     		fetchGovernanceIndicators={mockFetchGovernanceIndicators}
     		fetchDevelopmentIndicators={mockFetchDevelopmentIndicators}
     		selectDataBase={mockSelectDataBase}
-    		selectDataSet={mockSelectDataSet}
+    		clearDataSet={mockClearDataSet}
     		selectLocation={mockSelectLocation}
         makeSearch={mockMakeSearch}
     		history={mockHistory}
@@ -142,7 +142,7 @@ describe('ControlledForm', () => {
     		fetchGovernanceIndicators={mockFetchGovernanceIndicators}
     		fetchDevelopmentIndicators={mockFetchDevelopmentIndicators}
     		selectDataBase={mockSelectDataBase}
-    		selectDataSet={mockSelectDataSet}
+    		clearDataSet={mockClearDataSet}
     		selectLocation={mockSelectLocation}
         makeSearch={mockMakeSearch}
     		history={mockHistory}
@@ -279,13 +279,13 @@ describe('ControlledForm', () => {
 
 		});
 
-		it('calls dispatch with the setDataSet action when called', () => {
+		it('calls dispatch with the clearDataSet action when called', () => {
 
 			const mappedProps = mapDispatchToProps(mockDispatch);
 
-			actionToDispatch = setDataSet(mockDataSet);
+			actionToDispatch = clearDataSet();
 
-			mappedProps.selectDataSet(mockDataSet);
+			mappedProps.clearDataSet();
 
 			expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
 

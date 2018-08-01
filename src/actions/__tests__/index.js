@@ -96,9 +96,25 @@ describe('Actions', () => {
 
   });
 
+  describe('clearDataSet', () => {
+
+    it('should create a clear dataset object', () => {
+
+      let expected = {
+                      type: 'CLEAR_DATASET',
+                    };
+
+      let actual = actions.clearDataSet(mockDataSet);
+
+      expect(expected).toEqual(actual);
+
+    });
+
+  });
+
   describe('setDataSet', () => {
 
-    it('should create a dataset object', () => {
+    it('should create a set dataset object', () => {
 
       let expected = {
                       type: 'SET_DATASET',
