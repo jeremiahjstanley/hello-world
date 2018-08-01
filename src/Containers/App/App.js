@@ -33,7 +33,7 @@ export class App extends Component {
         <Route path='/stats/change_data_base' component={ChangeDataBaseForm}/>
         <Route path='/stats/change_data_set' component={ChangeDataSetForm}/>
         <Route path="/stats" component={GraphLinks}/>
-        <Route path="/stats" component={StatisticsContainer}/>
+        <Route exact path="/stats" component={StatisticsContainer}/>
       </div>
 
     );
