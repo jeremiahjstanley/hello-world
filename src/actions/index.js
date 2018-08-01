@@ -9,7 +9,7 @@ export const setDataSet = (dataSet) => ({
 });
 
 export const clearDataSet = () => ({
-  type: 'CLEAR_DATASET',
+  type: 'CLEAR_DATASET'
 });
 
 export const setDataBase = (dataBase) => ({
