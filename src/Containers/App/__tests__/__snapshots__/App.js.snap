@@ -64,6 +64,7 @@ ShallowWrapper {
 />,
         <Route
           component={[Function]}
+          exact={true}
           path="/stats"
 />,
       ],
@@ -192,6 +193,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "component": [Function],
+          "exact": true,
           "path": "/stats",
         },
         "ref": null,
@@ -251,6 +253,7 @@ ShallowWrapper {
 />,
           <Route
             component={[Function]}
+            exact={true}
             path="/stats"
 />,
         ],
@@ -379,6 +382,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
+            "exact": true,
             "path": "/stats",
           },
           "ref": null,
@@ -465,6 +469,7 @@ ShallowWrapper {
 />,
         <Route
           component={[Function]}
+          exact={true}
           path="/stats"
 />,
       ],
@@ -604,6 +609,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "component": [Function],
+          "exact": true,
           "path": "/stats",
         },
         "ref": null,
@@ -666,6 +672,7 @@ ShallowWrapper {
 />,
           <Route
             component={[Function]}
+            exact={true}
             path="/stats"
 />,
         ],
@@ -805,6 +812,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
+            "exact": true,
             "path": "/stats",
           },
           "ref": null,
@@ -894,6 +902,7 @@ ShallowWrapper {
 />,
         <Route
           component={[Function]}
+          exact={true}
           path="/stats"
 />,
       ],
@@ -1044,6 +1053,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "component": [Function],
+          "exact": true,
           "path": "/stats",
         },
         "ref": null,
@@ -1109,6 +1119,7 @@ ShallowWrapper {
 />,
           <Route
             component={[Function]}
+            exact={true}
             path="/stats"
 />,
         ],
@@ -1259,6 +1270,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
+            "exact": true,
             "path": "/stats",
           },
           "ref": null,
