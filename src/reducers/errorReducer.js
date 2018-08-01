@@ -1,7 +1,7 @@
 export const hasErrored = (state = false, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case 'HAS_ERRORED':
-      return action.hasErrored
+      return action.hasErrored;
     default:
       return state;
   }
