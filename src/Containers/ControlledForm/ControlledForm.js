@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { countries } from '../../helper/countryMetrics';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
-import { setLocation, setDataBase, clearDataSet, madeSearch } from '../../actions';
+import { setLocation, submitDataBase, submitDataSet, selectDataBase, clearDataSet, madeSearch } from '../../actions';
 import DataBaseSelectField from '../DataBaseSelectField/DataBaseSelectField';
 import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 import './ControlledForm.css';
@@ -38,11 +38,13 @@ export class ControlledForm extends Component {
     event.preventDefault();
     const location = [this.state.location];
     const { dataSet, dataBase } = this.props;
-    this.props.makeSearch(true)
+    this.props.makeSearch(true);
     this.props.selectLocation(location);
-    ((dataBase === 'WWGI') ? 
-      this.props.fetchGovernanceIndicators(location, dataSet, dataBase):
-      this.props.fetchDevelopmentIndicators(location, dataSet, dataBase));
+    this.props.submitDataSet(dataSet);
+    this.props.submitDataBase(dataBase);
+    ((dataBase.database_code === 'WWGI') ? 
+      this.props.fetchGovernanceIndicators(location, dataSet.dataset_code, dataBase.database_code):
+      this.props.fetchDevelopmentIndicators(location, dataSet.dataset_code, dataBase.database_code));
     this.props.history.push('/stats');
   };
 
@@ -92,22 +94,24 @@ export class ControlledForm extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  dataBase: state.dataBase.database_code,
-  dataSet: state.dataSet.dataset_code
+  dataBase: state.selectedDataBase,
+  dataSet: state.selectedDataSet
 });
 
 export const mapDispatchToProps = (dispatch) => ({
+  clearDataSet: () => dispatch(clearDataSet()),
   fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet)),
   fetchGovernanceIndicators: (location, dataSet, dataBase) => dispatch(fetchGovernanceIndicators(location, dataSet, dataBase)),
-  selectDataBase: (dataBase) => dispatch(setDataBase(dataBase)),
-  clearDataSet: () => dispatch(clearDataSet()),
+  makeSearch: (status) => dispatch(madeSearch(status)),
+  selectDataBase: (dataBase) => dispatch(selectDataBase(dataBase)),
   selectLocation: (location) => dispatch(setLocation(location)),
-  makeSearch: (status) => dispatch(madeSearch(status))
+  submitDataBase: (dataBase) => dispatch(submitDataBase(dataBase)),
+  submitDataSet: (dataBase) => dispatch(submitDataSet(dataBase))
 });
 
 ControlledForm.propTypes = {
-  dataBase: PropTypes.string,
-  dataSet: PropTypes.string,
+  dataBase: PropTypes.object,
+  dataSet: PropTypes.object,
   fetchDevelopmentIndicators: PropTypes.func.isRequired,
   fetchGovernanceIndicators: PropTypes.func.isRequired,
   selectDataBase: PropTypes.func.isRequired,

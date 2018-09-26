@@ -5,6 +5,7 @@ import { key } from '../helper/apiKey';
 export const fetchDevelopmentIndicators = (locations, dataSet, dataBase) => {
 
   return async (dispatch) => {
+    
     const unresolvedDevelopmentIndicators = locations.map(async location => {
       const isoAlpha3 = location.alpha_3;
       try {

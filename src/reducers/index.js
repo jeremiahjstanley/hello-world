@@ -1,15 +1,19 @@
 import { combineReducers } from 'redux';
 import { location } from './locationReducer';
 import { locationData } from './locationDataReducer';
-import { dataBase } from './dataBaseReducer';
-import { dataSet } from './dataSetReducer';
+import { selectedDataBase } from './selectedDataBaseReducer';
+import { selectedDataSet } from './selectedDataSetReducer';
+import { submittedDataBase } from './submittedDataBaseReducer';
+import { submittedDataSet } from './submittedDataSetReducer';
 import { hasErrored } from './errorReducer';
 import { madeSearch } from './madeSearchReducer';
 
 export const rootReducer = combineReducers({
   location,
-  dataBase,
-  dataSet,
+  selectedDataBase,
+  selectedDataSet,
+  submittedDataBase,
+  submittedDataSet,
   locationData,
   hasErrored,
   madeSearch

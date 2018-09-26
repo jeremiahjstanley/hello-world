@@ -9,7 +9,9 @@ import GraphLinks from '../GraphLinks/GraphLinks';
 import ControlledForm from '../ControlledForm/ControlledForm';
 import ChangeDataBaseForm from '../ChangeDataBaseForm/ChangeDataBaseForm';
 import ChangeDataSetForm from '../ChangeDataSetForm/ChangeDataSetForm';
+import AddMetricForm from '../AddMetricForm/AddMetricForm';
 import StatisticsContainer from '../StatisticsContainer/StatisticsContainer';
+import MultipleStatisticsContainer from '../MultipleStatisticsContainer/MultipleStatisticsContainer';
 import './App.css';
 
 export class App extends Component {
@@ -32,8 +34,10 @@ export class App extends Component {
         <Route path='/stats/compare' component={AddComparisonForm}/>
         <Route path='/stats/change_data_base' component={ChangeDataBaseForm}/>
         <Route path='/stats/change_data_set' component={ChangeDataSetForm}/>
-        <Route path="/stats" component={GraphLinks}/>
-        <Route exact path="/stats" component={StatisticsContainer}/>
+        <Route path='/multiple_stats/add_metric' component={AddMetricForm}/>
+        <Route path={['/multiple_stats','/stats']} component={GraphLinks}/>
+        <Route path='/stats' component={StatisticsContainer}/>
+        <Route path='/multiple_stats' component={MultipleStatisticsContainer}/>
       </div>
 
     );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { setDataBase } from '../../actions';
+import { selectDataBase } from '../../actions';
 import { dataMetrics } from '../../helper/dataMetrics';
 
 export class DataBaseSelectField extends Component {
@@ -30,7 +30,7 @@ export class DataBaseSelectField extends Component {
 };
 
 export const mapDispatchToProps = (dispatch) => ({
-  selectDataBase: (dataBase) => dispatch(setDataBase(dataBase))
+  selectDataBase: (dataBase) => dispatch(selectDataBase(dataBase))
 });
 
 DataBaseSelectField.propTypes = {

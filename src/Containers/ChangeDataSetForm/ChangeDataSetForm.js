@@ -4,6 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { fetchGovernanceIndicators } from '../../thunks/fetchGovernanceIndicators';
 import { fetchDevelopmentIndicators } from '../../thunks/fetchDevelopmentIndicators';
+import { submitDataSet } from '../../actions';
 import DataSetSelectField from '../DataSetSelectField/DataSetSelectField';
 
 export class ChangeDataSetForm extends Component {
@@ -11,9 +12,10 @@ export class ChangeDataSetForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const { location, dataSet, dataBase} = this.props;
-    ((dataBase === 'WWGI') ? 
-      this.props.fetchGovernanceIndicators(location, dataSet, dataBase):
-      this.props.fetchDevelopmentIndicators(location, dataSet, dataBase));
+    this.props.submitDataSet(dataSet);
+    ((dataBase.database_code === 'WWGI') ? 
+      this.props.fetchGovernanceIndicators(location, dataSet.dataset_code, dataBase.database_code):
+      this.props.fetchDevelopmentIndicators(location, dataSet.dataset_code, dataBase.database_code));
     this.props.history.push('/stats');
   };
 
@@ -34,19 +36,20 @@ export class ChangeDataSetForm extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  dataBase: state.dataBase.database_code,
-  dataSet: state.dataSet.dataset_code,
+  dataBase: state.selectedDataBase,
+  dataSet: state.selectedDataSet,
   location: state.location
 });
 
 export const mapDispatchToProps = (dispatch) => ({
   fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet)),
-  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet))
+  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet)),
+  submitDataSet: (dataBase) => dispatch(submitDataSet(dataBase))
 });
 
 ChangeDataSetForm.propTypes = {
-  dataBase: PropTypes.string,
-  dataSet: PropTypes.string,
+  dataBase: PropTypes.object,
+  dataSet: PropTypes.object,
   location: PropTypes.array,
   fetchDevelopmentIndicators: PropTypes.func,
   fetchGovernanceIndicators: PropTypes.func

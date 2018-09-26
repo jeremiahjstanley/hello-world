@@ -5,13 +5,13 @@ import { VictoryLine, VictoryBar, VictoryContainer, VictoryVoronoiContainer, Vic
 import { colors } from '../../helper/colors';
 import Loader from '../Loader/Loader'
 
-export class GovernanceIndicatorsStatistics extends Component {
+export class MultipleGovernanceIndicatorsStatistics extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
-      locationData: []
+      locationData: {}
     };
   };
 
@@ -35,119 +35,7 @@ export class GovernanceIndicatorsStatistics extends Component {
       );
     })
 
-    if (this.state.locationData.length) {
-
-      const percentileRankChart = this.state.locationData.map((location, index) => {
-
-        return ( 
-
-          <VictoryGroup
-            key={index}
-            color={colors[index]}
-            interpolation="natural"
-            labelComponent={
-              <VictoryTooltip
-                cornerRadius={0}
-                pointerLength={20}
-                style={{fontSize: 10, fontFamily: 'Avenir Next'}}
-                flyoutStyle={{ stroke: 'black', fill: 'white'}}
-              />
-            }
-            data={location.cleanPercentileRank}
-          >
-            <VictoryLine
-              containerComponent={<VictoryContainer responsive={true}/>}
-            />
-            <VictoryScatter
-              size={1}
-            />
-          </VictoryGroup>
-
-          );
-        });
-
-      const numberOfSourcesChart = this.state.locationData.map((location, index) => {
-
-        return (
-
-            <VictoryBar
-              containerComponent={<VictoryContainer responsive={true}/>}
-              key={index}
-              labelComponent={
-                <VictoryTooltip
-                  cornerRadius={0}
-                  pointerLength={20}
-                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
-                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
-                />
-              }
-              style={{
-                data: { fill: colors[index] },
-                parent: { border: '1px solid #ccc'},
-              }}
-              data={location.cleanNumberOfSources}
-            />
-
-          );
-        });
-
-      const standardErrorChart = this.state.locationData.map((location, index) => {
-
-        return ( 
-
-          <VictoryGroup
-            key={index}
-            color={colors[index]}
-            interpolation="natural"
-            labelComponent={
-              <VictoryTooltip
-                cornerRadius={0}
-                pointerLength={20}
-                style={{fontSize: 10, fontFamily: 'Avenir Next'}}
-                flyoutStyle={{ stroke: 'black', fill: 'white'}}
-              />
-            }
-            data={location.cleanStandardError}
-          >
-            <VictoryLine
-              containerComponent={<VictoryContainer responsive={true}/>}
-            />
-            <VictoryScatter
-              size={1}
-            />
-          </VictoryGroup>
-
-          );
-        });
-
-      const estimatesChart = this.state.locationData.map((location, index) => {
-
-        return (
-
-          <VictoryGroup
-            key={index}
-            color={colors[index]}
-            interpolation="natural"
-            labelComponent={
-              <VictoryTooltip
-                cornerRadius={0}
-                pointerLength={20}
-                style={{fontSize: 10, fontFamily: 'Avenir Next'}}
-                flyoutStyle={{ stroke: 'black', fill: 'white'}}
-              />
-            }
-            data={location.cleanEstimates}
-          >
-            <VictoryLine
-              containerComponent={<VictoryContainer responsive={true}/>}
-            />
-            <VictoryScatter
-              size={1}
-            />
-          </VictoryGroup>
-
-          );
-        });
+    if (this.state.locationData) {
 
       return (
 
@@ -178,7 +66,26 @@ export class GovernanceIndicatorsStatistics extends Component {
               }}
             />
 
-            { percentileRankChart }
+            <VictoryGroup
+              color={colors[0]}
+              interpolation="natural"
+              labelComponent={
+                <VictoryTooltip
+                  cornerRadius={0}
+                  pointerLength={20}
+                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
+                />
+              }
+              data={this.state.locationData.cleanPercentileRank}
+            >
+              <VictoryLine
+                containerComponent={<VictoryContainer responsive={true}/>}
+              />
+              <VictoryScatter
+                size={1}
+              />
+            </VictoryGroup>
 
           </VictoryChart>
 
@@ -211,7 +118,22 @@ export class GovernanceIndicatorsStatistics extends Component {
               }}
             />
 
-            { numberOfSourcesChart }
+            <VictoryBar
+              containerComponent={<VictoryContainer responsive={true}/>}
+              labelComponent={
+                <VictoryTooltip
+                  cornerRadius={0}
+                  pointerLength={20}
+                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
+                />
+              }
+              style={{
+                data: { fill: colors[0] },
+                parent: { border: '1px solid #ccc'},
+              }}
+              data={this.state.locationData.cleanNumberOfSources}
+            />
 
           </VictoryChart>
 
@@ -237,7 +159,26 @@ export class GovernanceIndicatorsStatistics extends Component {
               }}
             />
 
-            { standardErrorChart }
+            <VictoryGroup
+              color={colors[0]}
+              interpolation="natural"
+              labelComponent={
+                <VictoryTooltip
+                  cornerRadius={0}
+                  pointerLength={20}
+                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
+                />
+              }
+              data={this.state.locationData.cleanStandardError}
+            >
+            <VictoryLine
+              containerComponent={<VictoryContainer responsive={true}/>}
+            />
+            <VictoryScatter
+              size={1}
+            />
+          </VictoryGroup>
 
           </VictoryChart>
 
@@ -263,7 +204,26 @@ export class GovernanceIndicatorsStatistics extends Component {
               }}
             />
 
-            { estimatesChart }
+            <VictoryGroup
+              color={colors[0]}
+              interpolation="natural"
+              labelComponent={
+                <VictoryTooltip
+                  cornerRadius={0}
+                  pointerLength={20}
+                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
+                />
+              }
+              data={this.state.locationData.cleanEstimates}
+            >
+              <VictoryLine
+                containerComponent={<VictoryContainer responsive={true}/>}
+              />
+              <VictoryScatter
+                size={1}
+              />
+            </VictoryGroup>
 
           </VictoryChart>
 
@@ -285,14 +245,13 @@ export class GovernanceIndicatorsStatistics extends Component {
 export const mapStateToProps = (state) => ({
   dataBase: state.submittedDataBase,
   location: state.location,
-  locationData: state.locationData
 });
 
-GovernanceIndicatorsStatistics.propTypes = {
+MultipleGovernanceIndicatorsStatistics.propTypes = {
   dataBase: PropTypes.object,
   dataSet: PropTypes.object,
   location: PropTypes.array,
   locationData: PropTypes.array
 };
 
-export default connect(mapStateToProps)(GovernanceIndicatorsStatistics);
+export default connect(mapStateToProps)(MultipleGovernanceIndicatorsStatistics);

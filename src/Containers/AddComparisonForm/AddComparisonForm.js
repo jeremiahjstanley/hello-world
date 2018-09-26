@@ -24,13 +24,14 @@ export class AddComparisonForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const { location, dataSet, dataBase} = this.props;
+    const { location, dataSets, dataBase} = this.props;
+    const code = dataSets[0].dataset_code
     if (this.state.additionalLocation) {
       const locations = [...location, this.state.additionalLocation];
       this.props.selectLocation(locations);
       ((dataBase === 'WWGI') ? 
-        this.props.fetchGovernanceIndicators(locations, dataSet, dataBase) : 
-        this.props.fetchDevelopmentIndicators(locations, dataSet, dataBase));
+        this.props.fetchGovernanceIndicators(locations, code, dataBase.database_code) : 
+        this.props.fetchDevelopmentIndicators(locations, code, dataBase.database_code));
       this.props.history.push('/stats');
     }
   };
@@ -73,24 +74,24 @@ export class AddComparisonForm extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  dataBase: state.dataBase.database_code,
-  dataSet: state.dataSet.dataset_code,
+  dataBase: state.submittedDataBase,
+  dataSets: state.submittedDataSet,
   location: state.location
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  fetchDevelopmentIndicators: (locations, dataBase, dataSet) => dispatch(fetchDevelopmentIndicators(locations, dataBase, dataSet)),
-  fetchGovernanceIndicators: (locations, dataBase, dataSet) => dispatch(fetchGovernanceIndicators(locations, dataBase, dataSet)),
+  fetchDevelopmentIndicators: (locations, dataSets, dataBase) => dispatch(fetchDevelopmentIndicators(locations, dataSets, dataBase)),
+  fetchGovernanceIndicators: (locations, dataSets, dataBase) => dispatch(fetchGovernanceIndicators(locations, dataSets, dataBase)),
   selectLocation: (location) => dispatch(setLocation(location))
 });
 
 AddComparisonForm.propTypes = {
-  dataBase: PropTypes.string.isRequired,
-  dataSet: PropTypes.string.isRequired,
-  location: PropTypes.array.isRequired,
-  fetchDevelopmentIndicators: PropTypes.func.isRequired,
-  fetchGovernanceIndicators: PropTypes.func.isRequired,
-  selectLocation: PropTypes.func.isRequired
+  dataBase: PropTypes.object,
+  dataSets: PropTypes.array,
+  location: PropTypes.array,
+  fetchDevelopmentIndicators: PropTypes.func,
+  fetchGovernanceIndicators: PropTypes.func,
+  selectLocation: PropTypes.func
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AddComparisonForm));

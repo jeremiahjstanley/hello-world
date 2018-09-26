@@ -1,6 +1,6 @@
-export const dataBase = (state = {}, action) => {
+export const selectedDataBase = (state = {}, action) => {
   switch (action.type) {
-    case 'SET_DATABASE':
+    case 'SELECT_DATABASE':
       return action.dataBase;
     default: 
       return state;

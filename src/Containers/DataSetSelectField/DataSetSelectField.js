@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { setDataSet } from '../../actions';
+import { selectDataSet } from '../../actions';
 import { dataMetrics } from '../../helper/dataMetrics';
 
 export class DataSetSelectField extends Component {
@@ -59,11 +59,11 @@ export class DataSetSelectField extends Component {
 };
 
 export const mapStateToProps = (state) => ({
-  dataBase: state.dataBase.name
+  dataBase: state.selectedDataBase.name
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  selectDataSet: (dataSet) => dispatch(setDataSet(dataSet))
+  selectDataSet: (dataSet) => dispatch(selectDataSet(dataSet))
 });
 
 DataSetSelectField.propTypes = {

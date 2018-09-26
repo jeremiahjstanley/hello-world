@@ -1,6 +1,6 @@
 import React from 'react';
 import './Loader.css';
-import helloworld from '../../css-resources/helloworld.svg';
+import helloworld from '../../css-resources/helloworld.gif';
 
 export const Loader = () => {
 

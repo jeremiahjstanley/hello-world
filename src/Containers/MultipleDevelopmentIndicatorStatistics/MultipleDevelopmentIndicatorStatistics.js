@@ -6,7 +6,7 @@ import { colors } from '../../helper/colors';
 import Loader from '../Loader/Loader'
 
 
-export class DevelopmentIndicatorStatistics extends Component {
+export class MultipleDevelopmentIndicatorStatistics extends Component {
   
   constructor() {
     super()
@@ -19,8 +19,6 @@ export class DevelopmentIndicatorStatistics extends Component {
   static getDerivedStateFromProps(props, state) {
     if (props.locationData) {
       return {
-        dataBase: props.submittedDataBase,
-        dataSet: props.dataSet,
         locationData: props.locationData
       };
     }
@@ -38,37 +36,7 @@ export class DevelopmentIndicatorStatistics extends Component {
       );
     })
 
-    if (this.state.locationData.length && !this.props.locationData[0].cleanEstimates) {
-
-      const developmentChart = this.state.locationData.map((location, index) => {
-   
-        return ( 
-
-          <VictoryGroup
-            key={index}
-            color={colors[index]}
-            interpolation="natural"
-            labelComponent={
-              <VictoryTooltip
-                cornerRadius={0}
-                pointerLength={20}
-                style={{fontSize: 10, fontFamily: 'Avenir Next'}}
-                flyoutStyle={{ stroke: 'black', fill: 'white'}}
-              />
-            }
-            data={location}
-          >
-            <VictoryLine
-              containerComponent={<VictoryContainer responsive={true}/>}
-            />
-            <VictoryScatter
-              size={1}
-            />
-          </VictoryGroup>
-          
-        );
-      });
-
+    if (this.state.locationData.length && this.props.locationData && this.props.dataSet && this.props.dataBase && this.props.location) {
 
       return (
 
@@ -76,8 +44,6 @@ export class DevelopmentIndicatorStatistics extends Component {
 
           <h1>{this.props.dataBase.name}</h1>
           <h2>{this.props.dataSet.name}</h2>
-
-
 
           <VictoryChart
             animate={{ duration: 2000, easing: 'bounce' }} 
@@ -100,7 +66,26 @@ export class DevelopmentIndicatorStatistics extends Component {
               }}
             />
 
-            { developmentChart }
+            <VictoryGroup
+              color={colors[0]}
+              interpolation="natural"
+              labelComponent={
+                <VictoryTooltip
+                  cornerRadius={0}
+                  pointerLength={20}
+                  style={{fontSize: 10, fontFamily: 'Avenir Next'}}
+                  flyoutStyle={{ stroke: 'black', fill: 'white'}}
+                />
+              }
+              data={this.state.locationData}
+            >
+              <VictoryLine
+                containerComponent={<VictoryContainer responsive={true}/>}
+              />
+              <VictoryScatter
+                size={1}
+              />
+            </VictoryGroup>
 
           </VictoryChart>
 
@@ -129,14 +114,13 @@ export class DevelopmentIndicatorStatistics extends Component {
 export const mapStateToProps = (state) => ({
   dataBase: state.submittedDataBase,
   location: state.location,
-  locationData: state.locationData
 });
 
-DevelopmentIndicatorStatistics.propTypes = {
+MultipleDevelopmentIndicatorStatistics.propTypes = {
   dataBase: PropTypes.object,
   dataSet: PropTypes.object,
   location: PropTypes.array,
   locationData: PropTypes.array
 };
 
-export default connect(mapStateToProps)(DevelopmentIndicatorStatistics);
+export default connect(mapStateToProps)(MultipleDevelopmentIndicatorStatistics);

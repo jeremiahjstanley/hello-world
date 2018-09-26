@@ -21,6 +21,12 @@ a {
 .statistics-container {
 	margin: auto;
 	width: 80%;
+	min-width: 5rem;
+}
+
+.multiple-statistic-container {
+	display: flex;
+	justify-content: space-around;
 }
 
 .legend {

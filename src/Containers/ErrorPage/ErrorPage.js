@@ -1,7 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { madeSearch, hasErrored } from '../../actions';
 
-export const  ErrorPage = () => {
+export const  ErrorPage = ({makeSearch, hasErrored}) => {
+
+  const resetApplication = () => {
+    makeSearch(false);
+    hasErrored(false);
+  };
 
 	return (
 
@@ -16,11 +24,21 @@ export const  ErrorPage = () => {
           World. 
 	      </p>
         <div className='graph-link start-over'>
-          <Link to='/'>Start Over?</Link>
+          <Link  onClick={() => { resetApplication() }}  to='/'>Start Over?</Link>
         </div>
 	    </div>
          
 	);
 };
 
-export default ErrorPage;
+export const mapDispatchToProps = (dispatch) => ({
+  makeSearch: (status) => dispatch(madeSearch(status)),
+  hasErrored: (status) => dispatch(hasErrored(status)),
+});
+
+ErrorPage.propTypes = {
+  makeSearch: PropTypes.func,
+  hasErrored: PropTypes.func
+};
+
+export default withRouter(connect(null, mapDispatchToProps)(ErrorPage));
